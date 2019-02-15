@@ -4,3 +4,9 @@
     height: 400px;
     margin: 0 auto
   }
+
+  .highcharts-credits {
+    display: none;
+  }
+
+ 
