@@ -1,4 +1,53 @@
-
+let time = [];
+let p1 = [];
+let p2 = [];
+$.getJSON("/data/steps-day1.json", callbackFuncWithData);
+function callbackFuncWithData(data) {
+    data.forEach(e => {
+        time.push(e['Time']);
+        p1.push(e['Participant 1']);
+        p2.push(e['Participant 2']);
+    });
+    chart(time, p1, p2);
+}
+// console.log(time);
+function chart(time, p1, p2) {
+    Highcharts.chart('highchart-with-data-labels', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Monthly Average Temperature'
+        },
+        subtitle: {
+            text: 'Source: WorldClimate.com'
+        },
+        xAxis: {
+            categories: time
+        },
+        yAxis: {
+            title: {
+                text: 'Temperature (°C)'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: false
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Participant 3',
+            data: p1
+        },
+        {
+            name: 'Participant 2',
+            data: p2
+        }]
+    });
+}
 Highcharts.chart('graph1', {
 
     title: {
@@ -134,37 +183,3 @@ Highcharts.chart('graph2', {
 
 });
 
-Highcharts.chart('highchart-with-data-labels', {
-    chart: {
-      type: 'line'
-    },
-    title: {
-      text: 'Monthly Average Temperature'
-    },
-    subtitle: {
-      text: 'Source: WorldClimate.com'
-    },
-    xAxis: {
-      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    },
-    yAxis: {
-      title: {
-        text: 'Temperature (°C)'
-      }
-    },
-    plotOptions: {
-      line: {
-        dataLabels: {
-          enabled: true
-        },
-        enableMouseTracking: false
-      }
-    },
-    series: [{
-      name: 'Tokyo',
-      data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    }, {
-      name: 'London',
-      data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-    }]
-  });
