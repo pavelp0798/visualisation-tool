@@ -1,33 +1,54 @@
-let time = [];
-let p1 = [];
-let p2 = [];
 $.getJSON("/data/steps-day1.json", callbackFuncWithData);
 function callbackFuncWithData(data) {
+    let time = [];
+    let p1 = [];
+    let p2 = [];
+    let p3 = [];
+    let p4 = [];
+    let p5 = [];
     data.forEach(e => {
         time.push(e['Time']);
         p1.push(e['Participant 1']);
         p2.push(e['Participant 2']);
+        p3.push(e['Participant 3']);
+        p4.push(e['Participant 4']);
+        p5.push(e['Participant 5']);
     });
-    chart(time, p1, p2);
+    chart1(time, p1, p2, p3, p4, p5);
+}
+$.getJSON("/data/heartrate-day1.json", callbackFuncWithData2);
+function callbackFuncWithData2(data) {
+    let time = [];
+    let p1 = [];
+    let p2 = [];
+    let p3 = [];
+    let p4 = [];
+    let p5 = [];
+    data.forEach(e => {
+        time.push(e['Time']);
+        p1.push(parseInt(e['Participant 1']));
+        p2.push(e['Participant 2']);
+        p3.push(e['Participant 3']);
+        p4.push(e['Participant 4']);
+        p5.push(e['Participant 5']);
+    });
+    chart2(time, p1, p2, p3, p4, p5);
 }
 // console.log(time);
-function chart(time, p1, p2) {
+function chart1(time, p1, p2, p3, p4, p5) {
     Highcharts.chart('highchart-with-data-labels', {
-        chart: {
-            type: 'line'
-        },
         title: {
-            text: 'Monthly Average Temperature'
+            text: 'Steps Day 1'
         },
         subtitle: {
-            text: 'Source: WorldClimate.com'
+            text: 'Source: Sheffield Hallam Lab'
         },
         xAxis: {
             categories: time
         },
         yAxis: {
             title: {
-                text: 'Temperature (°C)'
+                text: 'Steps'
             }
         },
         plotOptions: {
@@ -35,16 +56,74 @@ function chart(time, p1, p2) {
                 dataLabels: {
                     enabled: false
                 },
-                enableMouseTracking: false
+                enableMouseTracking: true
             }
         },
         series: [{
-            name: 'Participant 3',
+            name: 'Participant 1',
             data: p1
         },
         {
             name: 'Participant 2',
             data: p2
+        },
+        {
+            name: 'Participant 3',
+            data: p3
+        },
+        {
+            name: 'Participant 4',
+            data: p4
+        },
+        {
+            name: 'Participant 5',
+            data: p5
+        }]
+    });
+}
+function chart2(time, p1, p2, p3, p4, p5) {
+    Highcharts.chart('highchart-with-data-labels2', {
+        title: {
+            text: 'Heart Rate Day 1'
+        },
+        subtitle: {
+            text: 'Source: Sheffield Hallam Lab'
+        },
+        xAxis: {
+            categories: time
+        },
+        yAxis: {
+            title: {
+                text: 'Heart Rate'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: false
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+            name: 'Participant 1',
+            data: p1
+        },
+        {
+            name: 'Participant 2',
+            data: p2
+        },
+        {
+            name: 'Participant 3',
+            data: p3
+        },
+        {
+            name: 'Participant 4',
+            data: p4
+        },
+        {
+            name: 'Participant 5',
+            data: p5
         }]
     });
 }
