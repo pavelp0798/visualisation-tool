@@ -1,4 +1,5 @@
 $.getJSON("/data/steps-day1.json", callbackFuncWithData);
+
 function callbackFuncWithData(data) {
     let time = [];
     let p1 = [];
@@ -17,6 +18,7 @@ function callbackFuncWithData(data) {
     chart1(time, p1, p2, p3, p4, p5);
 }
 $.getJSON("/data/heartrate-day1.json", callbackFuncWithData2);
+
 function callbackFuncWithData2(data) {
     let time = [];
     let p1 = [];
@@ -60,27 +62,29 @@ function chart1(time, p1, p2, p3, p4, p5) {
             }
         },
         series: [{
-            name: 'Participant 1',
-            data: p1
-        },
-        {
-            name: 'Participant 2',
-            data: p2
-        },
-        {
-            name: 'Participant 3',
-            data: p3
-        },
-        {
-            name: 'Participant 4',
-            data: p4
-        },
-        {
-            name: 'Participant 5',
-            data: p5
-        }]
+                name: 'Participant 1',
+                data: p1
+            },
+            {
+                name: 'Participant 2',
+                data: p2
+            },
+            {
+                name: 'Participant 3',
+                data: p3
+            },
+            {
+                name: 'Participant 4',
+                data: p4
+            },
+            {
+                name: 'Participant 5',
+                data: p5
+            }
+        ]
     });
 }
+
 function chart2(time, p1, p2, p3, p4, p5) {
     Highcharts.chart('highchart-with-data-labels2', {
         title: {
@@ -106,25 +110,26 @@ function chart2(time, p1, p2, p3, p4, p5) {
             }
         },
         series: [{
-            name: 'Participant 1',
-            data: p1
-        },
-        {
-            name: 'Participant 2',
-            data: p2
-        },
-        {
-            name: 'Participant 3',
-            data: p3
-        },
-        {
-            name: 'Participant 4',
-            data: p4
-        },
-        {
-            name: 'Participant 5',
-            data: p5
-        }]
+                name: 'Participant 1',
+                data: p1
+            },
+            {
+                name: 'Participant 2',
+                data: p2
+            },
+            {
+                name: 'Participant 3',
+                data: p3
+            },
+            {
+                name: 'Participant 4',
+                data: p4
+            },
+            {
+                name: 'Participant 5',
+                data: p5
+            }
+        ]
     });
 }
 Highcharts.chart('graph1', {
@@ -202,9 +207,7 @@ function getData(n) {
         c,
         spike;
     for (
-        i = 0, x = Date.UTC(new Date().getUTCFullYear(), 0, 1) - n * 36e5;
-        i < n;
-        i = i + 1, x = x + 36e5
+        i = 0, x = Date.UTC(new Date().getUTCFullYear(), 0, 1) - n * 36e5; i < n; i = i + 1, x = x + 36e5
     ) {
         if (i % 100 === 0) {
             a = 2 * Math.random();
@@ -261,4 +264,3 @@ Highcharts.chart('graph2', {
     }]
 
 });
-
