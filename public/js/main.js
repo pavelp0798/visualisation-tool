@@ -39,7 +39,7 @@ let type = "steps";
 getData(type, function (data) {
     displayGraph(type, data);
 });
-setTimeout(function(){
+setTimeout(function () {
     type = "heartrate";
     getData(type, function (data) {
         displayGraph(type, data);
