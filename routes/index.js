@@ -5,7 +5,8 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
-  res.render('index');
+  var participant = req.query.p;
+  res.render('index', { participant: participant });
 });
 
 module.exports = router;

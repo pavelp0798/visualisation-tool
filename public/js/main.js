@@ -16,7 +16,7 @@ function getData(type, callback) {
 }
 
 function getDataDay(i, type, callback) {
-    $.getJSON(`/data/${type}-day${i}.json`, function (jsonData) {
+    $.getJSON(`/data/p1/${type}-day${i}.json`, function (jsonData) {
         let time = [];
         let s1 = [];
         let s2 = [];
