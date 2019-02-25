@@ -30,3 +30,21 @@
 <div id="container4" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 <div id="container5" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 -->
+<script>
+let participant = "<%= participant %>";
+let type = "steps";
+
+getData(type, function (data) {
+    displayGraph(type, data);
+});
+setTimeout(function () {
+    type = "heartrate";
+    getData(type, function (data) {
+        displayGraph(type, data);
+    });
+}, 100);
+
+
+
+
+</script>

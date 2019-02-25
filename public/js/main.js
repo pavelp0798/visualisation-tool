@@ -1,51 +1,6 @@
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
-function getData(type, callback) {
-    const j = 7;
-    let all = []
-    for (let i = 1; i <= j; i++) {
-        getDataDay(i, type, function (data) {
-            all[i - 1] = data;
-        });
-    }
-    setTimeout(function () {
-        callback(all);
-    }, 100);
-}
-
-function getDataDay(i, type, callback) {
-    $.getJSON(`/data/p1/${type}-day${i}.json`, function (jsonData) {
-        let time = [];
-        let s1 = [];
-        let s2 = [];
-        let s3 = [];
-        let s4 = [];
-        let s5 = [];
-        jsonData.forEach(e => {
-            time.push(e['Time']);
-            s1.push(e['Sensor 1']);
-            s2.push(e['Sensor 2']);
-            s3.push(e['Sensor 3']);
-            s4.push(e['Sensor 4']);
-            s5.push(e['Sensor 5']);
-        });
-        let all = [time, s1, s2, s3, s4, s5];
-        callback(all);
-    });
-}
-let type = "steps";
-getData(type, function (data) {
-    displayGraph(type, data);
-});
-setTimeout(function () {
-    type = "heartrate";
-    getData(type, function (data) {
-        displayGraph(type, data);
-    });
-}, 100);
-
 function displayGraph(type, data) {
     setTimeout(function () {
         for (let v = 1; v <= 7; v++) {
@@ -106,5 +61,38 @@ function displayGraph(type, data) {
             }
             func_name(data[v - 1]);
         }
+    }, 100);
+}
+
+function getDataDay(i, type, callback) {
+    $.getJSON(`/data/${participant}/${type}-day${i}.json`, function (jsonData) {
+        let time = [];
+        let s1 = [];
+        let s2 = [];
+        let s3 = [];
+        let s4 = [];
+        let s5 = [];
+        jsonData.forEach(e => {
+            time.push(e['Time']);
+            s1.push(e['Sensor 1']);
+            s2.push(e['Sensor 2']);
+            s3.push(e['Sensor 3']);
+            s4.push(e['Sensor 4']);
+            s5.push(e['Sensor 5']);
+        });
+        let all = [time, s1, s2, s3, s4, s5];
+        callback(all);
+    });
+}
+function getData(type, callback) {
+    const j = 7;
+    let all = []
+    for (let i = 1; i <= j; i++) {
+        getDataDay(i, type, function (data) {
+            all[i - 1] = data;
+        });
+    }
+    setTimeout(function () {
+        callback(all);
     }, 100);
 }
