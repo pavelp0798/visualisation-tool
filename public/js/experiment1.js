@@ -65,7 +65,7 @@ function displayGraph(type, data) {
 }
 
 function getDataDay(i, type, callback) {
-    $.getJSON(`/data/${participant}/${type}-day${i}.json`, function (jsonData) {
+    $.getJSON(`/data/ex1/${participant}/${type}-day${i}.json`, function (jsonData) {
         let time = [];
         let s1 = [];
         let s2 = [];
