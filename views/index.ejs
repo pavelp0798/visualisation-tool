@@ -14,6 +14,7 @@
       aria-labelledby="nav-home-tab">
       <div id="steps-day<%-i%>"></div>
       <div id="heartrate-day<%-i%>"></div>
+      <div id="calories-day<%-i%>"></div>
     </div>
     <%}%>
   </div>
@@ -43,7 +44,12 @@ setTimeout(function () {
         displayGraph(type, data);
     });
 }, 100);
-
+setTimeout(function () {
+    type = "calories";
+    getData(type, function (data) {
+        displayGraph(type, data);
+    });
+}, 500);
 
 
 

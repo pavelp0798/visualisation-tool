@@ -13,6 +13,7 @@ function displayGraph(type, data) {
                 let s3 = data[3];
                 let s4 = data[4];
                 let s5 = data[5];
+                let average = data[6];
                 Highcharts.chart(container, {
                     title: {
                         text: `${capitalizeFirstLetter(type)} Day ${v}`
@@ -55,6 +56,10 @@ function displayGraph(type, data) {
                         {
                             name: 'Sensor 5',
                             data: s5
+                        },
+                        {
+                            name: 'Average',
+                            data: average
                         }
                     ]
                 });
@@ -72,15 +77,34 @@ function getDataDay(i, type, callback) {
         let s3 = [];
         let s4 = [];
         let s5 = [];
+        let average = [];
+        let sum = 0;
+        let count = 0;
+        jsonData.forEach(e => {
+            for (w = 1; w < 6; w++) {
+                if (parseInt(e[`Sensor ${w}`]) !== 0 && parseInt(e[`Sensor ${w}`]) != null) {
+                    count++;
+                    sum+=(parseInt(e[`Sensor ${w}`]) || 0);
+                }
+            }
+        });
+        console.log(sum, count);
+        let averageInt = sum / count;
+        count = 0;
+        sum = 0;
         jsonData.forEach(e => {
             time.push(e['Time']);
-            s1.push(e['Sensor 1']);
-            s2.push(e['Sensor 2']);
-            s3.push(e['Sensor 3']);
-            s4.push(e['Sensor 4']);
-            s5.push(e['Sensor 5']);
+            s1.push(parseInt(e['Sensor 1']));
+            s2.push(parseInt(e['Sensor 2']));
+            s3.push(parseInt(e['Sensor 3']));
+            s4.push(parseInt(e['Sensor 4']));
+            s5.push(parseInt(e['Sensor 5']));
+            average.push(averageInt);
         });
-        let all = [time, s1, s2, s3, s4, s5];
+        averageInt = 0;
+        
+        let all = [time, s1, s2, s3, s4, s5, average];
+        
         callback(all);
     });
 }
@@ -89,7 +113,7 @@ function getData(type, callback) {
     let all = []
     for (let i = 1; i <= j; i++) {
         getDataDay(i, type, function (data) {
-            all[i - 1] = data;
+            all[i-1] = data;
         });
     }
     setTimeout(function () {
