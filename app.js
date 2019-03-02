@@ -10,6 +10,7 @@ const favicon = require('serve-favicon');
 app.set('view engine', 'ejs');
 // tell where views are to be found
 app.set('views', 'views');
+app.set('layout', 'layout/layout');
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.use(expressLayouts);
 app.use(bodyParser.urlencoded({

@@ -9,10 +9,13 @@ router.get('/', (req, res, next) => {
   if (participant == null) {
     participant = "p1";
   }
-  res.render('index', { participant: participant, title: "First Experiment" });
+  var a = req.query.a;
+
+  res.render('index', { participant: participant, title: "First Experiment", a: a});
 });
 router.get('/second', (req, res, next) => {
-  res.render('second', {title: "Second Experiment"});
+  var participant = req.query.p;
+  res.render('second', { participant: participant, title: "Second Experiment"});
 });
 
 module.exports = router;

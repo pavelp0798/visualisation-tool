@@ -1,0 +1,21 @@
+<script src="js/experiment2.js"></script>
+<script>
+let participant = "<%= participant %>";
+
+let type = "steps";
+getData(type, function (data) {
+    displayGraph(type, data);
+});
+setTimeout(function () {
+    type = "heartrate";
+    getData(type, function (data) {
+        displayGraph(type, data);
+    });
+}, 100);
+setTimeout(function () {
+    type = "calories";
+    getData(type, function (data) {
+        displayGraph(type, data);
+    });
+}, 500);
+</script>
