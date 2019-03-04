@@ -91,10 +91,13 @@ function getDataDay(i, type, removeZeros, callback) {
             if (type === "heartrate") {
                 allData[0].push(jsonData[index]['Time']);
                 for (let i = 1; i < 6; i++) {
-                    
-                    
-                    if ((parseInt(jsonData[index][`Sensor ${i}`]) == 0) && (removeZeros === '1')) {
-                        allData[i].push(averageInt);
+                    if ((parseInt(jsonData[index][`Sensor ${i}`]) === 0) && (removeZeros === '1')) {
+                        if ((index > 0) && (index < jsonData.length-1)) {
+                            var average = (parseInt(jsonData[index-1][`Sensor ${i}`]) + parseInt(jsonData[index+1][`Sensor ${i}`]))/2
+                            allData[i].push(average);
+                        } else {
+                            allData[i].push(parseInt(jsonData[index][`Sensor ${i}`]));
+                        }
                     } else {
                         allData[i].push(parseInt(jsonData[index][`Sensor ${i}`]));
                     }
