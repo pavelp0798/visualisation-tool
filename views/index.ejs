@@ -10,11 +10,10 @@
   </nav>
   <div class="tab-content" id="nav-tabContent">
     <%for(var i=1; i<=7; i++) {%>
-    <div class="tab-pane fade  <%if (i===1) { %> show active <% } %>" id="nav-day<%-i%>" role="tabpanel"
-      aria-labelledby="nav-home-tab">
+    <div class="tab-pane fade <%if (i===1) { %> show active <% } %>" id="nav-day<%-i%>" role="tabpanel" aria-labelledby="nav-home-tab">
       <% types.forEach(function(element) {  %>
-    <div id="<%=element%>-day<%=i%>"></div>
-<% }); %> 
+      <div id="<%=element%>-day<%=i%>"></div>
+      <% }); %>
     </div>
     <%}%>
   </div>
@@ -23,9 +22,12 @@
 <script>
   let participant = "<%= participant %>";
   let types = "<%- types %>".split(",");
+  let removeZeros = "<%- removeZeros %>"
   for (let i = 0; i < types.length; i++) {
-        getData(types[i], function (data) {
-            displayGraph(types[i], data);
-        });
-    };
+    setTimeout(function () {
+      getData(types[i], removeZeros, function (data) {
+        displayGraph(types[i], data);
+      });
+    }, i * 100);
+  }
 </script>

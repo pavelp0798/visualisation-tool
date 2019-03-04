@@ -7,8 +7,10 @@ const router = express.Router();
 router.get('/', (req, res, next) => {
   var participant = req.query.p || "p1";
   var a = req.query.a;
+  var removeZeros = req.query.z;
 
-  res.render('index', { participant: participant, title: "First Experiment", a: a, types: ['calories', 'heartrate', 'steps', 'distance']});
+  
+  res.render('index', { participant: participant, title: "First Experiment", removeZeros: removeZeros, types: ['calories', 'heartrate', 'steps', 'distance']});
 });
 router.get('/second', (req, res, next) => {
   var participant = req.query.p || "p1";

@@ -1,8 +1,9 @@
 <% types.forEach(function(element) {  %>
-    <div id="<%= element %>"></div>
-<% }); %>   
+<div id="<%= element %>"></div>
+<% }); %>
+<div id="distance"></div>
 <script src="js/experiment2.js"></script>
- 
+
 <script>
     let participant = "<%= participant %>";
 
@@ -15,4 +16,60 @@
             displayGraph(types[i], data, names);
         });
     };
+</script>
+<script>
+setTimeout(function(){
+
+    Highcharts.chart('distance', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Treadmill Distance'
+        },
+        xAxis: {
+            categories: ['Start', 'End', 'Distance(M)', 'Diff'],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Rainfall (mm)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'GT(M)',
+            data: [0, 2887, 2887, 0]
+        }, {
+            name: 'Fitbit One',
+            data: [17310, 20260, 2950, 63]
+        }, {
+            name: 'Fitbit Charge HR',
+            data: [16870, 19280, 2410, -477]
+        }, {
+            name: 'Fitbit Surge',
+            data: [15720, 18010, 2290, -597]
+        }, {
+            name: 'Fitbit Flex 2',
+            data: [15780, 18200, 2420, -467]
+        }, {
+            name: 'Fitbit Charge 2',
+            data: [16010, 18530, 2520, -367]
+        }]
+    });
+}, 300);
 </script>

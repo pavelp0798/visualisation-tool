@@ -11,7 +11,7 @@ function displayGraph(type, data) {
                 let time = data[0];
                 let input = [];
                 let names = ['Sensor 1', 'Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Average', 'Comulative'];
-                
+
                 for (let i = 1; i < data.length; i++) {
                     let vis = true;
                     if (i === 7) {
@@ -20,11 +20,11 @@ function displayGraph(type, data) {
                     if (data[i].length !== 0) {
                         input.push({
                             data: data[i],
-                            name: names[i-1],
+                            name: names[i - 1],
                             visible: vis,
                         });
                     }
-                    
+
                 }
                 const options = {
                     title: {
@@ -58,7 +58,7 @@ function displayGraph(type, data) {
     }, 100);
 }
 
-function getDataDay(i, type, callback) {
+function getDataDay(i, type, removeZeros, callback) {
     $.getJSON(`/data/ex1/${participant}/${type}-day${i}.json`, function (jsonData) {
         let time = [],
             s1 = [],
@@ -71,6 +71,7 @@ function getDataDay(i, type, callback) {
         let sum = 0,
             count = 0,
             commulative = 0;
+            
         jsonData.forEach(e => {
             for (w = 1; w < 6; w++) {
                 if (parseFloat(e[`Sensor ${w}`]) !== 0 && parseFloat(e[`Sensor ${w}`]) != null) {
@@ -82,65 +83,48 @@ function getDataDay(i, type, callback) {
         let averageInt = sum / count;
         count = 0;
         sum = 0;
+        let allData = []
+        for (let i = 0; i < 8; i++) {
+            allData.push([]);
+        }
         jsonData.forEach(function (item, index) {
             if (type === "heartrate") {
-                time.push(jsonData[index]['Time']);
-                if (parseInt(jsonData[index]['Sensor 1']) == 0) {
-                    s1.push(averageInt);
-                } else {
-                    s1.push(parseInt(jsonData[index]['Sensor 1']));
-                }
-                if (parseInt(jsonData[index]['Sensor 2']) == 0) {
-                    s2.push(averageInt);
-                } else {
-                    s2.push(parseInt(jsonData[index]['Sensor 2']));
-                }
-                if (parseInt(jsonData[index]['Sensor 3']) == 0) {
-                    s3.push(averageInt);
-                } else {
-                    s3.push(parseInt(jsonData[index]['Sensor 3']));
-                }
-                if (parseInt(jsonData[index]['Sensor 4']) == 0) {
-                    s4.push(averageInt);
-                } else {
-                    s4.push(parseInt(jsonData[index]['Sensor 4']));
-                }
-                if (parseInt(jsonData[index]['Sensor 5']) == 0) {
-                    s5.push(averageInt);
-                } else {
-                    s5.push(parseInt(jsonData[index]['Sensor 5']));
+                allData[0].push(jsonData[index]['Time']);
+                for (let i = 1; i < 6; i++) {
+                    
+                    
+                    if ((parseInt(jsonData[index][`Sensor ${i}`]) == 0) && (removeZeros === '1')) {
+                        allData[i].push(averageInt);
+                    } else {
+                        allData[i].push(parseInt(jsonData[index][`Sensor ${i}`]));
+                    }
                 }
             } else if (type === "distance") {
-                time.push(item['Time']);
-                s1.push(item['Sensor 1']);
-                s2.push(item['Sensor 2']);
-                s3.push(item['Sensor 3']);
-                s4.push(item['Sensor 4']);
-                s5.push(item['Sensor 5']);
+                allData[0].push(item['Time']);
+                for (let i = 1; i < 6; i++) {
+                    allData[i].push(item[`Sensor ${i}`]);
+                }
                 commulative += ((item['Sensor 1'] + item['Sensor 2'] + item['Sensor 3'] + item['Sensor 4'] + item['Sensor 5']) / 5)
-                c.push(commulative);
+                allData[7].push(commulative);
             } else {
-                time.push(item['Time']);
-                s1.push(parseInt(item['Sensor 1']));
-                s2.push(parseInt(item['Sensor 2']));
-                s3.push(parseInt(item['Sensor 3']));
-                s4.push(parseInt(item['Sensor 4']));
-                s5.push(parseInt(item['Sensor 5']));
+                allData[0].push(item['Time']);
+                for (let i = 1; i < 6; i++) {
+                    allData[i].push(item[`Sensor ${i}`]);
+                }
             }
-            average.push(averageInt);
+            allData[6].push(averageInt);
         });
         averageInt = 0;
-        let all = [time, s1, s2, s3, s4, s5, average, c];
         commulative = 0;
-        callback(all);
+        callback(allData);
     });
 }
 
-function getData(type, callback) {
+function getData(type, removeZeros, callback) {
     const j = 7;
     let all = []
     for (let i = 1; i <= j; i++) {
-        getDataDay(i, type, function (data) {
+        getDataDay(i, type, removeZeros, function (data) {
             all[i - 1] = data;
         });
     }
