@@ -6,7 +6,7 @@ function capitalizeFirstLetter(string) {
 
 function displayGraph(type, data, names) {
     setTimeout(function () {
-        var container = function (data) {
+        const container = function (data) {
             let time = data[0];
             let input = [];
             for (i = 1; i < data.length; i++) {
@@ -15,7 +15,7 @@ function displayGraph(type, data, names) {
                     data: data[i]
                 });
             }
-            Highcharts.chart(type, {
+            const options = {
                 title: {
                     text: `${capitalizeFirstLetter(type)} Day`
                 },
@@ -42,7 +42,8 @@ function displayGraph(type, data, names) {
                     }
                 },
                 series: input
-            });
+            }
+            Highcharts.chart(type, options);
         }
         container(data);
     }, 100);
@@ -52,7 +53,7 @@ function getData(type, names, callback) {
     $.getJSON(`/data/ex2/${participant}/tm-${type}.json`, function (jsonData) {
         let allData = [];
 
-        for (var i = 0; i < names.length; i++) {
+        for (let i = 0; i < names.length; i++) {
             allData.push([]);
         }
         jsonData.forEach(e => {
@@ -64,7 +65,6 @@ function getData(type, names, callback) {
                 }
             }
         });
-        console.log(allData);
         
         setTimeout(function () {
             callback(allData);

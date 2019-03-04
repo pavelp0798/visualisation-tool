@@ -1,6 +1,7 @@
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
 function displayGraph(type, data) {
     setTimeout(function () {
         for (let v = 1; v <= 7; v++) {
@@ -8,119 +9,49 @@ function displayGraph(type, data) {
             var func_name = "container" + v;
             func_name = function (data) {
                 let time = data[0];
-                let s1 = data[1];
-                let s2 = data[2];
-                let s3 = data[3];
-                let s4 = data[4];
-                let s5 = data[5];
-                let average = data[6];
-                if (data[7].length != 0) {
-                    let c = data[7];
-                    Highcharts.chart(container, {
-                        title: {
-                            text: `${capitalizeFirstLetter(type)} Day ${v}`
-                        },
-                        subtitle: {
-                            text: 'Source: Sheffield Hallam Lab'
-                        },
-                        xAxis: {
-                            categories: time
-                        },
-                        yAxis: {
-                            title: {
-                                text: `${type}`
-                            }
-                        },
-                        plotOptions: {
-                            line: {
-                                dataLabels: {
-                                    enabled: false
-                                },
-                                enableMouseTracking: true
-                            }
-                        },
-                        series: [{
-                                name: 'Sensor 1',
-                                data: s1
-                            },
-                            {
-                                name: 'Sensor 2',
-                                data: s2
-                            },
-                            {
-                                name: 'Sensor 3',
-                                data: s3
-                            },
-                            {
-                                name: 'Sensor 4',
-                                data: s4
-                            },
-                            {
-                                name: 'Sensor 5',
-                                data: s5
-                            },
-                            {
-                                name: 'Average',
-                                data: average
-                            },
-                            {
-                                visible: false,
-                                name: 'Comulative',
-                                data: c
-                            }
-                        ]
-                    });
-                } else {
-                    Highcharts.chart(container, {
-                        title: {
-                            text: `${capitalizeFirstLetter(type)} Day ${v}`
-                        },
-                        subtitle: {
-                            text: 'Source: Sheffield Hallam Lab'
-                        },
-                        xAxis: {
-                            categories: time
-                        },
-                        yAxis: {
-                            title: {
-                                text: `${type}`
-                            }
-                        },
-                        plotOptions: {
-                            line: {
-                                dataLabels: {
-                                    enabled: false
-                                },
-                                enableMouseTracking: true
-                            }
-                        },
-                        series: [{
-                                name: 'Sensor 1',
-                                data: s1
-                            },
-                            {
-                                name: 'Sensor 2',
-                                data: s2
-                            },
-                            {
-                                name: 'Sensor 3',
-                                data: s3
-                            },
-                            {
-                                name: 'Sensor 4',
-                                data: s4
-                            },
-                            {
-                                name: 'Sensor 5',
-                                data: s5
-                            },
-                            {
-                                name: 'Average',
-                                data: average
-                            }
-                        ]
-                    });
+                let input = [];
+                let names = ['Sensor 1', 'Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Average', 'Comulative'];
+                
+                for (let i = 1; i < data.length; i++) {
+                    let vis = true;
+                    if (i === 7) {
+                        vis = false;
+                    }
+                    if (data[i].length !== 0) {
+                        input.push({
+                            data: data[i],
+                            name: names[i-1],
+                            visible: vis,
+                        });
+                    }
+                    
                 }
+                const options = {
+                    title: {
+                        text: `${capitalizeFirstLetter(type)} Day ${v}`
+                    },
+                    subtitle: {
+                        text: 'Source: Sheffield Hallam Lab'
+                    },
+                    xAxis: {
+                        categories: time
+                    },
+                    yAxis: {
+                        title: {
+                            text: `${type}`
+                        }
+                    },
+                    plotOptions: {
+                        line: {
+                            dataLabels: {
+                                enabled: false
+                            },
+                            enableMouseTracking: true
+                        }
+                    },
+                    series: input
+                }
+                Highcharts.chart(container, options);
             }
             func_name(data[v - 1]);
         }
@@ -129,20 +60,29 @@ function displayGraph(type, data) {
 
 function getDataDay(i, type, callback) {
     $.getJSON(`/data/ex1/${participant}/${type}-day${i}.json`, function (jsonData) {
-        let time = [], s1 = [], s2 = [], s3 = [], s4 = [], s5 = [], c = [], average = [];
-        let sum = 0, count = 0, commulative = 0;
+        let time = [],
+            s1 = [],
+            s2 = [],
+            s3 = [],
+            s4 = [],
+            s5 = [],
+            c = [],
+            average = [];
+        let sum = 0,
+            count = 0,
+            commulative = 0;
         jsonData.forEach(e => {
             for (w = 1; w < 6; w++) {
                 if (parseFloat(e[`Sensor ${w}`]) !== 0 && parseFloat(e[`Sensor ${w}`]) != null) {
                     count++;
-                    sum+=(parseFloat(e[`Sensor ${w}`]) || 0);
+                    sum += (parseFloat(e[`Sensor ${w}`]) || 0);
                 }
             }
         });
         let averageInt = sum / count;
         count = 0;
         sum = 0;
-        jsonData.forEach(function(item, index) {
+        jsonData.forEach(function (item, index) {
             if (type === "heartrate") {
                 time.push(jsonData[index]['Time']);
                 if (parseInt(jsonData[index]['Sensor 1']) == 0) {
@@ -177,7 +117,7 @@ function getDataDay(i, type, callback) {
                 s3.push(item['Sensor 3']);
                 s4.push(item['Sensor 4']);
                 s5.push(item['Sensor 5']);
-                commulative += ((item['Sensor 1'] + item['Sensor 2'] + item['Sensor 3'] + item['Sensor 4'] + item['Sensor 5'])/5)
+                commulative += ((item['Sensor 1'] + item['Sensor 2'] + item['Sensor 3'] + item['Sensor 4'] + item['Sensor 5']) / 5)
                 c.push(commulative);
             } else {
                 time.push(item['Time']);
@@ -195,12 +135,13 @@ function getDataDay(i, type, callback) {
         callback(all);
     });
 }
+
 function getData(type, callback) {
     const j = 7;
     let all = []
     for (let i = 1; i <= j; i++) {
         getDataDay(i, type, function (data) {
-            all[i-1] = data;
+            all[i - 1] = data;
         });
     }
     setTimeout(function () {
