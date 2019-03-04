@@ -14,7 +14,7 @@
         <a class="nav-link" href="<%- title === 'First Experiment' ? "/second" : "/?p=p1" %>"><%- title === 'First Experiment' ? "Second Experiment" : "First Experiment" %></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="?z=1">Remove Zeros</a>
+        <a class="nav-link" href="<%- removeZeros === '1' ? '/' : '?z=1'%>"><%- removeZeros === '1' ? "Add Zeros" : "Remove Zeros" %></a>
     </li>
     <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
