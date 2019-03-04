@@ -129,17 +129,8 @@ function displayGraph(type, data) {
 
 function getDataDay(i, type, callback) {
     $.getJSON(`/data/ex1/${participant}/${type}-day${i}.json`, function (jsonData) {
-        let time = [];
-        let s1 = [];
-        let s2 = [];
-        let s3 = [];
-        let s4 = [];
-        let s5 = [];
-        let c = [];
-        let average = [];
-        let sum = 0;
-        let count = 0;
-        let commulative = 0;
+        let time = [], s1 = [], s2 = [], s3 = [], s4 = [], s5 = [], c = [], average = [];
+        let sum = 0, count = 0, commulative = 0;
         jsonData.forEach(e => {
             for (w = 1; w < 6; w++) {
                 if (parseFloat(e[`Sensor ${w}`]) !== 0 && parseFloat(e[`Sensor ${w}`]) != null) {

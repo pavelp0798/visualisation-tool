@@ -1,21 +1,19 @@
+<% types.forEach(function(element) {  %>
+    <div id="<%= element %>"></div>
+<% }); %>   
 <script src="js/experiment2.js"></script>
+ 
 <script>
-let participant = "<%= participant %>";
+    let participant = "<%= participant %>";
 
-let type = "steps";
-getData(type, function (data) {
-    displayGraph(type, data);
-});
-setTimeout(function () {
-    type = "heartrate";
-    getData(type, function (data) {
-        displayGraph(type, data);
-    });
-}, 100);
-setTimeout(function () {
-    type = "calories";
-    getData(type, function (data) {
-        displayGraph(type, data);
-    });
-}, 500);
+    let types = "<%- types %>".split(",");
+    console.log(types);
+    let names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
+        'Fitbit Charge HR', 'Fitbit Charge 2'
+    ]
+    for (let i = 0; i < types.length; i++) {
+        getData(types[i], names, function (data) {
+            displayGraph(types[i], data, names);
+        });
+    };
 </script>
