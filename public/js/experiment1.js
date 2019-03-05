@@ -8,7 +8,7 @@ function displayGraph(type, data) {
             var container = type + "-day" + v;
             var func_name = "container" + v;
             func_name = function (data) {
-                let time = data[0];
+                    let time = data[0];
                 let input = [];
                 let names = ['Sensor 1', 'Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Average', 'Comulative'];
 
@@ -52,6 +52,7 @@ function displayGraph(type, data) {
                     series: input
                 }
                 Highcharts.chart(container, options);
+                
             }
             func_name(data[v - 1]);
         }
@@ -60,14 +61,6 @@ function displayGraph(type, data) {
 
 function getDataDay(i, type, removeZeros, callback) {
     $.getJSON(`/data/ex1/${participant}/${type}-day${i}.json`, function (jsonData) {
-        let time = [],
-            s1 = [],
-            s2 = [],
-            s3 = [],
-            s4 = [],
-            s5 = [],
-            c = [],
-            average = [];
         let sum = 0,
             count = 0,
             commulative = 0;
