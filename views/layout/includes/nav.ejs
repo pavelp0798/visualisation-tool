@@ -1,22 +1,19 @@
 <ul class="nav ">
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle pl-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-            aria-expanded="false">Participant</a>
+            aria-expanded="false">Select Participant</a>
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="?p=p1">Participant 1</a>
-            <a class="dropdown-item" href="?p=p2">Participant 2</a>
-            <a class="dropdown-item" href="?p=p3">Participant 3</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
+        <% for(let i = 0; i < participants.length; i++) {%>
+            <a class="dropdown-item" href="?p=p<%=i+1%>"><%- participants[i] %></a>
+            <% } %>
         </div>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="<%- title === 'First Experiment' ? "/second" : "/?p=p1" %>"><%- title === 'First Experiment' ? "Second Experiment" : "First Experiment" %></a>
     </li>
     <li class="nav-item">
+    <% if (title == "First Experiment") { %>
         <a class="nav-link" href="<%- removeZeros === '1' ? '/' : '?z=1'%>"><%- removeZeros === '1' ? "Add Zeros" : "Remove Zeros" %></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <% } %>
     </li>
 </ul>
