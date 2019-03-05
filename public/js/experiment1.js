@@ -7,19 +7,19 @@ function displayGraph(type, data) {
         for (let v = 1; v <= 7; v++) {
             var container = type + "-day" + v;
             var func_name = "container" + v;
-            func_name = function (data) {
-                let time = data[0];
+            func_name = function (retrievedData) {
+                let time = retrievedData[0];
                 let input = [];
                 let names = ['Sensor 1', 'Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Average', 'Comulative'];
 
-                for (let i = 1; i < data.length; i++) {
+                for (let i = 1; i < retrievedData.length; i++) {
                     let vis = true;
                     if (i === 7) {
                         vis = false;
                     }
-                    if (data[i].length !== 0) {
+                    if (retrievedData[i].length !== 0) {
                         input.push({
-                            data: data[i],
+                            data: retrievedData[i],
                             name: names[i - 1],
                             visible: vis,
                         });
@@ -56,7 +56,7 @@ function displayGraph(type, data) {
             }
             func_name(data[v - 1]);
         }
-    }, 200);
+    }, 100);
 }
 
 function getDataDay(i, type, removeZeros, callback) {
