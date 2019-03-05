@@ -8,7 +8,7 @@ function displayGraph(type, data) {
             var container = type + "-day" + v;
             var func_name = "container" + v;
             func_name = function (data) {
-                    let time = data[0];
+                let time = data[0];
                 let input = [];
                 let names = ['Sensor 1', 'Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5', 'Average', 'Comulative'];
 
@@ -56,7 +56,7 @@ function displayGraph(type, data) {
             }
             func_name(data[v - 1]);
         }
-    }, 100);
+    }, 200);
 }
 
 function getDataDay(i, type, removeZeros, callback) {
