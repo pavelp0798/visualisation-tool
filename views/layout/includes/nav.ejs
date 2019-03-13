@@ -1,4 +1,4 @@
-<ul class="nav ">
+<ul class="nav">
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle pl-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
             aria-expanded="false">Select Participant</a>
@@ -15,5 +15,8 @@
     <% if (title == "First Experiment") { %>
         <a class="nav-link" href="<%-`/?p=${participant}&`%><%- removeZeros === '1' ? '' : 'z=1'%>"><%- removeZeros === '1' ? "Add Zeros" : "Remove Zeros (Average of Neighbour Elements)" %></a>
         <% } %>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
     </li>
 </ul>
