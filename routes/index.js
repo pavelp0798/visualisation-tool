@@ -17,6 +17,11 @@ router.get('/second', (req, res, next) => {
   var removeZeros = req.query.z;
   res.render('second', { participants: participants, participant: participant, title: "Second Experiment", removeZeros: removeZeros, types: ['calories', 'calories2', 'heartrate', 'steps', 'steps2']});
 });
+router.get('/secondba', (req, res, next) => {
+  var participant = req.query.p || "p1";
+  var removeZeros = req.query.z;
+  res.render('secondba', { participants: participants, participant: participant, title: "Second Experiment", removeZeros: removeZeros, types: ['calories', 'calories2', 'heartrate', 'steps', 'steps2']});
+});
 router.get('/about', (req, res, next) => {
   var participant = req.query.p || "p1";
   res.render('about', { participants: participants, participant: participant, title: "About Page",  types: ['calories', 'calories2', 'heartrate', 'steps', 'steps2']});

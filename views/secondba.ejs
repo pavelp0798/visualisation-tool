@@ -1,0 +1,19 @@
+<% types.forEach(function(element) {  %>
+<div id="ba<%= element %>"></div>
+<% }); %>
+<div id="distance"></div>
+<div id="distance2"></div>
+<script src="js/experiment2ba.js"></script>
+
+<script>
+    let participant = "<%= participant %>";
+
+    let types = "<%- types %>".split(",");
+    let names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
+        'Fitbit Charge HR', 'Fitbit Charge 2'
+    ]
+    getData(types[2], names, function (data) {
+        baDisplayGraph(types[2], data, names);
+    });
+    
+</script>

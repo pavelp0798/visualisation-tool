@@ -6,6 +6,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 const expressLayouts = require('express-ejs-layouts');
 const favicon = require('serve-favicon');
+const sass = require('node-sass');
+
 // register view engine as ejs
 app.set('view engine', 'ejs');
 // tell where views are to be found

@@ -1,6 +1,6 @@
 function capitalizeFirstLetter(string) {
     let uString = string.charAt(0).toUpperCase() + string.slice(1);
-    let fString = uString.replace(/([a-zA-Z])(\d)/g, '$1 $2');    
+    let fString = uString.replace(/([a-zA-Z])(\d)/g, '$1 $2');
     return fString
 }
 
@@ -9,11 +9,21 @@ function displayGraph(type, data, names) {
         const container = function (data) {
             let time = data[0];
             let input = [];
+            heartRateSensors = ["GT", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
             for (i = 1; i < data.length; i++) {
-                input.push({
-                    name: names[i],
-                    data: data[i]
-                });
+                if (type == "heartrate") {
+                    if (heartRateSensors.indexOf(names[i]) >= 0) {
+                        input.push({
+                            name: names[i],
+                            data: data[i]
+                        });
+                    }
+                } else {
+                    input.push({
+                        name: names[i],
+                        data: data[i]
+                    });
+                }
             }
             const options = {
                 title: {
@@ -65,7 +75,7 @@ function getData(type, names, callback) {
                 }
             }
         });
-        
+
         setTimeout(function () {
             callback(allData);
         }, 100);

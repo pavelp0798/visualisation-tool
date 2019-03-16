@@ -6,15 +6,13 @@
 }
 
 .highcharts-credits {
-  display: none;
+  display: none;  
 }
 
 .nounderline {
-  
   text-decoration: none !important;
 }
 
 .nounderline:hover {
-
   text-decoration: none !important;
 }

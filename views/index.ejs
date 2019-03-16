@@ -1,4 +1,5 @@
 <div>
+  <div id="bland-altman"></div>
   <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
       <% for(var i=1; i<=7; i++) {%>
@@ -24,10 +25,13 @@
   let types = "<%- types %>".split(",");
   let removeZeros = "<%- removeZeros %>"
   for (let i = 0; i < types.length; i++) {
-    setTimeout(function(){
+    setTimeout(function () {
       getData(types[i], removeZeros, function (data) {
         displayGraph(types[i], data);
       });
     }, 100 * i);
   }
+</script>
+<script>
+  
 </script>
