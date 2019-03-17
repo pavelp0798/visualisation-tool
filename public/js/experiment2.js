@@ -62,7 +62,6 @@ function displayGraph(type, data, names) {
 function getData(type, names, callback) {
     $.getJSON(`/data/ex2/${participant}/tm-${type}.json`, function (jsonData) {
         let allData = [];
-
         for (let i = 0; i < names.length; i++) {
             allData.push([]);
         }

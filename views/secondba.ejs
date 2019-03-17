@@ -1,19 +1,30 @@
-<% types.forEach(function(element) {  %>
-<div id="ba<%= element %>"></div>
-<% }); %>
+<a class="btn btn-primary" href="/second" role="button">Back</a>
+<div id="ba0"></div>
+<div id="ba1"></div>
+<div id="ba2"></div>
+<div id="ba3"></div>
+<div id="ba4"></div>
+<div id="ba5"></div>
+<div id="ba6"></div>
+<div id="ba7"></div>
+<div id="ba8"></div>
+<div id="ba9"></div>
+<div id="ba10"></div>
 <div id="distance"></div>
 <div id="distance2"></div>
 <script src="js/experiment2ba.js"></script>
 
 <script>
     let participant = "<%= participant %>";
-
+    let type = "<%- type %>";
     let types = "<%- types %>".split(",");
     let names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
-        'Fitbit Charge HR', 'Fitbit Charge 2'
-    ]
-    getData(types[2], names, function (data) {
-        baDisplayGraph(types[2], data, names);
+        'Fitbit Charge HR', 'Fitbit Charge 2'];
+    let heartRateSensors = ["Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"];
+    let typeIndex = types.indexOf(type);
+    getData(types[typeIndex], names, function (data) {
+        for(let i = 2; i < names.length; i++) {
+            baDisplayGraph(types[typeIndex], data, names, names[i], type);
+        }
     });
-    
 </script>

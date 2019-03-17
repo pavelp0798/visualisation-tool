@@ -1,8 +1,12 @@
 <% types.forEach(function(element) {  %>
 <div id="<%= element %>"></div>
-<% }); %>
+    <div class="text-center">
+        <a href="/secondba?type=<%-element%>&p=<%-participant%>"><button type="button" class="primary btn btn-outline-secondary%>">Bland–Altman plot</button></a>
+    </div>
+<%});%>
+
+
 <div id="distance"></div>
-<div id="distance2"></div>
 <script src="js/experiment2.js"></script>
 
 <script>

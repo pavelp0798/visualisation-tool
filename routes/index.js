@@ -20,7 +20,8 @@ router.get('/second', (req, res, next) => {
 router.get('/secondba', (req, res, next) => {
   var participant = req.query.p || "p1";
   var removeZeros = req.query.z;
-  res.render('secondba', { participants: participants, participant: participant, title: "Second Experiment", removeZeros: removeZeros, types: ['calories', 'calories2', 'heartrate', 'steps', 'steps2']});
+  var type = req.query.type;
+  res.render('secondba', { type: type, participants: participants, participant: participant, title: "Second Experiment Bland–Altman", removeZeros: removeZeros, types: ['calories', 'calories2', 'heartrate', 'steps', 'steps2']});
 });
 router.get('/about', (req, res, next) => {
   var participant = req.query.p || "p1";
