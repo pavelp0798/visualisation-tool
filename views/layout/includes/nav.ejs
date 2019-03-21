@@ -3,13 +3,13 @@
         <% if (title == "First Experiment" || title == "Second Experiment") { %>
         <a class="nav-link dropdown-toggle pl-0 pr-4" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
             aria-expanded="false">Select Participant</a>
-        <% } %>
         <div class="dropdown-menu">
-            <% for(let i = 0; i < participants.length; i++) {%>
-            <a class="dropdown-item" href="?p=p<%=i+1%>">
-                <%- participants[i] %></a>
+            <% for(let i = 1; i <= participantsCount; i++) {%>
+            <a class="dropdown-item" href="?p=p<%=i%>">
+                Participant <%- i %></a>
             <% } %>
         </div>
+        <% } %>
     </li>
     <li class="nav-item">
         <a class="nav-link pl-0 pr-4" href="<%- title === 'First Experiment' ? "/second" : "/?p=p1" %>">

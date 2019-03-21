@@ -4,7 +4,7 @@ function capitalizeFirstLetter(string) {
     return fString
 }
 
-function displayGraph(type, data, names) {
+function displayGraph(type, data, names, title) {
     setTimeout(function () {
         const container = function (data) {
             let time = data[0];
@@ -26,8 +26,11 @@ function displayGraph(type, data, names) {
                 }
             }
             const options = {
+                // chart: {
+                //     type: 'area'
+                // },
                 title: {
-                    text: `${capitalizeFirstLetter(type)} Day`
+                    text: `${title}`
                 },
                 subtitle: {
                     text: 'Source: Sheffield Hallam Lab'
@@ -57,6 +60,27 @@ function displayGraph(type, data, names) {
         }
         container(data);
     }, 100);
+}
+function getDistanceData(callback) {
+    let dataTypes = ["Name", "Start", "End", "Distance(M)", "Diff"];
+    $.getJSON(`/data/ex2/${participant}/tm-distance.json`, function(jsonData) {
+        let allData = [];
+        for (let i = 0; i < names.length; i++) {
+            allData.push([]);
+        }
+        jsonData.forEach(e => {
+            for (let i = 0; i < 5; i++) {
+                if (i == 0) {
+                    allData[i].push(e[dataTypes[i]]);
+                } else {
+                    allData[i].push(parseInt(e[dataTypes[i]]));
+                }
+            }
+        });
+        setTimeout(function () {
+            callback(allData);
+        }, 100);
+    });
 }
 
 function getData(type, names, callback) {

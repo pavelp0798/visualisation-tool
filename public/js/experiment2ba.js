@@ -4,7 +4,7 @@ function capitalizeFirstLetter(string) {
     return fString
 }
 
-function baDisplayGraph(type, data, names, sensor, type) {
+function baDisplayGraph(type, data, names, sensor) {
     setTimeout(function () {
         const container = function (data) {
             heartRateSensors = ["GT", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
@@ -67,7 +67,7 @@ function baDisplayGraph(type, data, names, sensor, type) {
                     zoomType: 'xy'
                 },
                 title: {
-                    text: 'Bland Altman'
+                    text: 'Bland Altman - ' + `${capitalizeFirstLetter(type)}`
                 },
                 subtitle: {
                     text: 'Sheffield Hallam Lab'
@@ -91,7 +91,7 @@ function baDisplayGraph(type, data, names, sensor, type) {
                     align: 'left',
                     verticalAlign: 'top',
                     x: 80,
-                    y: 0,
+                    y: -10,
                     floating: true,
                     backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
                     borderWidth: 1

@@ -24,7 +24,7 @@
     let typeIndex = types.indexOf(type);
     getData(types[typeIndex], names, function (data) {
         for(let i = 2; i < names.length; i++) {
-            baDisplayGraph(types[typeIndex], data, names, names[i], type);
+            baDisplayGraph(types[typeIndex], data, names, names[i]);
         }
     });
 </script>

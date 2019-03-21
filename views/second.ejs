@@ -1,77 +1,159 @@
+<br>
+<h1>Second Experiment</h1>
+<h3 class="font-weight-normal">Target: Comparing data of structured activities on treadmill from Fitbit sensors.</h3>
+<br>
+<h4 class="text-primary">Devices</h4>
+<table class="table table-bordered table-striped table-hover">
+  <thead class="thead-light">
+    <tr class="text-center">
+      <th scope="col" class="text-dark">Sensors</th>
+      <th scope="col" class="text-dark">Wearing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="text-center">
+      <td>Fitbit One</td>
+      <td>Waist (right side, attached to trousers)</td>
+    </tr>
+    <tr class="text-center">
+      <td>Fitbit Flex 2</td>
+      <td>Left Hand (closer to fingers)</td>
+    </tr>
+    <tr class="text-center">
+      <td>Fitbit Surge</td>
+      <td>Left Hand (closer to elbow)</td>
+    </tr>
+    <tr class="text-center">
+      <td>Fitbit Charge HR</td>
+      <td>Right Hand (closer to fingers)</td>
+    </tr>
+    <tr class="text-center">
+      <td>Fitbit Charge 2</td>
+      <td>Right Hand (closer to elbow)</td>
+    </tr>
+  </tbody>
+</table>
+<h4 class="text-primary">Experiment Details</h4>
+<p>Participants were required to wear all of above Fitbit sensors on the right place(See the
+  first table), wearing Polar H7 Heart Rate Sensor on chest, wearing the mask of Portable
+  Metabolic System.</p>
+<p>Then Participants were asked to avoid caffeine and food intake and exercise for the 2 hours
+  prior to the experiment. Then, they were asked to walk and run on a treadmill at the
+  following speeds (See the table below), each speed for 5 minutes.</p>
+<table class="table table-bordered table-striped table-hover">
+  <thead class="thead-light">
+    <tr class="text-center">
+      <th scope="col" class="text-dark">Time</th>
+      <th scope="col" class="text-dark">Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="text-center">
+      <td>5 min</td>
+      <td>Walking 3.0 mph</td>
+    </tr>
+    <tr class="text-center">
+      <td>5 min</td>
+      <td>Walking 4.0 mph</td>
+    </tr>
+    <tr class="text-center">
+      <td>5 min</td>
+      <td>Walking 5.0 mph</td>
+    </tr>
+    <tr class="text-center">
+      <td>5 min</td>
+      <td>Running 6.0 mph</td>
+    </tr>
+    <tr class="text-center">
+      <td>5 min</td>
+      <td>Running 7.5 mph</td>
+    </tr>
+    <tr class="text-center">
+      <td>5 min</td>
+      <td>Running 9.0 mph</td>
+    </tr>
+  </tbody>
+</table>
+<p>Data(Steps, Distance, Heart Rate, Energy Consumption) collected by these Fitbit sensors was
+  recorded and has been vizualised below. Variables such as steps, energy consumption and
+  heart rate were recorded every 5 minutes, walking and running distance were recorded every
+  15 minutes. Also Data from Polar H7 and Portable Metabolic System was recorded to comparing with data from Fitbit
+  products.</p>
+<p>Then the physical activity data will be analysed and used for further research.</p>
 <% types.forEach(function(element) {  %>
 <div id="<%= element %>"></div>
-    <div class="text-center">
-        <a href="/secondba?type=<%-element%>&p=<%-participant%>"><button type="button" class="primary btn btn-outline-secondary%>">Bland–Altman plot</button></a>
-    </div>
+<div class="text-center">
+  <a href="/secondba?type=<%-element%>&p=<%-participant%>"><button type="button" class="primary btn btn-outline-secondary%>">Bland–Altman
+      plot</button></a>
+</div>
 <%});%>
-
 
 <div id="distance"></div>
 <script src="js/experiment2.js"></script>
 
 <script>
-    let participant = "<%= participant %>";
-
-    let types = "<%- types %>".split(",");
-    let names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
-        'Fitbit Charge HR', 'Fitbit Charge 2'
-    ]
-    for (let i = 0; i < types.length; i++) {
-        getData(types[i], names, function (data) {
-            displayGraph(types[i], data, names);
-        });
-    };
-</script>
-<script>
+  let participant = "<%= participant %>";
+  let types = "<%- types %>".split(",");
+  let titles = "<%- titles %>".split(",");
+  let names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
+    'Fitbit Charge HR', 'Fitbit Charge 2'
+];
+  for (let i = 0; i < types.length; i++) {
+    getData(types[i], names, function (data) {
+      displayGraph(types[i], data, names, titles[i]);
+    });
+  };
+  getDistanceData(function (data) {
     setTimeout(function () {
-        Highcharts.chart('distance', {
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: true,
-                type: 'pie'
-            },
-            title: {
-                text: 'Treadmill Distance Difference From Ground Truth'
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true,
-                        format: '<b>{point.name}</b>: {point.y} - {point.percentage:.1f} %',
-                        style: {
-                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                        }
-                    }
-                }
-            },
-            series: [{
-                name: 'Treadmill Distance',
-                colorByPoint: true,
-                data: [{
-                    name: 'Fitbit One',
-                    y: 63,
-                    sliced: true,
-                    selected: true
-                }, {
-                    name: 'Fitbit Charge HR',
-                    y: 477
-                }, {
-                    name: 'Fitbit Surge',
-                    y: 597
-                }, {
-                    name: 'Fitbit Flex 2',
-                    y: 467
-                }, {
-                    name: 'Fitbit Charge 2',
-                    y: 367
-                }]
-            }]
-        });
+      Highcharts.chart('distance', {
+        chart: {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: true,
+          type: 'pie'
+        },
+        title: {
+          text: 'Treadmill Distance Difference From Ground Truth'
+        },
+        tooltip: {
+          pointFormat: 'Difference From GT: <b>{point.y}</b>'
+        },
+        plotOptions: {
+          pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+              enabled: true,
+              format: '<b>{point.name}</b>: {point.y} - {point.percentage:.1f} %',
+              style: {
+                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+              }
+            }
+          }
+        },
+        series: [{
+          name: 'Treadmill Distance',
+          colorByPoint: true,
+          data: [{
+            name: 'Fitbit One',
+            y: data[4][1],
+            sliced: true,
+            selected: true
+          }, {
+            name: 'Fitbit Charge HR',
+            y: Math.abs(data[4][2])
+          }, {
+            name: 'Fitbit Surge',
+            y: Math.abs(data[4][3])
+          }, {
+            name: 'Fitbit Flex 2',
+            y: Math.abs(data[4][4])
+          }, {
+            name: 'Fitbit Charge 2',
+            y: Math.abs(data[4][5])
+          }]
+        }]
+      });
     }, 300);
+  });
 </script>

@@ -1,3 +1,52 @@
+<br>
+<h1>First Experiment</h1>
+<h4 class="text-primary">Experiment Introduction</h4>
+<p>- Comparing data of daily life free activities from Fitbit sensors.</p>
+<p>- Understand and quantify the level of agreement between different sensors in normal life
+settings (uncontrolled settings).</p>
+<p>- Select at least one Fitbit sensor so that it can be compared to other commercial activity
+monitoring sensors (see experiment 3).</p>
+<p>- Ultimate aim of this experiment (and future experiments) is to derive objective measures of
+physical activity that can quantify the levels of physical activity of individuals during their
+daily life.</p>
+<table class="table table-bordered table-striped table-hover">
+  <thead class="thead-light">
+    <tr class="text-center">
+      <th scope="col" class="text-dark">Sensors</th>
+      <th scope="col" class="text-dark">Wearing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="text-center">
+      <td>Fitbit One</td>
+      <td>Waist (right side, attached to trousers)</td>
+    </tr>
+    <tr class="text-center">
+      <td>Fitbit Flex 2</td>
+      <td>Left Hand (closer to fingers)</td>
+    </tr>
+    <tr class="text-center">
+      <td>Fitbit Surge</td>
+      <td>Left Hand (closer to elbow)</td>
+    </tr>
+    <tr class="text-center">
+      <td>Fitbit Charge HR</td>
+      <td>Right Hand (closer to fingers)</td>
+    </tr>
+    <tr class="text-center">
+      <td>Fitbit Charge 2</td>
+      <td>Right Hand (closer to elbow)</td>
+    </tr>
+  </tbody>
+</table>
+<h4 class="text-primary">Experiment Details</h4>
+<p>Every participants were be required to wear all above five Fitbit sensors on the right place(See
+above)for 7 days(Instead of sleeping and avoiding contact with water) while carrying their
+normal daily activities.</p>
+<p>Data(Steps, Distance, Heart Rate, Energy Consumption) collected by these Fitbit sensors was
+recorded and stored in an Excel spreadsheet. Variables such as steps, energy consumption and
+heart rate were recorded every 5 minutes, walking and running distance were recorded every
+15 minutes.</p>
 <div>
   <div id="bland-altman"></div>
   <nav>
@@ -23,7 +72,7 @@
 <script>
   let participant = "<%= participant %>";
   let types = "<%- types %>".split(",");
-  let removeZeros = "<%- removeZeros %>"
+  let removeZeros = "<%- removeZeros %>";
   for (let i = 0; i < types.length; i++) {
     setTimeout(function () {
       getData(types[i], removeZeros, function (data) {
@@ -31,7 +80,4 @@
       });
     }, 100 * i);
   }
-</script>
-<script>
-  
 </script>
