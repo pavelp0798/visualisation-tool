@@ -3,12 +3,12 @@
 <h4 class="text-primary">Experiment Introduction</h4>
 <p>- Comparing data of daily life free activities from Fitbit sensors.</p>
 <p>- Understand and quantify the level of agreement between different sensors in normal life
-settings (uncontrolled settings).</p>
+  settings (uncontrolled settings).</p>
 <p>- Select at least one Fitbit sensor so that it can be compared to other commercial activity
-monitoring sensors (see experiment 3).</p>
+  monitoring sensors (see experiment 3).</p>
 <p>- Ultimate aim of this experiment (and future experiments) is to derive objective measures of
-physical activity that can quantify the levels of physical activity of individuals during their
-daily life.</p>
+  physical activity that can quantify the levels of physical activity of individuals during their
+  daily life.</p>
 <table class="table table-bordered table-striped table-hover">
   <thead class="thead-light">
     <tr class="text-center">
@@ -41,43 +41,42 @@ daily life.</p>
 </table>
 <h4 class="text-primary">Experiment Details</h4>
 <p>Every participants were be required to wear all above five Fitbit sensors on the right place(See
-above)for 7 days(Instead of sleeping and avoiding contact with water) while carrying their
-normal daily activities.</p>
+  above)for 7 days(Instead of sleeping and avoiding contact with water) while carrying their
+  normal daily activities.</p>
 <p>Data(Steps, Distance, Heart Rate, Energy Consumption) collected by these Fitbit sensors was
-recorded and stored in an Excel spreadsheet. Variables such as steps, energy consumption and
-heart rate were recorded every 5 minutes, walking and running distance were recorded every
-15 minutes.</p>
+  recorded and stored in an Excel spreadsheet. Variables such as steps, energy consumption and
+  heart rate were recorded every 5 minutes, walking and running distance were recorded every
+  15 minutes.</p>
 <div>
   <div id="bland-altman"></div>
   <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
       <% for(var i=1; i<=7; i++) {%>
-      <a class="nav-item nav-link <% if (i === 1) { %> active <% } %>" id="nav-home-tab" data-toggle="tab" href="#nav-day<%-i%>"
-        role="tab" aria-controls="nav-home" aria-selected="true">Day
+      <a class="nav-item nav-link <% if (i === 1) { %> active <% } %>" id="nav-home-tab" data-toggle="tab"
+        href="#nav-day<%-i%>" role="tab" aria-controls="nav-home" aria-selected="true">Day
         <%- i %></a>
       <%}%>
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
     <%for(var i=1; i<=7; i++) {%>
-    <div class="tab-pane fade <%if (i===1) { %> show active <% } %>" id="nav-day<%-i%>" role="tabpanel" aria-labelledby="nav-home-tab">
-      <% types.forEach(function(element) {  %>
-      <div id="<%=element%>-day<%=i%>"></div>
-      <% }); %>
-    </div>
-    <%}%>
+      <div class="tab-pane fade <%if (i===1) { %> show active <% } %>" id="nav-day<%-i%>" role="tabpanel"
+        aria-labelledby="nav-home-tab">
+        <% types.forEach(function(element) {  %>
+        <div id="<%=element%>-day<%=i%>"></div>
+        <div class="text-center mb-3">
+          <a href="/download?e=1&p=<%= participant %>&type=<%= element%>"><button type="button"
+              class="btn btn-lg btn-outline-success">Download Experiment</button></a>
+        </div>
+        <% }); %>
+      </div>
+      <%}%>
   </div>
 </div>
 <script src="js/experiment1.js"></script>
 <script>
   let participant = "<%= participant %>";
-  let types = "<%- types %>".split(",");
-  let removeZeros = "<%- removeZeros %>";
-  for (let i = 0; i < types.length; i++) {
-    setTimeout(function () {
-      getData(types[i], removeZeros, function (data) {
-        displayGraph(types[i], data);
-      });
-    }, 100 * i);
-  }
-</script>
+      let types = "<%- types %>".split(",");
+      let removeZeros = "<%- removeZeros %>";
+      for (let i = 0; i < types.length; i++) { setTimeout(function () { getData(types[i], removeZeros, function (data) {
+        displayGraph(types[i], data); }); }, 100 * i); } </script>

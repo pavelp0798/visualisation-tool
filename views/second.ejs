@@ -1,3 +1,4 @@
+<div id="testing123"></div>
 <br>
 <h1>Second Experiment</h1>
 <h3 class="font-weight-normal">Target: Comparing data of structured activities on treadmill from Fitbit sensors.</h3>
@@ -80,6 +81,10 @@
   15 minutes. Also Data from Polar H7 and Portable Metabolic System was recorded to comparing with data from Fitbit
   products.</p>
 <p>Then the physical activity data will be analysed and used for further research.</p>
+<div class="text-center mb-3">
+  <a href="/download?e=2&p=<%= participant %>"><button type="button" class="btn btn-lg btn-outline-success">Download Experiment</button></a>
+</div>
+
 <% types.forEach(function(element) {  %>
 <div id="<%= element %>"></div>
 <div class="text-center">
@@ -87,6 +92,7 @@
       plot</button></a>
 </div>
 <%});%>
+
 
 <div id="distance"></div>
 <script src="js/experiment2.js"></script>
@@ -156,4 +162,46 @@
       });
     }, 300);
   });
+</script>
+<script>
+Highcharts.chart('testing123', {
+
+    chart: {
+        type: 'boxplot'
+    },
+
+    title: {
+        text: 'Highcharts Box Plot Example'
+    },
+
+    legend: {
+        enabled: false
+    },
+
+    xAxis: {
+        categories: ['Male', 'Female', 'All'],
+        title: {
+            text: 'Participant Group'
+        }
+    },
+
+    yAxis: {
+        title: {
+            text: 'Observations'
+        }
+    },
+
+    series: [{
+        name: 'Observations',
+        data: [
+            [760, 801, 848, 895, 965],
+            [733, 853, 939, 980, 1080],
+            [714, 762, 817, 870, 918]
+        ],
+        tooltip: {
+            headerFormat: '<em>Experiment {point.key}</em><br/>'
+        }
+    }]
+
+});
 </script>

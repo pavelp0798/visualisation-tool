@@ -29,6 +29,19 @@ router.get('/second', (req, res, next) => {
     types: ['calories', 'calories2', 'heartrate', 'steps', 'steps2'],
     titles: ['Energy Consumption in Calories (Cumulative)', 'Energy Consumption in Calories (Discrete)', 'Heart Rate', 'Steps (Cumulative)', 'Steps (Discrete)']});
 });
+router.get('/download', function(req, res){
+  var participant = req.query.p;
+  var experiment = req.query.e;
+  var type = req.query.type;
+  var file = 'public/images/favicon.ico';
+  // res.download(file); 
+  if (experiment === "2") {
+    file = 'public/dataOriginal/sample'+participant.substr(1)+'_treadmillData.xlsx';
+  } else if (experiment === "1") {
+    file = 'public/dataOriginal/sample'+participant.substr(1)+'_oneWeekData/'+type+".xlsx";
+  }
+  res.download(file); 
+});
 
 router.get('/secondba', (req, res, next) => {
   var participant = req.query.p || "p1";

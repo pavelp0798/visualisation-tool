@@ -33,8 +33,9 @@ function displayGraph(type, data, names, title) {
                     text: `${title}`
                 },
                 subtitle: {
-                    text: 'Source: Sheffield Hallam Lab'
+                    text: 'Source: Sheffield Hallam Lab | Gender: Male'
                 },
+                
                 xAxis: {
                     categories: time,
                     title: {
@@ -61,6 +62,7 @@ function displayGraph(type, data, names, title) {
         container(data);
     }, 100);
 }
+
 function getDistanceData(callback) {
     let dataTypes = ["Name", "Start", "End", "Distance(M)", "Diff"];
     $.getJSON(`/data/ex2/${participant}/tm-distance.json`, function(jsonData) {
