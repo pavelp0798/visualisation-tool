@@ -1,4 +1,22 @@
-<div id="testing123"></div>
+<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link text-success active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Calories</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-danger" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Heart Rate</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-warning" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Steps</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <div id="testing123"></div></div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  <div id="testing124"></div></div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+  <div id="testing125"></div></div>
+</div>
 <br>
 <h1>Second Experiment</h1>
 <h3 class="font-weight-normal">Target: Comparing data of structured activities on treadmill from Fitbit sensors.</h3>
@@ -169,9 +187,23 @@ Highcharts.chart('testing123', {
     chart: {
         type: 'boxplot'
     },
-
+    plotOptions: {
+        boxplot: {
+            fillColor: '#F0F0E0',
+            lineWidth: 2,
+            medianColor: '#0C5DA5',
+            medianWidth: 3,
+            stemColor: '#A63400',
+            stemDashStyle: 'dot',
+            stemWidth: 1,
+            whiskerColor: '#3D9200',
+            whiskerLength: '20%',
+            whiskerWidth: 2,
+            maxPointWidth: 50
+        }
+    },
     title: {
-        text: 'Highcharts Box Plot Example'
+        text: 'Energy Consumption in Calories Error Box Plot For Genders'
     },
 
     legend: {
@@ -186,10 +218,130 @@ Highcharts.chart('testing123', {
     },
 
     yAxis: {
+      title: {
+          text: 'Values'
+      },
+      plotLines: [{
+          value: 932,
+          color: 'red',
+          width: 1,
+          label: {
+              text: 'Actual Value',
+              align: 'left',
+              style: {
+                  color: 'grey'
+              }
+          }
+      }]
+  },
+
+    series: [{
+        name: 'Observations',
+        data: [
+            [760, 801, 848, 895, 965],
+            [733, 853, 939, 980, 1080],
+            [714, 762, 817, 870, 918]
+        ],
+        tooltip: {
+            headerFormat: '<em>Experiment {point.key}</em><br/>'
+        }
+    }]
+
+});
+</script>
+<script>
+Highcharts.chart('testing124', {
+
+    chart: {
+        type: 'boxplot'
+    },
+
+    title: {
+        text: 'Heart Rate Error Box Plot For Genders'
+    },
+
+    legend: {
+        enabled: false
+    },
+
+    xAxis: {
+        categories: ['Male', 'Female', 'All'],
         title: {
-            text: 'Observations'
+            text: 'Participant Group'
         }
     },
+
+    yAxis: {
+      title: {
+          text: 'Values'
+      },
+      plotLines: [{
+          value: 760,
+          color: 'red',
+          width: 1,
+          label: {
+              text: 'Actual Value',
+              align: 'left',
+              style: {
+                  color: 'grey'
+              }
+          }
+      }]
+  },
+
+    series: [{
+        name: 'Observations',
+        data: [
+            [760, 801, 848, 895, 965],
+            [733, 853, 939, 980, 1080],
+            [714, 762, 817, 870, 918]
+        ],
+        tooltip: {
+            headerFormat: '<em>Experiment {point.key}</em><br/>'
+        }
+    }]
+
+});
+</script>
+<script>
+Highcharts.chart('testing125', {
+
+    chart: {
+        type: 'boxplot'
+    },
+
+    title: {
+        text: 'Steps Error Box Plot For Genders'
+    },
+
+    legend: {
+        enabled: false
+    },
+
+    xAxis: {
+        categories: ['Male', 'Female', 'All'],
+        title: {
+            text: 'Participant Group'
+        }
+    },
+
+    yAxis: {
+      title: {
+          text: 'Values'
+      },
+      plotLines: [{
+          value: 932,
+          color: 'red',
+          width: 1,
+          label: {
+              text: 'Actual Value',
+              align: 'left',
+              style: {
+                  color: 'grey'
+              }
+          }
+      }]
+  },
 
     series: [{
         name: 'Observations',
