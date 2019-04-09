@@ -3,7 +3,6 @@ const fs = require('fs');
 const express = require('express');
 const router = express.Router();
 const pcorr = require('compute-pcorr');
-const loadJsonFile = require('load-json-file');
 
 var participants = ['Participant 1', 'Participant 2', 'Participant 3'];
 
@@ -11,7 +10,52 @@ router.get('/', (req, res, next) => {
   var participant = req.query.p || "p1";
   var a = req.query.a;
   var removeZeros = req.query.z;
+  let names = ['Time', 'Sensor 1', 'Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5'];
+  let days = ['day1', 'day2', 'day3', 'day4', 'day5', 'day6', 'day7'];
+  let stepsDays = [];
+  let caloriesDays = [];
+  for (let i = 0; i < days.length; i++) {
+    let caloriesRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/calories-${days[i]}.json`)));
+
+    allData = [];
+    for (let i = 0; i < names.length - 1; i++) {
+      allData.push([]);
+    }
+    caloriesRawData.forEach(e => {
+      for (let i = 0; i < names.length - 1; i++) {
+        if (e[names[i + 1]] !== null) {
+          allData[i].push(parseInt(e[names[i + 1]]));
+        } else {
+          allData[i].push(0)
+        }
+      }
+    });
+    caloriesDays.push(pcorr(allData));
+  }
+
+  for (let i = 0; i < days.length; i++) {
+    let stepsRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/steps-${days[i]}.json`)));
+
+    allData = [];
+    for (let i = 0; i < names.length - 1; i++) {
+      allData.push([]);
+    }
+    stepsRawData.forEach(e => {
+      for (let i = 0; i < names.length - 1; i++) {
+        if (e[names[i + 1]] !== null) {
+          allData[i].push(parseInt(e[names[i + 1]]));
+        } else {
+          allData[i].push(0)
+        }
+      }
+    });
+    stepsDays.push(pcorr(allData));
+  }
+
   res.render('index', {
+    matrix: JSON.stringify(caloriesDays),
+    matrixSteps: JSON.stringify(stepsDays),
+    names: JSON.stringify(names),
     participantsCount: 10,
     participants: participants,
     participant: participant,
@@ -21,48 +65,6 @@ router.get('/', (req, res, next) => {
   });
 });
 
-function getData2(type, names) {
-  allData = [];
-  loadJsonFile(path.join(__dirname, '../public', `/data/ex2/p2/tm-heartrate.json`)).then(json => {
-    for (let i = 0; i < names.length; i++) {
-      allData.push([]);
-    }
-    json.forEach(e => {
-      for (let i = 0; i < names.length; i++) {
-        if (i === 0) {
-          allData[i].push(e[names[i]]);
-        } else {
-          allData[i].push(parseInt(e[names[i]]));
-        }
-      }
-    });
-    return allData;
-  }).then(function (allData) {
-    return allData;
-
-  });
-  // console.log(allData);
-  // return allData;
-  // getJSON(`/data/ex2/p2/tm-${type}.json`)
-  //   .then(function (jsonData) {
-  //     // let allData = [];
-  //     // for (let i = 0; i < names.length; i++) {
-  //     //   allData.push([]);
-  //     // }
-  //     // jsonData.forEach(e => {
-  //     //   for (let i = 0; i < names.length; i++) {
-  //     //     if (i === 0) {
-  //     //       allData[i].push(e[names[i]]);
-  //     //     } else {
-  //     //       allData[i].push(parseInt(e[names[i]]));
-  //     //     }
-  //     //   }
-  //     // });
-  //     console.log(jsonData);
-  //   }).catch(function (error) {
-  //     console.log(error);
-  //   });
-}
 
 router.get('/second', (req, res, next) => {
   var participant = req.query.p || "p1";
@@ -106,14 +108,13 @@ router.get('/second', (req, res, next) => {
   }
   heartrateRawData.forEach(e => {
     for (let i = 1; i < 4; i++) {
-        if (e[heartRateSensors[i-1]] !== null) {
-          allData3[i-1].push(parseInt(e[heartRateSensors[i-1]]));
-        } else {
-          allData3[i-1].push(0)
+      if (e[heartRateSensors[i - 1]] !== null) {
+        allData3[i - 1].push(parseInt(e[heartRateSensors[i - 1]]));
+      } else {
+        allData3[i - 1].push(0)
       }
     }
   });
-  console.log(allData3);
   res.render('second', {
     names: JSON.stringify(['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
       'Fitbit Charge HR', 'Fitbit Charge 2'

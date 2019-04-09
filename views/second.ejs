@@ -86,7 +86,6 @@
 </div>
 
 <script>
-  let mat = JSON.parse("<%- matrix %>");
   let names = JSON.parse('<%- names %>');
 </script>
 
@@ -122,13 +121,12 @@
 <% types.forEach(function(element) {  %>
 <div id="<%= element %>"></div>
 <div class="text-center">
-  <a href="/secondba?type=<%-element%>&p=<%-participant%>"><button type="button"
-      class="primary btn btn-outline-secondary%>">Bland–Altman
-      plot</button></a>
-      <% if (element != 'calories' && element != 'steps') { %>
-  <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modal<%-element%>">
-    Correlation coefficients
-  </button>
+  <a href="/secondba?type=<%-element%>&p=<%-participant%>">
+  <button type="button" class="primary btn btn-outline-secondary%>">Bland–Altman plot</button></a>
+  <% if (element != 'calories' && element != 'steps') { %>
+    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modal<%-element%>">
+      Correlation coefficients
+    </button>
   <% } %>
 </div>
 <%});%>
@@ -407,4 +405,4 @@
 
 
 
-<%- include ./layout/partials/modals.ejs %>
+<%- include ./layout/partials/modalsEx2.ejs %>

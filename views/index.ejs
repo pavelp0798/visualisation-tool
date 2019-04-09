@@ -100,7 +100,10 @@
         <div id="<%=element%>-day<%=i%>"></div>
         <div class="text-center mb-3">
           <a href="/download?e=1&p=<%= participant %>&type=<%= element%>"><button type="button"
-              class="btn btn-lg btn-outline-success">Download Experiment</button></a>
+              class="btn btn-outline-primary">Download Experiment</button></a>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modal-<%-element%>-day<%-i%>">
+            Correlation coefficients
+          </button>
         </div>
         <% }); %>
       </div>
@@ -387,3 +390,5 @@ Highcharts.chart('testing126', {
 
 });
 </script>
+
+<%- include ./layout/partials/modalsEx1.ejs %>
