@@ -1,4 +1,3 @@
-
 <h1>Second Experiment</h1>
 <h3 class="font-weight-normal">Target: Comparing data of structured activities on treadmill from Fitbit sensors.</h3>
 <br>
@@ -90,76 +89,8 @@
   let mat = JSON.parse("<%- matrix %>");
   let names = JSON.parse('<%- names %>');
 </script>
-<% let names2 = JSON.parse(names); %>
-<% let namesHR = ["Gold standard", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]; %>
 
-<table class="table table-striped table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <% for (let i = 1; i < names2.length; i++) {%>
-        <th scope="col"><%-names2[i]%></th>
-      <% } %>
-    </tr>
-  </thead>
-  <tbody>
-    <% for (let i = 1; i < names2.length; i++) {%>
-    <tr>
-      <th scope="row"><%-names2[i]%></th>
-      <% for (let j = 1; j < names2.length; j++) {%>
-      <% if (JSON.parse(matrix)[i-1][j-1] !== null) { %>
-      <td><%- JSON.parse(matrix)[i-1][j-1].toFixed(2)%> </td>
-      <% } %>
-      <% } %>
-    </tr>
-    <% } %>
-  </tbody>
-</table>
 
-<table class="table table-striped table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <% for (let i = 1; i < names2.length; i++) {%>
-        <th scope="col"><%-names2[i]%></th>
-      <% } %>
-    </tr>
-  </thead>
-  <tbody>
-    <% for (let i = 1; i < names2.length; i++) {%>
-    <tr>
-      <th scope="row"><%-names2[i]%></th>
-      <% for (let j = 1; j < names2.length; j++) {%>
-      <% if (JSON.parse(matrix2)[i-1][j-1] !== null) { %>
-        <td><%- JSON.parse(matrix2)[i-1][j-1].toFixed(2)%> </td>
-      <% } %>
-      <% } %>
-    </tr>
-    <% } %>
-  </tbody>
-</table>
-<table class="table table-striped table-hover" >
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <% for (let i = 1; i < namesHR.length; i++) {%>
-        <th scope="col"><%-namesHR[i]%></th>
-      <% } %>
-    </tr>
-  </thead>
-  <tbody>
-    <% for (let i = 1; i < namesHR.length; i++) {%>
-    <tr>
-      <th scope="row"><%-namesHR[i]%></th>
-      <% for (let j = 1; j < namesHR.length; j++) {%>
-      <% if (JSON.parse(matrix3)[i-1][j-1] !== null) { %>
-        <td><%- JSON.parse(matrix3)[i-1][j-1].toFixed(2)%> </td>
-      <% } %>
-      <% } %>
-    </tr>
-    <% } %>
-  </tbody>
-</table>
 <!--Box Plot-->
 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
   <li class="nav-item">
@@ -194,15 +125,16 @@
   <a href="/secondba?type=<%-element%>&p=<%-participant%>"><button type="button"
       class="primary btn btn-outline-secondary%>">Bland–Altman
       plot</button></a>
-  <a href="/secondcc?type=<%-element%>&p=<%-participant%>"><button type="button"
-      class="primary btn btn-outline-success%>">Correlation coefficients</button></a>
+      <% if (element != 'calories' && element != 'steps') { %>
+  <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modal<%-element%>">
+    Correlation coefficients
+  </button>
+  <% } %>
 </div>
 <%});%>
 
 <div id="distance"></div>
 <script src="js/experiment2.js"></script>
-
-
 
 <script>
   let participant = "<%- participant %>";
@@ -471,3 +403,8 @@
 
   });
 </script>
+
+
+
+
+<%- include ./layout/partials/modals.ejs %>
