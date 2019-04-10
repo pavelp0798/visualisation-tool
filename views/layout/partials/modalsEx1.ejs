@@ -5,7 +5,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
     <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLongTitle">Calories</h5>
+      <h5 class="modal-title" id="exampleModalLongTitle">Calories Day <%- z %></h5>
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -46,7 +46,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
     <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLongTitle">Calories</h5>
+      <h5 class="modal-title" id="exampleModalLongTitle">Steps Day <%- z %></h5>
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -68,6 +68,89 @@
         <% for (let j = 1; j < names2.length; j++) {%>
         <% if (JSON.parse(matrixSteps)[z-1][i-1][j-1] !== null) { %>
         <td><%- JSON.parse(matrixSteps)[z-1][i-1][j-1].toFixed(2)%> </td>
+        <% } %>
+        <% } %>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+  </div>
+</div>
+<% } %>
+<% for (let z = 1; z < 8; z++) {%>
+<div class="modal fade bd-example-modal-lg" id="modal-distance-day<%- z %>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">Distance Day <%- z %></h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+    <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <% for (let i = 1; i < names2.length; i++) {%>
+        <th scope="col"><%-names2[i]%></th>
+        <% } %>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (let i = 1; i < names2.length; i++) {%>
+      <tr>
+        <th scope="row"><%-names2[i]%></th>
+        <% for (let j = 1; j < names2.length; j++) {%>
+        <% if (JSON.parse(matrixDistance)[z-1][i-1][j-1] !== null) { %>
+        <td><%- JSON.parse(matrixDistance)[z-1][i-1][j-1].toFixed(2)%> </td>
+        <% } %>
+        <% } %>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+  </div>
+</div>
+<% } %>
+
+<% for (let z = 1; z < 8; z++) {%>
+<div class="modal fade bd-example-modal-lg" id="modal-heartrate-day<%- z %>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle">Heartrate Day <%- z %></h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+    <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <% for (let i = 1; i < names2.length - 2; i++) {%>
+        <th scope="col"><%-names2[i]%></th>
+        <% } %>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (let i = 1; i < names2.length - 2; i++) {%>
+      <tr>
+        <th scope="row"><%-names2[i]%></th>
+        <% for (let j = 1; j < names2.length - 2; j++) {%>
+        <% if (JSON.parse(matrixHeartrate)[z-1][i-1][j-1] !== null) { %>
+        <td><%- JSON.parse(matrixHeartrate)[z-1][i-1][j-1].toFixed(2)%> </td>
         <% } %>
         <% } %>
       </tr>

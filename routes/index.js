@@ -14,6 +14,8 @@ router.get('/', (req, res, next) => {
   let days = ['day1', 'day2', 'day3', 'day4', 'day5', 'day6', 'day7'];
   let stepsDays = [];
   let caloriesDays = [];
+  let distanceDays = [];
+  let heartrateDays = [];
   for (let i = 0; i < days.length; i++) {
     let caloriesRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/calories-${days[i]}.json`)));
 
@@ -52,9 +54,49 @@ router.get('/', (req, res, next) => {
     stepsDays.push(pcorr(allData));
   }
 
+  for (let i = 0; i < days.length; i++) {
+    let distanceRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/distance-${days[i]}.json`)));
+    allData = [];
+    for (let i = 0; i < names.length - 1; i++) {
+      allData.push([]);
+    }
+
+    distanceRawData.forEach(e => {
+      for (let i = 0; i < names.length - 1; i++) {
+        if (e[names[i + 1]] != null) {
+          allData[i].push(parseInt(e[names[i + 1]]));
+        } else {
+          allData[i].push(0)
+        }
+      }
+    });
+    console.log(pcorr(allData));
+    distanceDays.push(pcorr(allData));
+  }
+
+  for (let d = 0; d < days.length; d++) {
+    let heartrateRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/heartrate-${days[d]}.json`)));
+
+    allData = [];
+    for (let i = 0; i < names.length - 3; i++) {
+      allData.push([]);
+    }
+    heartrateRawData.forEach(e => {
+      for (let i = 0; i < names.length - 3; i++) {
+        if (e[names[i + 1]] != null) {
+          allData[i].push(parseInt(e[names[i + 1]]));
+        } else {
+          allData[i].push(0)
+        }
+      }
+    });
+    heartrateDays.push(pcorr(allData));
+  }
   res.render('index', {
     matrix: JSON.stringify(caloriesDays),
     matrixSteps: JSON.stringify(stepsDays),
+    matrixDistance: JSON.stringify(distanceDays),
+    matrixHeartrate: JSON.stringify(heartrateDays),
     names: JSON.stringify(names),
     participantsCount: 10,
     participants: participants,
