@@ -89,7 +89,6 @@
   let names = JSON.parse('<%- names %>');
 </script>
 
-
 <!--Box Plot-->
 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
   <li class="nav-item">
@@ -261,7 +260,25 @@
       tooltip: {
         headerFormat: '<em>Data for {point.key}</em><br/>'
       }
-    }]
+    }, {
+      name: 'Outlier',
+      color: Highcharts.getOptions().colors[0],
+      type: 'scatter',
+      data: [ // x, y positions where 0 is the first category
+          [0, 644],
+          [2, 518],
+          [2, 951],
+          [2, 969]
+      ],
+      marker: {
+          fillColor: 'white',
+          lineWidth: 1,
+          lineColor: Highcharts.getOptions().colors[0]
+      },
+      tooltip: {
+          pointFormat: 'Observation: {point.y}'
+      }
+  }]
 
   });
 </script>

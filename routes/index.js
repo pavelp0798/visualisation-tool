@@ -105,57 +105,33 @@ router.get('/', (req, res, next) => {
     types: ['calories', 'heartrate', 'steps', 'distance']
   });
 });
-
+function getData(participant, inputNames, type) {
+  let rawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex2/${participant}/tm-${type}.json`)));
+  data = [];
+  for (let i = 0; i < inputNames.length - 1; i++) {
+    data.push([]);
+  }
+  rawData.forEach(e => {
+    for (let i = 0; i < inputNames.length - 1; i++) {
+      if (e[inputNames[i + 1]] !== null) {
+        data[i].push(parseFloat(e[inputNames[i + 1]]));
+      } else {
+        data[i].push(0);
+      }
+    }
+  });
+  return data;
+}
 
 router.get('/second', (req, res, next) => {
   var participant = req.query.p || "p1";
   var removeZeros = req.query.z;
   var names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge', 'Fitbit Charge HR', 'Fitbit Charge 2'];
+  var heartRateSensors = ['Time Count(Every 60 seconds)', "GT", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
 
-  let caloriesRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex2/${participant}/tm-calories2.json`)));
-  allData = [];
-  for (let i = 0; i < names.length - 1; i++) {
-    allData.push([]);
-  }
-  caloriesRawData.forEach(e => {
-    for (let i = 0; i < names.length - 1; i++) {
-      if (e[names[i + 1]] !== null) {
-        allData[i].push(parseInt(e[names[i + 1]]));
-      } else {
-        allData[i].push(0)
-      }
-    }
-  });
-  let stepsRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex2/${participant}/tm-steps2.json`)));
-  allData2 = [];
-  for (let i = 0; i < names.length - 1; i++) {
-    allData2.push([]);
-  }
-  stepsRawData.forEach(e => {
-    for (let i = 0; i < names.length - 1; i++) {
-      if (e[names[i + 1]] !== null) {
-        allData2[i].push(parseInt(e[names[i + 1]]));
-      } else {
-        allData2[i].push(0)
-      }
-    }
-  });
-
-  let heartrateRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex2/${participant}/tm-heartrate.json`)));
-  heartRateSensors = ["GT", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
-  allData3 = [];
-  for (let i = 0; i < heartRateSensors.length - 1; i++) {
-    allData3.push([]);
-  }
-  heartrateRawData.forEach(e => {
-    for (let i = 1; i < 4; i++) {
-      if (e[heartRateSensors[i - 1]] !== null) {
-        allData3[i - 1].push(parseInt(e[heartRateSensors[i - 1]]));
-      } else {
-        allData3[i - 1].push(0)
-      }
-    }
-  });
+  allData = getData(participant, names, "calories2");
+  allData2 = getData(participant, names, "steps2");
+  allData3 = getData(participant, heartRateSensors, "heartrate");
   res.render('second', {
     names: JSON.stringify(['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
       'Fitbit Charge HR', 'Fitbit Charge 2'

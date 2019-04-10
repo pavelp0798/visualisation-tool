@@ -98,18 +98,18 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <% for (let i = 1; i < namesHR.length; i++) {%>
+      <% for (let i = 0; i < namesHR.length; i++) {%>
       <th scope="col"><%-namesHR[i]%></th>
       <% } %>
     </tr>
   </thead>
   <tbody>
-    <% for (let i = 1; i < namesHR.length; i++) {%>
+    <% for (let i = 0; i < namesHR.length; i++) {%>
     <tr>
       <th scope="row"><%-namesHR[i]%></th>
-      <% for (let j = 1; j < namesHR.length; j++) {%>
-      <% if (JSON.parse(matrix3)[i-1][j-1] !== null) { %>
-      <td><%- JSON.parse(matrix3)[i-1][j-1].toFixed(2)%> </td>
+      <% for (let j = 0; j < namesHR.length; j++) {%>
+      <% if (JSON.parse(matrix3)[i][j] !== null) { %>
+      <td><%- JSON.parse(matrix3)[i][j].toFixed(2)%> </td>
       <% } %>
       <% } %>
     </tr>
