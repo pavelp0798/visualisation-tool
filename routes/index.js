@@ -129,16 +129,16 @@ router.get('/second', (req, res, next) => {
   var names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge', 'Fitbit Charge HR', 'Fitbit Charge 2'];
   var heartRateSensors = ['Time Count(Every 60 seconds)', "GT", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
 
-  allData = getData(participant, names, "calories2");
-  allData2 = getData(participant, names, "steps2");
-  allData3 = getData(participant, heartRateSensors, "heartrate");
+  caloriesData = getData(participant, names, "calories2");
+  stepsData = getData(participant, names, "steps2");
+  hrData = getData(participant, heartRateSensors, "heartrate");
   res.render('second', {
     names: JSON.stringify(['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
       'Fitbit Charge HR', 'Fitbit Charge 2'
     ]),
-    matrix: JSON.stringify(pcorr(allData)),
-    matrix2: JSON.stringify(pcorr(allData2)),
-    matrix3: JSON.stringify(pcorr(allData3)),
+    matrix: JSON.stringify(pcorr(caloriesData)),
+    matrix2: JSON.stringify(pcorr(stepsData)),
+    matrix3: JSON.stringify(pcorr(hrData)),
     participantsCount: 20,
     participants: participants,
     participant: participant,
