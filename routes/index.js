@@ -26,7 +26,7 @@ router.get('/', (req, res, next) => {
     caloriesRawData.forEach(e => {
       for (let i = 0; i < names.length - 1; i++) {
         if (e[names[i + 1]] !== null) {
-          allData[i].push(parseInt(e[names[i + 1]]));
+          allData[i].push(parseFloat(e[names[i + 1]]));
         } else {
           allData[i].push(0)
         }
@@ -45,7 +45,7 @@ router.get('/', (req, res, next) => {
     stepsRawData.forEach(e => {
       for (let i = 0; i < names.length - 1; i++) {
         if (e[names[i + 1]] !== null) {
-          allData[i].push(parseInt(e[names[i + 1]]));
+          allData[i].push(parseFloat(e[names[i + 1]]));
         } else {
           allData[i].push(0)
         }
@@ -64,13 +64,12 @@ router.get('/', (req, res, next) => {
     distanceRawData.forEach(e => {
       for (let i = 0; i < names.length - 1; i++) {
         if (e[names[i + 1]] != null) {
-          allData[i].push(parseInt(e[names[i + 1]]));
+          allData[i].push(parseFloat(e[names[i + 1]]));
         } else {
           allData[i].push(0)
         }
       }
     });
-    console.log(pcorr(allData));
     distanceDays.push(pcorr(allData));
   }
 
@@ -84,7 +83,7 @@ router.get('/', (req, res, next) => {
     heartrateRawData.forEach(e => {
       for (let i = 0; i < names.length - 3; i++) {
         if (e[names[i + 1]] != null) {
-          allData[i].push(parseInt(e[names[i + 1]]));
+          allData[i].push(parseFloat(e[names[i + 1]]));
         } else {
           allData[i].push(0)
         }
