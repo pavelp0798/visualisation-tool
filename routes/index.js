@@ -8,89 +8,26 @@ var participants = ['Participant 1', 'Participant 2', 'Participant 3'];
 
 router.get('/', (req, res, next) => {
   var participant = req.query.p || "p1";
-  var a = req.query.a;
   var removeZeros = req.query.z;
   let names = ['Time', 'Sensor 1', 'Sensor 2', 'Sensor 3', 'Sensor 4', 'Sensor 5'];
+  let namesHR = ['Time', 'Sensor 1', 'Sensor 2', 'Sensor 3'];
   let days = ['day1', 'day2', 'day3', 'day4', 'day5', 'day6', 'day7'];
   let stepsDays = [];
   let caloriesDays = [];
   let distanceDays = [];
   let heartrateDays = [];
-  for (let i = 0; i < days.length; i++) {
-    let caloriesRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/calories-${days[i]}.json`)));
-
-    allData = [];
-    for (let i = 0; i < names.length - 1; i++) {
-      allData.push([]);
-    }
-    caloriesRawData.forEach(e => {
-      for (let i = 0; i < names.length - 1; i++) {
-        if (e[names[i + 1]] !== null) {
-          allData[i].push(parseFloat(e[names[i + 1]]));
-        } else {
-          allData[i].push(0)
-        }
-      }
-    });
-    caloriesDays.push(pcorr(allData));
-  }
 
   for (let i = 0; i < days.length; i++) {
-    let stepsRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/steps-${days[i]}.json`)));
-
-    allData = [];
-    for (let i = 0; i < names.length - 1; i++) {
-      allData.push([]);
-    }
-    stepsRawData.forEach(e => {
-      for (let i = 0; i < names.length - 1; i++) {
-        if (e[names[i + 1]] !== null) {
-          allData[i].push(parseFloat(e[names[i + 1]]));
-        } else {
-          allData[i].push(0)
-        }
-      }
-    });
-    stepsDays.push(pcorr(allData));
-  }
-
-  for (let i = 0; i < days.length; i++) {
-    let distanceRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/distance-${days[i]}.json`)));
-    allData = [];
-    for (let i = 0; i < names.length - 1; i++) {
-      allData.push([]);
-    }
-
-    distanceRawData.forEach(e => {
-      for (let i = 0; i < names.length - 1; i++) {
-        if (e[names[i + 1]] != null) {
-          allData[i].push(parseFloat(e[names[i + 1]]));
-        } else {
-          allData[i].push(0)
-        }
-      }
-    });
+    allData = getData(1, participant, names, "distance", days[i]);
     distanceDays.push(pcorr(allData));
+    allData2 = getData(1, participant, names, "steps", days[i]);
+    stepsDays.push(pcorr(allData2));
+    allData3 = getData(1, participant, names, "calories", days[i]);
+    caloriesDays.push(pcorr(allData3));
+    allData4 = getData(1, participant, namesHR, "heartrate", days[i]);
+    heartrateDays.push(pcorr(allData4));
   }
 
-  for (let d = 0; d < days.length; d++) {
-    let heartrateRawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/heartrate-${days[d]}.json`)));
-
-    allData = [];
-    for (let i = 0; i < names.length - 3; i++) {
-      allData.push([]);
-    }
-    heartrateRawData.forEach(e => {
-      for (let i = 0; i < names.length - 3; i++) {
-        if (e[names[i + 1]] != null) {
-          allData[i].push(parseFloat(e[names[i + 1]]));
-        } else {
-          allData[i].push(0)
-        }
-      }
-    });
-    heartrateDays.push(pcorr(allData));
-  }
   res.render('index', {
     matrix: JSON.stringify(caloriesDays),
     matrixSteps: JSON.stringify(stepsDays),
@@ -105,8 +42,15 @@ router.get('/', (req, res, next) => {
     types: ['calories', 'heartrate', 'steps', 'distance']
   });
 });
-function getData(participant, inputNames, type) {
-  let rawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex2/${participant}/tm-${type}.json`)));
+
+function getData(ex, participant, inputNames, type, day) {
+  let rawData;
+  if (ex == 1) {
+    rawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex1/${participant}/${type}-${day}.json`)));
+  } else if (ex == 2) {
+    rawData = JSON.parse(fs.readFileSync(path.join(__dirname, '../public', `/data/ex2/${participant}/tm-${type}.json`)));
+  }
+  
   data = [];
   for (let i = 0; i < inputNames.length - 1; i++) {
     data.push([]);
@@ -129,11 +73,12 @@ router.get('/second', (req, res, next) => {
   var names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge', 'Fitbit Charge HR', 'Fitbit Charge 2'];
   var heartRateSensors = ['Time Count(Every 60 seconds)', "GT", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
 
-  caloriesData = getData(participant, names, "calories2");
-  stepsData = getData(participant, names, "steps2");
-  hrData = getData(participant, heartRateSensors, "heartrate");
+  caloriesData = getData(2, participant, names, "calories2");
+  stepsData = getData(2, participant, names, "steps2");
+  hrData = getData(2, participant, heartRateSensors, "heartrate");
+
   res.render('second', {
-    names: JSON.stringify(['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
+    names: JSON.stringify(['Time Count(Every 60 seconds)', 'Gold Standart', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
       'Fitbit Charge HR', 'Fitbit Charge 2'
     ]),
     matrix: JSON.stringify(pcorr(caloriesData)),
@@ -154,7 +99,6 @@ router.get('/download', function (req, res) {
   var experiment = req.query.e;
   var type = req.query.type;
   var file = 'public/images/favicon.ico';
-  // res.download(file); 
   if (experiment === "2") {
     file = 'public/dataOriginal/sample' + participant.substr(1) + '_treadmillData.xlsx';
   } else if (experiment === "1") {

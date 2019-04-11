@@ -1,0 +1,233 @@
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div id="testing123"></div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div id="testing124"></div>
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div id="testing125"></div>
+  </div>
+</div>
+<script>
+  Highcharts.chart('testing123', {
+
+    chart: {
+      type: 'boxplot'
+    },
+    plotOptions: {
+      boxplot: {
+        fillColor: '#F0F0E0',
+        lineWidth: 2,
+        medianColor: '#0C5DA5',
+        medianWidth: 3,
+        stemColor: '#A63400',
+        stemDashStyle: 'dot',
+        stemWidth: 1,
+        whiskerColor: '#3D9200',
+        whiskerLength: '20%',
+        whiskerWidth: 2,
+        maxPointWidth: 50
+      }
+    },
+    title: {
+      text: 'Energy Consumption in Calories Error Box Plot For Genders'
+    },
+
+    legend: {
+      enabled: false
+    },
+
+    xAxis: {
+      categories: ['Male', 'Female', 'All'],
+      title: {
+        text: 'Participant Group'
+      }
+    },
+
+    yAxis: {
+      title: {
+        text: 'Values'
+      },
+      plotLines: [{
+        value: 932,
+        color: 'red',
+        width: 1,
+        label: {
+          text: 'Actual Value',
+          align: 'left',
+          style: {
+            color: 'grey'
+          }
+        }
+      }]
+    },
+
+    series: [{
+      name: 'Observations',
+      data: [
+        [760, 801, 848, 895, 965],
+        [733, 853, 939, 980, 1080],
+        [714, 762, 817, 870, 918]
+      ],
+      tooltip: {
+        headerFormat: '<em>Data for {point.key}</em><br/>'
+      }
+    }, {
+      name: 'Outlier',
+      color: Highcharts.getOptions().colors[0],
+      type: 'scatter',
+      data: [ // x, y positions where 0 is the first category
+          [0, 644],
+          [2, 518],
+          [2, 951],
+          [2, 969]
+      ],
+      marker: {
+          fillColor: 'white',
+          lineWidth: 1,
+          lineColor: Highcharts.getOptions().colors[0]
+      },
+      tooltip: {
+          pointFormat: 'Observation: {point.y}'
+      }
+  }]
+
+  });
+</script>
+<script>
+  Highcharts.chart('testing124', {
+
+    chart: {
+      type: 'boxplot'
+    },
+    plotOptions: {
+      boxplot: {
+        fillColor: '#F0F0E0',
+        lineWidth: 2,
+        medianColor: '#0C5DA5',
+        medianWidth: 3,
+        stemColor: '#A63400',
+        stemDashStyle: 'dot',
+        stemWidth: 1,
+        whiskerColor: '#3D9200',
+        whiskerLength: '20%',
+        whiskerWidth: 2,
+        maxPointWidth: 50
+      }
+    },
+    title: {
+      text: 'Heart Rate Error Box Plot For Genders'
+    },
+
+    legend: {
+      enabled: false
+    },
+
+    xAxis: {
+      categories: ['Male', 'Female', 'All'],
+      title: {
+        text: 'Participant Group'
+      }
+    },
+
+    yAxis: {
+      title: {
+        text: 'Values'
+      },
+      plotLines: [{
+        value: 760,
+        color: 'red',
+        width: 1,
+        label: {
+          text: 'Actual Value',
+          align: 'left',
+          style: {
+            color: 'grey'
+          }
+        }
+      }]
+    },
+
+    series: [{
+      name: 'Observations',
+      data: [
+        [760, 801, 848, 895, 965],
+        [733, 853, 939, 980, 1080],
+        [714, 762, 817, 870, 918]
+      ],
+      tooltip: {
+        headerFormat: '<em>Experiment {point.key}</em><br/>'
+      }
+    }]
+
+  });
+</script>
+<script>
+  Highcharts.chart('testing125', {
+
+    chart: {
+      type: 'boxplot'
+    },
+    plotOptions: {
+      boxplot: {
+        fillColor: '#F0F0E0',
+        lineWidth: 2,
+        medianColor: '#0C5DA5',
+        medianWidth: 3,
+        stemColor: '#A63400',
+        stemDashStyle: 'dot',
+        stemWidth: 1,
+        whiskerColor: '#3D9200',
+        whiskerLength: '20%',
+        whiskerWidth: 2,
+        maxPointWidth: 50
+      }
+    },
+    title: {
+      text: 'Steps Error Box Plot For Genders'
+    },
+
+    legend: {
+      enabled: false
+    },
+
+    xAxis: {
+      categories: ['Male', 'Female', 'All'],
+      title: {
+        text: 'Participant Group'
+      }
+    },
+
+    yAxis: {
+      title: {
+        text: 'Values'
+      },
+      plotLines: [{
+        value: 932,
+        color: 'red',
+        width: 1,
+        label: {
+          text: 'Actual Value',
+          align: 'left',
+          style: {
+            color: 'grey'
+          }
+        }
+      }]
+    },
+
+    series: [{
+      name: 'Observations',
+      data: [
+        [760, 801, 848, 895, 965],
+        [733, 853, 939, 980, 1080],
+        [714, 762, 817, 870, 918]
+      ],
+      tooltip: {
+        headerFormat: '<em>Experiment {point.key}</em><br/>'
+      }
+    }]
+
+  });
+</script>
