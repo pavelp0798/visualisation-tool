@@ -10,6 +10,8 @@
   </div>
 </div>
 <script>
+  let statistics = JSON.parse('<%- statistics %>');
+
   Highcharts.chart('testing123', {
 
     chart: {
@@ -66,9 +68,9 @@
     series: [{
       name: 'Observations',
       data: [
-        [760, 801, 848, 895, 965],
-        [733, 853, 939, 980, 1080],
-        [714, 762, 817, 870, 918]
+        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]],
+        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]],
+        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]]
       ],
       tooltip: {
         headerFormat: '<em>Data for {point.key}</em><br/>'
@@ -152,9 +154,9 @@
     series: [{
       name: 'Observations',
       data: [
-        [760, 801, 848, 895, 965],
-        [733, 853, 939, 980, 1080],
-        [714, 762, 817, 870, 918]
+        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]],
+        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]],
+        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]]
       ],
       tooltip: {
         headerFormat: '<em>Experiment {point.key}</em><br/>'

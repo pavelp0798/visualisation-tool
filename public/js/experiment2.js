@@ -13,7 +13,6 @@ function displayGraph(type, data, names, title) {
             for (i = 1; i < data.length; i++) {
                 if (type == "heartrate") {
                     if (heartRateSensors.indexOf(names[i]) >= 0) {
-                    
                         input.push({
                             name: names[i],
                             data: data[i]
