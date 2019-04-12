@@ -10,9 +10,17 @@
   </div>
 </div>
 <script>
-  let errorsCalories = JSON.parse('<%- errorsCalories %>');
-  let errorsSteps = JSON.parse('<%- errorsSteps %>');
-  let errorsHR = JSON.parse('<%- errorsHR %>');
+  let maleErrorsCalories = JSON.parse('<%- maleErrorsCalories %>');
+  let maleErrorsSteps = JSON.parse('<%- maleErrorsSteps %>');
+  let maleErrorsHR = JSON.parse('<%- maleErrorsHR %>');
+
+  let femaleErrorsCalories = JSON.parse('<%- femaleErrorsCalories %>');
+  let femaleErrorsSteps = JSON.parse('<%- femaleErrorsSteps %>');
+  let femaleErrorsHR = JSON.parse('<%- femaleErrorsHR %>');
+
+  let allErrorsCalories = JSON.parse('<%- allErrorsCalories %>');
+  let allErrorsSteps = JSON.parse('<%- allErrorsSteps %>');
+  let allErrorsHR = JSON.parse('<%- allErrorsHR %>');
 
   Highcharts.chart('errorsCalories', {
 
@@ -68,36 +76,36 @@
     },
 
     series: [{
-      name: 'Observations',
-      data: [
-        [errorsCalories[0], errorsCalories[1], errorsCalories[2], errorsCalories[3], errorsCalories[4]],
-        [errorsCalories[0], errorsCalories[1], errorsCalories[2], errorsCalories[3], errorsCalories[4]],
-        [errorsCalories[0], errorsCalories[1], errorsCalories[2], errorsCalories[3], errorsCalories[4]]
-      ],
-      tooltip: {
-        headerFormat: '<em>Data for {point.key}</em><br/>'
+        name: 'Observations',
+        data: [
+          maleErrorsCalories,
+          femaleErrorsCalories,
+          allErrorsCalories
+        ],
+        tooltip: {
+          headerFormat: '<em>Data for {point.key}</em><br/>'
+        }
       }
-    }
-  //   , {
-  //     name: 'Outlier',
-  //     color: Highcharts.getOptions().colors[0],
-  //     type: 'scatter',
-  //     data: [ // x, y positions where 0 is the first category
-  //         [0, 644],
-  //         [2, 518],
-  //         [2, 951],
-  //         [2, 969]
-  //     ],
-  //     marker: {
-  //         fillColor: 'white',
-  //         lineWidth: 1,
-  //         lineColor: Highcharts.getOptions().colors[0]
-  //     },
-  //     tooltip: {
-  //         pointFormat: 'Observation: {point.y}'
-  //     }
-  // }
-  ]
+      //   , {
+      //     name: 'Outlier',
+      //     color: Highcharts.getOptions().colors[0],
+      //     type: 'scatter',
+      //     data: [ // x, y positions where 0 is the first category
+      //         [0, 644],
+      //         [2, 518],
+      //         [2, 951],
+      //         [2, 969]
+      //     ],
+      //     marker: {
+      //         fillColor: 'white',
+      //         lineWidth: 1,
+      //         lineColor: Highcharts.getOptions().colors[0]
+      //     },
+      //     tooltip: {
+      //         pointFormat: 'Observation: {point.y}'
+      //     }
+      // }
+    ]
 
   });
 </script>
@@ -158,9 +166,9 @@
     series: [{
       name: 'Observations',
       data: [
-        [errorsHR[0], errorsHR[1], errorsHR[2], errorsHR[3], errorsHR[4]],
-        [errorsHR[0], errorsHR[1], errorsHR[2], errorsHR[3], errorsHR[4]],
-        [errorsHR[0], errorsHR[1], errorsHR[2], errorsHR[3], errorsHR[4]]
+        maleErrorsHR,
+        femaleErrorsHR,
+        allErrorsHR
       ],
       tooltip: {
         headerFormat: '<em>Experiment {point.key}</em><br/>'
@@ -225,9 +233,9 @@
     series: [{
       name: 'Observations',
       data: [
-        [errorsSteps[0], errorsSteps[1], errorsSteps[2], errorsSteps[3], errorsSteps[4]],
-        [errorsSteps[0], errorsSteps[1], errorsSteps[2], errorsSteps[3], errorsSteps[4]],
-        [errorsSteps[0], errorsSteps[1], errorsSteps[2], errorsSteps[3], errorsSteps[4]]
+        maleErrorsSteps,
+        femaleErrorsSteps,
+        allErrorsSteps
       ],
       tooltip: {
         headerFormat: '<em>Experiment {point.key}</em><br/>'

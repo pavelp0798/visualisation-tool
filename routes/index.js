@@ -142,10 +142,18 @@ function getData(ex, participant, inputNames, type, day) {
 }
 
 router.get('/second', (req, res, next) => {
-  let participants = ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"];
-  let errorsCalories = error(participants, "calories2");
-  let errorsSteps = error(participants, "steps2");
-  let errorsHR = error(participants, "heartrate");
+  let allParticipants = ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"];
+  let maleParticipants = ["p2", "p4", "p6", "p8", "p10", "p12", "p14", "p16", "p18", "p20"];
+  let femaleParticipants = ["p1", "p3", "p5", "p7", "p9", "p11", "p13", "p15", "p17", "p19"];
+  let maleErrorsCalories = error(maleParticipants, "calories2");
+  let maleErrorsSteps = error(maleParticipants, "steps2");
+  let maleErrorsHR = error(maleParticipants, "heartrate");
+  let femaleErrorsCalories = error(femaleParticipants, "calories2");
+  let femaleErrorsSteps = error(femaleParticipants, "steps2");
+  let femaleErrorsHR = error(femaleParticipants, "heartrate");
+  let allErrorsCalories = error(allParticipants, "calories2");
+  let allErrorsSteps = error(allParticipants, "steps2");
+  let allErrorsHR = error(allParticipants, "heartrate");
   var participant = req.query.p || "p1";
   var removeZeros = req.query.z;
   var names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge', 'Fitbit Charge HR', 'Fitbit Charge 2'];
@@ -158,9 +166,15 @@ router.get('/second', (req, res, next) => {
     names: JSON.stringify(['Time Count(Every 60 seconds)', 'Gold Standart', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
       'Fitbit Charge HR', 'Fitbit Charge 2'
     ]),
-    errorsCalories: JSON.stringify(statistics(errorsCalories)),
-    errorsSteps: JSON.stringify(statistics(errorsSteps)),
-    errorsHR: JSON.stringify(statistics(errorsHR)),
+    maleErrorsCalories: JSON.stringify(statistics(maleErrorsCalories)),
+    maleErrorsSteps: JSON.stringify(statistics(maleErrorsSteps)),
+    maleErrorsHR: JSON.stringify(statistics(maleErrorsHR)),
+    femaleErrorsCalories: JSON.stringify(statistics(femaleErrorsCalories)),
+    femaleErrorsSteps: JSON.stringify(statistics(femaleErrorsSteps)),
+    femaleErrorsHR: JSON.stringify(statistics(femaleErrorsHR)),
+    allErrorsCalories: JSON.stringify(statistics(allErrorsCalories)),
+    allErrorsSteps: JSON.stringify(statistics(allErrorsSteps)),
+    allErrorsHR: JSON.stringify(statistics(allErrorsHR)),
     matrix: JSON.stringify(pcorr(caloriesData)),
     matrix2: JSON.stringify(pcorr(stepsData)),
     matrix3: JSON.stringify(pcorr(hrData)),
