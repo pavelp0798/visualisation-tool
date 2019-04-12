@@ -62,28 +62,32 @@ function arraySortNumbers(inputarray) {
 }
 
 function statistics(data) {
-  stats = [Math.min.apply(Math, data), 
-           parseFloat(quartile(data, 0.25).toFixed(2)), 
-           parseFloat(quartile(data, 0.5).toFixed(2)), 
-           parseFloat(quartile(data, 0.75).toFixed(2)), 
-           Math.max.apply(Math, data)];
+  stats = [Math.min.apply(Math, data),
+    parseFloat(quartile(data, 0.25).toFixed(2)),
+    parseFloat(quartile(data, 0.5).toFixed(2)),
+    parseFloat(quartile(data, 0.75).toFixed(2)),
+    Math.max.apply(Math, data)
+  ];
   return stats;
 }
-function error(participants) {
+
+function error(participants, type) {
   const sumFunc = test => test.reduce((a, b) => a + b, 0)
   let names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge', 'Fitbit Charge HR', 'Fitbit Charge 2'];
-  let type = "calories";
+  if (type == "heartrate") {
+    names = ['Time Count(Every 60 seconds)', "GT", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"];
+  }
   let experiment = 2;
   let errors = [];
   for (i = 0; i < participants.length; i++) {
+    let total2 = 0;
     let groundtruth = getData(experiment, participants[i], ['', names[1]], type)[0];
-    let sensor1 = getData(experiment, participants[i], ['', names[2]], type)[0];
-    let sensor2 = getData(experiment, participants[i], ['', names[3]], type)[0];
-    let sensor3 = getData(experiment, participants[i], ['', names[4]], type)[0];
-    let sensor4 = getData(experiment, participants[i], ['', names[5]], type)[0];
-    let sensor5 = getData(experiment, participants[i], ['', names[6]], type)[0];
+    for (let j = 2; j < names.length; j++) {
+      total2 += sumFunc(getData(experiment, participants[i], ['', names[j]], type)[0]);
+    }
+    total2 /= (names.length - 2);
     let total = sumFunc(groundtruth);
-    let total2 = (sumFunc(sensor1) + sumFunc(sensor2) + sumFunc(sensor3) + sumFunc(sensor4) + sumFunc(sensor5)) / 5;
+
     let error = total2 - total;
     errors.push(parseFloat(error.toFixed(2)));
   }
@@ -138,7 +142,10 @@ function getData(ex, participant, inputNames, type, day) {
 }
 
 router.get('/second', (req, res, next) => {
-  let errors = error(["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"]);
+  let participants = ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"];
+  let errorsCalories = error(participants, "calories2");
+  let errorsSteps = error(participants, "steps2");
+  let errorsHR = error(participants, "heartrate");
   var participant = req.query.p || "p1";
   var removeZeros = req.query.z;
   var names = ['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge', 'Fitbit Charge HR', 'Fitbit Charge 2'];
@@ -147,12 +154,13 @@ router.get('/second', (req, res, next) => {
   caloriesData = getData(2, participant, names, "calories2");
   stepsData = getData(2, participant, names, "steps2");
   hrData = getData(2, participant, heartRateSensors, "heartrate");
-
   res.render('second', {
     names: JSON.stringify(['Time Count(Every 60 seconds)', 'Gold Standart', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
       'Fitbit Charge HR', 'Fitbit Charge 2'
     ]),
-    statistics: JSON.stringify(statistics(errors)),
+    errorsCalories: JSON.stringify(statistics(errorsCalories)),
+    errorsSteps: JSON.stringify(statistics(errorsSteps)),
+    errorsHR: JSON.stringify(statistics(errorsHR)),
     matrix: JSON.stringify(pcorr(caloriesData)),
     matrix2: JSON.stringify(pcorr(stepsData)),
     matrix3: JSON.stringify(pcorr(hrData)),
@@ -187,7 +195,6 @@ router.get('/secondba', (req, res, next) => {
   res.render('secondba', {
     type: type,
     typeTitle: typeTitle,
-    participants: participants,
     participant: participant,
     title: "Second Experiment Bland–Altman",
     removeZeros: removeZeros,

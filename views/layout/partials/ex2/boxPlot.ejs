@@ -1,18 +1,20 @@
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    <div id="testing123"></div>
+    <div id="errorsCalories"></div>
   </div>
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    <div id="testing124"></div>
+    <div id="errorsHR"></div>
   </div>
   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-    <div id="testing125"></div>
+    <div id="errorsSteps"></div>
   </div>
 </div>
 <script>
-  let statistics = JSON.parse('<%- statistics %>');
+  let errorsCalories = JSON.parse('<%- errorsCalories %>');
+  let errorsSteps = JSON.parse('<%- errorsSteps %>');
+  let errorsHR = JSON.parse('<%- errorsHR %>');
 
-  Highcharts.chart('testing123', {
+  Highcharts.chart('errorsCalories', {
 
     chart: {
       type: 'boxplot'
@@ -50,55 +52,57 @@
     yAxis: {
       title: {
         text: 'Values'
-      },
-      plotLines: [{
-        value: 932,
-        color: 'red',
-        width: 1,
-        label: {
-          text: 'Actual Value',
-          align: 'left',
-          style: {
-            color: 'grey'
-          }
-        }
-      }]
+      }
+      // ,plotLines: [{
+      //   value: 932,
+      //   color: 'red',
+      //   width: 1,
+      //   label: {
+      //     text: 'Actual Value',
+      //     align: 'left',
+      //     style: {
+      //       color: 'grey'
+      //     }
+      //   }
+      // }]
     },
 
     series: [{
       name: 'Observations',
       data: [
-        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]],
-        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]],
-        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]]
+        [errorsCalories[0], errorsCalories[1], errorsCalories[2], errorsCalories[3], errorsCalories[4]],
+        [errorsCalories[0], errorsCalories[1], errorsCalories[2], errorsCalories[3], errorsCalories[4]],
+        [errorsCalories[0], errorsCalories[1], errorsCalories[2], errorsCalories[3], errorsCalories[4]]
       ],
       tooltip: {
         headerFormat: '<em>Data for {point.key}</em><br/>'
       }
-    }, {
-      name: 'Outlier',
-      color: Highcharts.getOptions().colors[0],
-      type: 'scatter',
-      data: [ // x, y positions where 0 is the first category
-          [0, 644],
-          [2, 518],
-          [2, 951],
-          [2, 969]
-      ],
-      marker: {
-          fillColor: 'white',
-          lineWidth: 1,
-          lineColor: Highcharts.getOptions().colors[0]
-      },
-      tooltip: {
-          pointFormat: 'Observation: {point.y}'
-      }
-  }]
+    }
+  //   , {
+  //     name: 'Outlier',
+  //     color: Highcharts.getOptions().colors[0],
+  //     type: 'scatter',
+  //     data: [ // x, y positions where 0 is the first category
+  //         [0, 644],
+  //         [2, 518],
+  //         [2, 951],
+  //         [2, 969]
+  //     ],
+  //     marker: {
+  //         fillColor: 'white',
+  //         lineWidth: 1,
+  //         lineColor: Highcharts.getOptions().colors[0]
+  //     },
+  //     tooltip: {
+  //         pointFormat: 'Observation: {point.y}'
+  //     }
+  // }
+  ]
 
   });
 </script>
 <script>
-  Highcharts.chart('testing124', {
+  Highcharts.chart('errorsHR', {
 
     chart: {
       type: 'boxplot'
@@ -154,9 +158,9 @@
     series: [{
       name: 'Observations',
       data: [
-        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]],
-        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]],
-        [statistics[0], statistics[1], statistics[2], statistics[3], statistics[4]]
+        [errorsHR[0], errorsHR[1], errorsHR[2], errorsHR[3], errorsHR[4]],
+        [errorsHR[0], errorsHR[1], errorsHR[2], errorsHR[3], errorsHR[4]],
+        [errorsHR[0], errorsHR[1], errorsHR[2], errorsHR[3], errorsHR[4]]
       ],
       tooltip: {
         headerFormat: '<em>Experiment {point.key}</em><br/>'
@@ -166,8 +170,7 @@
   });
 </script>
 <script>
-  Highcharts.chart('testing125', {
-
+  Highcharts.chart('errorsSteps', {
     chart: {
       type: 'boxplot'
     },
@@ -222,9 +225,9 @@
     series: [{
       name: 'Observations',
       data: [
-        [760, 801, 848, 895, 965],
-        [733, 853, 939, 980, 1080],
-        [714, 762, 817, 870, 918]
+        [errorsSteps[0], errorsSteps[1], errorsSteps[2], errorsSteps[3], errorsSteps[4]],
+        [errorsSteps[0], errorsSteps[1], errorsSteps[2], errorsSteps[3], errorsSteps[4]],
+        [errorsSteps[0], errorsSteps[1], errorsSteps[2], errorsSteps[3], errorsSteps[4]]
       ],
       tooltip: {
         headerFormat: '<em>Experiment {point.key}</em><br/>'
