@@ -101,14 +101,14 @@ function getDataDay(i, type, removeZeros, callback) {
                     allData[i].push(item[`Sensor ${i}`]);
                 }
                 commulative += ((item['Sensor 1'] + item['Sensor 2'] + item['Sensor 3'] + item['Sensor 4'] + item['Sensor 5']) / 5)
-                allData[7].push(commulative);
+                allData[7].push(parseFloat(commulative.toFixed(2)));
             } else {
                 allData[0].push(item['Time']);
                 for (let i = 1; i < 6; i++) {
                     allData[i].push(item[`Sensor ${i}`]);
                 }
             }
-            allData[6].push(averageInt);
+            allData[6].push(parseFloat(averageInt.toFixed(2)));
         });
         averageInt = 0;
         commulative = 0;

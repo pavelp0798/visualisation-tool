@@ -48,7 +48,7 @@ function quartile(data, q) {
   var pos = ((data.length) - 1) * q;
   var base = Math.floor(pos);
   var rest = pos - base;
-  if ((data[base + 1] !== undefined)) {
+  if (data[base + 1] !== undefined) {
     return data[base] + rest * (data[base + 1] - data[base]);
   } else {
     return data[base];
