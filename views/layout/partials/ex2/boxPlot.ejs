@@ -53,7 +53,6 @@
   for (let i = 0; i < allErrorsHR[6].length; i++) {
     hrOutliers.push([2, allErrorsHR[6][i]])
   }
-  console.log(caloriesOutliers);
   setTimeout(function(){
 
   Highcharts.chart('errorsCalories', {
@@ -109,7 +108,7 @@
     },
 
     series: [{
-      name: 'Observations',
+      name: 'Errors',
       data: [
         maleErrorsCalories,
         femaleErrorsCalories,
@@ -127,18 +126,16 @@
       marker: {
         fillColor: 'white',
         lineWidth: 1,
-        lineColor: Highcharts.getOptions().colors[0]
+        lineColor: Highcharts.getOptions().colors[1]
       },
       tooltip: {
-        pointFormat: 'Observation: {point.y}'
+        pointFormat: 'Error: {point.y}'
       }
     }
     ]
 
 
   });
-    console.log(caloriesOutliers);
-
   }, 1000);
 
 </script>
@@ -197,7 +194,7 @@
     },
 
     series: [{
-      name: 'Observations',
+      name: 'Errors',
       data: [
         maleErrorsHR,
         femaleErrorsHR,
@@ -214,10 +211,10 @@
       marker: {
         fillColor: 'white',
         lineWidth: 1,
-        lineColor: Highcharts.getOptions().colors[0]
+        lineColor: Highcharts.getOptions().colors[1]
       },
       tooltip: {
-        pointFormat: 'Observation: {point.y}'
+        pointFormat: 'Error: {point.y}'
       }
     }]
 
@@ -277,7 +274,7 @@
     },
 
     series: [{
-      name: 'Observations',
+      name: 'Errors',
       data: [
         maleErrorsSteps,
         femaleErrorsSteps,
@@ -294,10 +291,10 @@
       marker: {
         fillColor: 'white',
         lineWidth: 1,
-        lineColor: Highcharts.getOptions().colors[0]
+        lineColor: Highcharts.getOptions().colors[1]
       },
       tooltip: {
-        pointFormat: 'Observation: {point.y}'
+        pointFormat: 'Error: {point.y}'
       }
     }
     ]

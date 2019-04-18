@@ -72,7 +72,7 @@ function statistics(data) {
   let maximum = Math.max.apply(Math, data.filter(function(x){return x <= upperMaximum}));
   let outliers = [];
   for (let i = 0; i < data.length; i++) {
-    if (data[i] < lowerMinimum || data[i] > upperMaximum) {
+    if (data[i] <= lowerMinimum || data[i] >= upperMaximum) {
       outliers.push(data[i]);
     }
   }
@@ -85,6 +85,7 @@ function statistics(data) {
     maximum,
     outliers
   ];
+  console.log(stats);
   return stats;
 }
 
