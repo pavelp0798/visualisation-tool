@@ -21,9 +21,42 @@
   let allErrorsCalories = JSON.parse('<%- allErrorsCalories %>');
   let allErrorsSteps = JSON.parse('<%- allErrorsSteps %>');
   let allErrorsHR = JSON.parse('<%- allErrorsHR %>');
+  caloriesOutliers = []
+  for (let i = 0; i < maleErrorsCalories[6].length; i++) {
+    caloriesOutliers.push([1, maleErrorsCalories[6][i]])
+  }
+  for (let i = 0; i < femaleErrorsCalories[6].length; i++) {
+    caloriesOutliers.push([1, femaleErrorsCalories[6][i]])
+  }
+  for (let i = 0; i < allErrorsCalories[6].length; i++) {
+    caloriesOutliers.push([2, allErrorsCalories[6][i]])
+  }
+
+  stepsOutliers = []
+  for (let i = 0; i < femaleErrorsSteps[6].length; i++) {
+    stepsOutliers.push([1, femaleErrorsSteps[6][i]])
+  }
+  for (let i = 0; i < femaleErrorsCalories[6].length; i++) {
+    stepsOutliers.push([1, femaleErrorsCalories[6][i]])
+  }
+  for (let i = 0; i < allErrorsSteps[6].length; i++) {
+    stepsOutliers.push([2, allErrorsSteps[6][i]])
+  }
+
+  hrOutliers = []
+  for (let i = 0; i < maleErrorsHR[6].length; i++) {
+    hrOutliers.push([1, maleErrorsHR[6][i]])
+  }
+  for (let i = 0; i < femaleErrorsHR[6].length; i++) {
+    hrOutliers.push([1, femaleErrorsHR[6][i]])
+  }
+  for (let i = 0; i < allErrorsHR[6].length; i++) {
+    hrOutliers.push([2, allErrorsHR[6][i]])
+  }
+  console.log(caloriesOutliers);
+  setTimeout(function(){
 
   Highcharts.chart('errorsCalories', {
-
     chart: {
       type: 'boxplot'
     },
@@ -76,38 +109,38 @@
     },
 
     series: [{
-        name: 'Observations',
-        data: [
-          maleErrorsCalories,
-          femaleErrorsCalories,
-          allErrorsCalories
-        ],
-        tooltip: {
-          headerFormat: '<em>Data for {point.key}</em><br/>'
-        }
+      name: 'Observations',
+      data: [
+        maleErrorsCalories,
+        femaleErrorsCalories,
+        allErrorsCalories
+      ],
+      tooltip: {
+        headerFormat: '<em>Data for {point.key}</em><br/>'
       }
-      //   , {
-      //     name: 'Outlier',
-      //     color: Highcharts.getOptions().colors[0],
-      //     type: 'scatter',
-      //     data: [ // x, y positions where 0 is the first category
-      //         [0, 644],
-      //         [2, 518],
-      //         [2, 951],
-      //         [2, 969]
-      //     ],
-      //     marker: {
-      //         fillColor: 'white',
-      //         lineWidth: 1,
-      //         lineColor: Highcharts.getOptions().colors[0]
-      //     },
-      //     tooltip: {
-      //         pointFormat: 'Observation: {point.y}'
-      //     }
-      // }
+    }
+    , {
+      name: 'Outlier',
+      color: Highcharts.getOptions().colors[0],
+      type: 'scatter',
+      data: caloriesOutliers,
+      marker: {
+        fillColor: 'white',
+        lineWidth: 1,
+        lineColor: Highcharts.getOptions().colors[0]
+      },
+      tooltip: {
+        pointFormat: 'Observation: {point.y}'
+      }
+    }
     ]
 
+
   });
+    console.log(caloriesOutliers);
+
+  }, 1000);
+
 </script>
 <script>
   Highcharts.chart('errorsHR', {
@@ -172,6 +205,19 @@
       ],
       tooltip: {
         headerFormat: '<em>Experiment {point.key}</em><br/>'
+      }
+    }, {
+      name: 'Outlier',
+      color: Highcharts.getOptions().colors[0],
+      type: 'scatter',
+      data: hrOutliers,
+      marker: {
+        fillColor: 'white',
+        lineWidth: 1,
+        lineColor: Highcharts.getOptions().colors[0]
+      },
+      tooltip: {
+        pointFormat: 'Observation: {point.y}'
       }
     }]
 
@@ -240,7 +286,21 @@
       tooltip: {
         headerFormat: '<em>Experiment {point.key}</em><br/>'
       }
-    }]
+    }, {
+      name: 'Outlier',
+      color: Highcharts.getOptions().colors[0],
+      type: 'scatter',
+      data: stepsOutliers,
+      marker: {
+        fillColor: 'white',
+        lineWidth: 1,
+        lineColor: Highcharts.getOptions().colors[0]
+      },
+      tooltip: {
+        pointFormat: 'Observation: {point.y}'
+      }
+    }
+    ]
 
   });
 </script>

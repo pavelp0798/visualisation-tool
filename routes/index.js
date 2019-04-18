@@ -62,11 +62,28 @@ function arraySortNumbers(inputarray) {
 }
 
 function statistics(data) {
-  stats = [Math.min.apply(Math, data),
-    parseFloat(quartile(data, 0.25).toFixed(2)),
-    parseFloat(quartile(data, 0.5).toFixed(2)),
-    parseFloat(quartile(data, 0.75).toFixed(2)),
-    Math.max.apply(Math, data)
+  let Q1 = parseFloat(quartile(data, 0.25).toFixed(2));
+  let median =  parseFloat(quartile(data, 0.5).toFixed(2));
+  let Q3 = parseFloat(quartile(data, 0.75).toFixed(2));
+  let IQR = Q3 - Q1;
+  let lowerMinimum = Q1 - 1.5 * IQR; 
+  let upperMaximum = Q3 + 1.5 * IQR;
+  let minimum = Math.min.apply(Math, data.filter(function(x){return x >= lowerMinimum}));
+  let maximum = Math.max.apply(Math, data.filter(function(x){return x <= upperMaximum}));
+  let outliers = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i] < lowerMinimum || data[i] > upperMaximum) {
+      outliers.push(data[i]);
+    }
+  }
+
+  stats = [,
+    minimum,
+    Q1,
+    median,
+    Q3,
+    maximum,
+    outliers
   ];
   return stats;
 }
