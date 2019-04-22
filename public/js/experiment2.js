@@ -9,7 +9,7 @@ function displayGraph(type, data, names, title) {
         const container = function (data) {
             let time = data[0];
             let input = [];
-            heartRateSensors = ["Gold Standart", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
+            heartRateSensors = ["Gold Standard", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
             for (i = 1; i < data.length; i++) {
                 if (type == "heartrate") {
                     if (heartRateSensors.indexOf(names[i]) >= 0) {
@@ -94,7 +94,7 @@ function getData(type, names, callback) {
         jsonData.forEach(e => {
             for (let i = 0; i < names.length; i++) {
                 let currentName = names[i];
-                if (names[i] == "Gold Standart") {
+                if (names[i] == "Gold Standard") {
                     currentName = "GT";
                 }
                 if (i === 0) {

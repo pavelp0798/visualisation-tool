@@ -85,7 +85,6 @@ function statistics(data) {
     maximum,
     outliers
   ];
-  console.log(stats);
   return stats;
 }
 
@@ -181,7 +180,7 @@ router.get('/second', (req, res, next) => {
   stepsData = getData(2, participant, names, "steps2");
   hrData = getData(2, participant, heartRateSensors, "heartrate");
   res.render('second', {
-    names: JSON.stringify(['Time Count(Every 60 seconds)', 'Gold Standart', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
+    names: JSON.stringify(['Time Count(Every 60 seconds)', 'Gold Standard', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
       'Fitbit Charge HR', 'Fitbit Charge 2'
     ]),
     maleErrorsCalories: JSON.stringify(statistics(maleErrorsCalories)),
