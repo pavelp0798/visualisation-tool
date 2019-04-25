@@ -116,7 +116,7 @@
       let types = "<%- types %>".split(",");
       let removeZeros = "<%- removeZeros %>";
       for (let i = 0; i < types.length; i++) { setTimeout(function () { getData(types[i], removeZeros, function (data) {
-        displayGraph(types[i], data); }); }, 100 * i); } 
+        displayGraph(types[i], data); }); }, 1000 * i); } 
         </script>
         <script>
         Highcharts.chart('testing123', {
