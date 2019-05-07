@@ -87,6 +87,9 @@
 
 <script>
   let names = JSON.parse('<%- names %>');
+  let namesNew = ['Time Count(Every 60 seconds)', 'Gold Standard', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
+      'Fitbit Charge HR', 'Fitbit Charge 2'
+    ];
 </script>
 
 <!--Box Plot-->
@@ -128,7 +131,7 @@
   let titles = "<%- titles %>".split(",");
   for (let i = 0; i < types.length; i++) {
     getData(types[i], names, function (data) {
-      displayGraph(types[i], data, names, titles[i]);
+      displayGraph(types[i], data, namesNew, titles[i]);
     });
   };
   

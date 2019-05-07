@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "nodemon app.js",
     "sass": "node-sass -w public/sass/ -o public/css/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "mocha": "^6.1.4",
     "nodemon": "^1.18.10"
   },
   "dependencies": {

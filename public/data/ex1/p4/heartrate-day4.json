@@ -1,0 +1,1058 @@
+[
+ {
+   "Time": "21:46:00",
+   "Sensor 1": 91,
+   "Sensor 2": 78,
+   "Sensor 3": 77,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:47:00",
+   "Sensor 1": 88,
+   "Sensor 2": 92,
+   "Sensor 3": 87,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:48:00",
+   "Sensor 1": 93,
+   "Sensor 2": 102,
+   "Sensor 3": 87,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:49:00",
+   "Sensor 1": 77,
+   "Sensor 2": 78,
+   "Sensor 3": 80,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:50:00",
+   "Sensor 1": 76,
+   "Sensor 2": 75,
+   "Sensor 3": 72,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:51:00",
+   "Sensor 1": 77,
+   "Sensor 2": 77,
+   "Sensor 3": 75,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:52:00",
+   "Sensor 1": 79,
+   "Sensor 2": 79,
+   "Sensor 3": 77,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:53:00",
+   "Sensor 1": 78,
+   "Sensor 2": 78,
+   "Sensor 3": 77,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:54:00",
+   "Sensor 1": 81,
+   "Sensor 2": 82,
+   "Sensor 3": 76,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:55:00",
+   "Sensor 1": 77,
+   "Sensor 2": 77,
+   "Sensor 3": 74,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:56:00",
+   "Sensor 1": 81,
+   "Sensor 2": 80,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:57:00",
+   "Sensor 1": 80,
+   "Sensor 2": 80,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:58:00",
+   "Sensor 1": 77,
+   "Sensor 2": 78,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "21:59:00",
+   "Sensor 1": 79,
+   "Sensor 2": 89,
+   "Sensor 3": 90,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:00:00",
+   "Sensor 1": 80,
+   "Sensor 2": 92,
+   "Sensor 3": 96,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:01:00",
+   "Sensor 1": 80,
+   "Sensor 2": 89,
+   "Sensor 3": 97,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:02:00",
+   "Sensor 1": 81,
+   "Sensor 2": 80,
+   "Sensor 3": 95,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:03:00",
+   "Sensor 1": 86,
+   "Sensor 2": 100,
+   "Sensor 3": 100,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:04:00",
+   "Sensor 1": 91,
+   "Sensor 2": 97,
+   "Sensor 3": 116,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:05:00",
+   "Sensor 1": 93,
+   "Sensor 2": 100,
+   "Sensor 3": 119,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:06:00",
+   "Sensor 1": 94,
+   "Sensor 2": 112,
+   "Sensor 3": 119,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:07:00",
+   "Sensor 1": 90,
+   "Sensor 2": 134,
+   "Sensor 3": 118,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:08:00",
+   "Sensor 1": 90,
+   "Sensor 2": 109,
+   "Sensor 3": 120,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:09:00",
+   "Sensor 1": 83,
+   "Sensor 2": 89,
+   "Sensor 3": 123,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:10:00",
+   "Sensor 1": 81,
+   "Sensor 2": 86,
+   "Sensor 3": 121,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:11:00",
+   "Sensor 1": 88,
+   "Sensor 2": 91,
+   "Sensor 3": 121,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:12:00",
+   "Sensor 1": 90,
+   "Sensor 2": 94,
+   "Sensor 3": 115,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:13:00",
+   "Sensor 1": 0,
+   "Sensor 2": 89,
+   "Sensor 3": 114,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:14:00",
+   "Sensor 1": 0,
+   "Sensor 2": 83,
+   "Sensor 3": 112,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:15:00",
+   "Sensor 1": 99,
+   "Sensor 2": 88,
+   "Sensor 3": 114,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:16:00",
+   "Sensor 1": 113,
+   "Sensor 2": 85,
+   "Sensor 3": 117,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:17:00",
+   "Sensor 1": 121,
+   "Sensor 2": 82,
+   "Sensor 3": 116,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:18:00",
+   "Sensor 1": 117,
+   "Sensor 2": 91,
+   "Sensor 3": 112,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:19:00",
+   "Sensor 1": 113,
+   "Sensor 2": 95,
+   "Sensor 3": 112,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:20:00",
+   "Sensor 1": 100,
+   "Sensor 2": 98,
+   "Sensor 3": 115,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:21:00",
+   "Sensor 1": 104,
+   "Sensor 2": 107,
+   "Sensor 3": 113,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:22:00",
+   "Sensor 1": 97,
+   "Sensor 2": 94,
+   "Sensor 3": 113,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:23:00",
+   "Sensor 1": 96,
+   "Sensor 2": 94,
+   "Sensor 3": 112,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:24:00",
+   "Sensor 1": 97,
+   "Sensor 2": 98,
+   "Sensor 3": 112,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:25:00",
+   "Sensor 1": 104,
+   "Sensor 2": 98,
+   "Sensor 3": 112,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:26:00",
+   "Sensor 1": 103,
+   "Sensor 2": 105,
+   "Sensor 3": 112,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:27:00",
+   "Sensor 1": 105,
+   "Sensor 2": 99,
+   "Sensor 3": 113,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:28:00",
+   "Sensor 1": 97,
+   "Sensor 2": 100,
+   "Sensor 3": 111,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:29:00",
+   "Sensor 1": 99,
+   "Sensor 2": 102,
+   "Sensor 3": 102,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:30:00",
+   "Sensor 1": 97,
+   "Sensor 2": 97,
+   "Sensor 3": 75,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:31:00",
+   "Sensor 1": 100,
+   "Sensor 2": 94,
+   "Sensor 3": 77,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:32:00",
+   "Sensor 1": 104,
+   "Sensor 2": 105,
+   "Sensor 3": 109,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:33:00",
+   "Sensor 1": 103,
+   "Sensor 2": 98,
+   "Sensor 3": 116,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:34:00",
+   "Sensor 1": 108,
+   "Sensor 2": 92,
+   "Sensor 3": 113,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:35:00",
+   "Sensor 1": 109,
+   "Sensor 2": 91,
+   "Sensor 3": 113,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:36:00",
+   "Sensor 1": 115,
+   "Sensor 2": 98,
+   "Sensor 3": 113,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:37:00",
+   "Sensor 1": 126,
+   "Sensor 2": 100,
+   "Sensor 3": 121,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:38:00",
+   "Sensor 1": 115,
+   "Sensor 2": 105,
+   "Sensor 3": 135,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:39:00",
+   "Sensor 1": 121,
+   "Sensor 2": 112,
+   "Sensor 3": 123,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:40:00",
+   "Sensor 1": 112,
+   "Sensor 2": 106,
+   "Sensor 3": 114,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:41:00",
+   "Sensor 1": 106,
+   "Sensor 2": 101,
+   "Sensor 3": 114,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:42:00",
+   "Sensor 1": 99,
+   "Sensor 2": 104,
+   "Sensor 3": 114,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:43:00",
+   "Sensor 1": 103,
+   "Sensor 2": 100,
+   "Sensor 3": 118,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:44:00",
+   "Sensor 1": 103,
+   "Sensor 2": 103,
+   "Sensor 3": 79,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:45:00",
+   "Sensor 1": 103,
+   "Sensor 2": 103,
+   "Sensor 3": 86,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:46:00",
+   "Sensor 1": 101,
+   "Sensor 2": 90,
+   "Sensor 3": 87,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:47:00",
+   "Sensor 1": 95,
+   "Sensor 2": 81,
+   "Sensor 3": 86,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:48:00",
+   "Sensor 1": 93,
+   "Sensor 2": 78,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:49:00",
+   "Sensor 1": 92,
+   "Sensor 2": 78,
+   "Sensor 3": 79,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:50:00",
+   "Sensor 1": 93,
+   "Sensor 2": 83,
+   "Sensor 3": 80,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:51:00",
+   "Sensor 1": 90,
+   "Sensor 2": 83,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:52:00",
+   "Sensor 1": 85,
+   "Sensor 2": 82,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:53:00",
+   "Sensor 1": 88,
+   "Sensor 2": 81,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:54:00",
+   "Sensor 1": 0,
+   "Sensor 2": 93,
+   "Sensor 3": 80,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:55:00",
+   "Sensor 1": 86,
+   "Sensor 2": 94,
+   "Sensor 3": 78,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:56:00",
+   "Sensor 1": 85,
+   "Sensor 2": 90,
+   "Sensor 3": 78,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:57:00",
+   "Sensor 1": 0,
+   "Sensor 2": 82,
+   "Sensor 3": 75,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:58:00",
+   "Sensor 1": 0,
+   "Sensor 2": 79,
+   "Sensor 3": 75,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "22:59:00",
+   "Sensor 1": 83,
+   "Sensor 2": 80,
+   "Sensor 3": 76,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:00:00",
+   "Sensor 1": 84,
+   "Sensor 2": 88,
+   "Sensor 3": 78,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:01:00",
+   "Sensor 1": 84,
+   "Sensor 2": 89,
+   "Sensor 3": 78,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:02:00",
+   "Sensor 1": 83,
+   "Sensor 2": 88,
+   "Sensor 3": 81,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:03:00",
+   "Sensor 1": 78,
+   "Sensor 2": 74,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:04:00",
+   "Sensor 1": 63,
+   "Sensor 2": 64,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:05:00",
+   "Sensor 1": 64,
+   "Sensor 2": 64,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:06:00",
+   "Sensor 1": 65,
+   "Sensor 2": 69,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:07:00",
+   "Sensor 1": 76,
+   "Sensor 2": 75,
+   "Sensor 3": 88,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:08:00",
+   "Sensor 1": 100,
+   "Sensor 2": 89,
+   "Sensor 3": 109,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:09:00",
+   "Sensor 1": 110,
+   "Sensor 2": 95,
+   "Sensor 3": 119,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:10:00",
+   "Sensor 1": 93,
+   "Sensor 2": 88,
+   "Sensor 3": 109,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:11:00",
+   "Sensor 1": 92,
+   "Sensor 2": 87,
+   "Sensor 3": 92,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:12:00",
+   "Sensor 1": 85,
+   "Sensor 2": 81,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:13:00",
+   "Sensor 1": 84,
+   "Sensor 2": 74,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:14:00",
+   "Sensor 1": 87,
+   "Sensor 2": 79,
+   "Sensor 3": 86,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:15:00",
+   "Sensor 1": 84,
+   "Sensor 2": 82,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:16:00",
+   "Sensor 1": 83,
+   "Sensor 2": 77,
+   "Sensor 3": 78,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:17:00",
+   "Sensor 1": 84,
+   "Sensor 2": 82,
+   "Sensor 3": 81,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:18:00",
+   "Sensor 1": 85,
+   "Sensor 2": 85,
+   "Sensor 3": 86,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:19:00",
+   "Sensor 1": 84,
+   "Sensor 2": 84,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:20:00",
+   "Sensor 1": 83,
+   "Sensor 2": 83,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:21:00",
+   "Sensor 1": 86,
+   "Sensor 2": 84,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:22:00",
+   "Sensor 1": 83,
+   "Sensor 2": 83,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:23:00",
+   "Sensor 1": 84,
+   "Sensor 2": 84,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:24:00",
+   "Sensor 1": 83,
+   "Sensor 2": 81,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:25:00",
+   "Sensor 1": 84,
+   "Sensor 2": 85,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:26:00",
+   "Sensor 1": 84,
+   "Sensor 2": 83,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:27:00",
+   "Sensor 1": 81,
+   "Sensor 2": 81,
+   "Sensor 3": 81,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:28:00",
+   "Sensor 1": 85,
+   "Sensor 2": 78,
+   "Sensor 3": 85,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:29:00",
+   "Sensor 1": 85,
+   "Sensor 2": 85,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:30:00",
+   "Sensor 1": 84,
+   "Sensor 2": 84,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:31:00",
+   "Sensor 1": 88,
+   "Sensor 2": 84,
+   "Sensor 3": 86,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:32:00",
+   "Sensor 1": 85,
+   "Sensor 2": 79,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:33:00",
+   "Sensor 1": 85,
+   "Sensor 2": 83,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:34:00",
+   "Sensor 1": 82,
+   "Sensor 2": 83,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:35:00",
+   "Sensor 1": 82,
+   "Sensor 2": 82,
+   "Sensor 3": 80,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:36:00",
+   "Sensor 1": 83,
+   "Sensor 2": 82,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:37:00",
+   "Sensor 1": 86,
+   "Sensor 2": 86,
+   "Sensor 3": 85,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:38:00",
+   "Sensor 1": 86,
+   "Sensor 2": 77,
+   "Sensor 3": 85,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:39:00",
+   "Sensor 1": 85,
+   "Sensor 2": 72,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:40:00",
+   "Sensor 1": 86,
+   "Sensor 2": 75,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:41:00",
+   "Sensor 1": 88,
+   "Sensor 2": 88,
+   "Sensor 3": 85,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:42:00",
+   "Sensor 1": 87,
+   "Sensor 2": 86,
+   "Sensor 3": 87,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:43:00",
+   "Sensor 1": 89,
+   "Sensor 2": 82,
+   "Sensor 3": 86,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:44:00",
+   "Sensor 1": 86,
+   "Sensor 2": 84,
+   "Sensor 3": 83,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:45:00",
+   "Sensor 1": 88,
+   "Sensor 2": 85,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:46:00",
+   "Sensor 1": 89,
+   "Sensor 2": 88,
+   "Sensor 3": 88,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:47:00",
+   "Sensor 1": 95,
+   "Sensor 2": 93,
+   "Sensor 3": 88,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:48:00",
+   "Sensor 1": 88,
+   "Sensor 2": 87,
+   "Sensor 3": 85,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:49:00",
+   "Sensor 1": 90,
+   "Sensor 2": 85,
+   "Sensor 3": 87,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:50:00",
+   "Sensor 1": 88,
+   "Sensor 2": 89,
+   "Sensor 3": 88,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:51:00",
+   "Sensor 1": 90,
+   "Sensor 2": 88,
+   "Sensor 3": 88,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:52:00",
+   "Sensor 1": 89,
+   "Sensor 2": 86,
+   "Sensor 3": 86,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:53:00",
+   "Sensor 1": 85,
+   "Sensor 2": 86,
+   "Sensor 3": 85,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:54:00",
+   "Sensor 1": 86,
+   "Sensor 2": 86,
+   "Sensor 3": 81,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:55:00",
+   "Sensor 1": 87,
+   "Sensor 2": 89,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:56:00",
+   "Sensor 1": 84,
+   "Sensor 2": 86,
+   "Sensor 3": 82,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ },
+ {
+   "Time": "23:57:00",
+   "Sensor 1": 85,
+   "Sensor 2": 84,
+   "Sensor 3": 84,
+   "Sensor 4": 0,
+   "Sensor 5": 0
+ }
+]

@@ -26,14 +26,11 @@ function displayGraph(type, data, names, title) {
                 }
             }
             const options = {
-                // chart: {
-                //     type: 'area'
-                // },
                 title: {
                     text: `${title}`
                 },
                 subtitle: {
-                    text: 'Source: Sheffield Hallam Lab | Gender: Male'
+                    text: 'Source: Sheffield Hallam Lab'
                 },
                 
                 xAxis: {
@@ -95,7 +92,7 @@ function getData(type, names, callback) {
             for (let i = 0; i < names.length; i++) {
                 let currentName = names[i];
                 if (names[i] == "Gold Standard") {
-                    currentName = "GT";
+                    currentName = "GS";
                 }
                 if (i === 0) {
                     allData[i].push(e[currentName]);

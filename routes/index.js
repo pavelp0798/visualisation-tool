@@ -27,14 +27,13 @@ router.get('/', (req, res, next) => {
     allData4 = getData(1, participant, namesHR, "heartrate", days[i]);
     heartrateDays.push(pcorr(allData4));
   }
-
+  
   res.render('index', {
     matrix: JSON.stringify(caloriesDays),
     matrixSteps: JSON.stringify(stepsDays),
     matrixDistance: JSON.stringify(distanceDays),
     matrixHeartrate: JSON.stringify(heartrateDays),
-    names: JSON.stringify(names),
-    participantsCount: 10,
+    participantsCount: 20,
     participants: participants,
     participant: participant,
     title: "First Experiment",
@@ -160,8 +159,9 @@ function getData(ex, participant, inputNames, type, day) {
 
 router.get('/second', (req, res, next) => {
   let allParticipants = ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"];
-  let maleParticipants = ["p2", "p4", "p6", "p8", "p10", "p12", "p14", "p16", "p18", "p20"];
-  let femaleParticipants = ["p1", "p3", "p5", "p7", "p9", "p11", "p13", "p15", "p17", "p19"];
+  
+  let maleParticipants = ["p1", "p2", "p3", "p4", "p6", "p8", "p13", "p14", "p19", "p20"];
+  let femaleParticipants = ["p5", "p7", "p9", "p10", "p11", "p12",  "p15",  "p16", "p17", "p18"];
   let maleErrorsCalories = error(maleParticipants, "calories2");
   let maleErrorsSteps = error(maleParticipants, "steps2");
   let maleErrorsHR = error(maleParticipants, "heartrate");
@@ -180,7 +180,7 @@ router.get('/second', (req, res, next) => {
   stepsData = getData(2, participant, names, "steps2");
   hrData = getData(2, participant, heartRateSensors, "heartrate");
   res.render('second', {
-    names: JSON.stringify(['Time Count(Every 60 seconds)', 'Gold Standard', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
+    names: JSON.stringify(['Time Count(Every 60 seconds)', 'GT', 'Fitbit One', 'Fitbit Flex 2', 'Fitbit Surge',
       'Fitbit Charge HR', 'Fitbit Charge 2'
     ]),
     maleErrorsCalories: JSON.stringify(statistics(maleErrorsCalories)),

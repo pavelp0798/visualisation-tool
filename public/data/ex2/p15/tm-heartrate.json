@@ -1,0 +1,1812 @@
+[
+ {
+   "Time Count(Every 10 seconds)": "0:12",
+   "GT": 85,
+   "Fitbit Charge HR": 85,
+   "Fitbit Charge 2": 83,
+   "Fitbit Surge": 82,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": -3
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:22",
+   "GT": 99,
+   "Fitbit Charge HR": 84,
+   "Fitbit Charge 2": 83,
+   "Fitbit Surge": 82,
+   "Diff(Fitbit Charge HR)": -15,
+   "Diff(Fitbit Charge 2)": -16,
+   "Diff(Fitbit Surge)": -17
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:32",
+   "GT": 94,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": 82,
+   "Fitbit Surge": 83,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": -12,
+   "Diff(Fitbit Surge)": -11
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:42",
+   "GT": 100,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": 89,
+   "Fitbit Surge": 85,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": -11,
+   "Diff(Fitbit Surge)": -15
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:52",
+   "GT": 94,
+   "Fitbit Charge HR": 92,
+   "Fitbit Charge 2": 92,
+   "Fitbit Surge": 87,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": -7
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:02",
+   "GT": 94,
+   "Fitbit Charge HR": 92,
+   "Fitbit Charge 2": 93,
+   "Fitbit Surge": 89,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:12",
+   "GT": 93,
+   "Fitbit Charge HR": 92,
+   "Fitbit Charge 2": 93,
+   "Fitbit Surge": 88,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": 0,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:22",
+   "GT": 94,
+   "Fitbit Charge HR": 93,
+   "Fitbit Charge 2": 94,
+   "Fitbit Surge": 91,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": 0,
+   "Diff(Fitbit Surge)": -3
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:32",
+   "GT": 92,
+   "Fitbit Charge HR": 93,
+   "Fitbit Charge 2": 93,
+   "Fitbit Surge": 90,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": 1,
+   "Diff(Fitbit Surge)": -2
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:42",
+   "GT": 97,
+   "Fitbit Charge HR": 93,
+   "Fitbit Charge 2": 94,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": -4,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:52",
+   "GT": 91,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 96,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": 4,
+   "Diff(Fitbit Charge 2)": 5,
+   "Diff(Fitbit Surge)": 1
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:02",
+   "GT": 92,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 95,
+   "Fitbit Surge": 91,
+   "Diff(Fitbit Charge HR)": 2,
+   "Diff(Fitbit Charge 2)": 3,
+   "Diff(Fitbit Surge)": -1
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:12",
+   "GT": 96,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 94,
+   "Fitbit Surge": 95,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": -1
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:22",
+   "GT": 95,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 95,
+   "Fitbit Surge": 95,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": 0,
+   "Diff(Fitbit Surge)": 0
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:32",
+   "GT": 92,
+   "Fitbit Charge HR": 92,
+   "Fitbit Charge 2": 91,
+   "Fitbit Surge": 97,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": 5
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:42",
+   "GT": 93,
+   "Fitbit Charge HR": 93,
+   "Fitbit Charge 2": 92,
+   "Fitbit Surge": 96,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": 3
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:52",
+   "GT": 95,
+   "Fitbit Charge HR": 90,
+   "Fitbit Charge 2": 92,
+   "Fitbit Surge": 95,
+   "Diff(Fitbit Charge HR)": -5,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": 0
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:02",
+   "GT": 94,
+   "Fitbit Charge HR": 90,
+   "Fitbit Charge 2": 93,
+   "Fitbit Surge": 97,
+   "Diff(Fitbit Charge HR)": -4,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": 3
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:12",
+   "GT": 95,
+   "Fitbit Charge HR": 89,
+   "Fitbit Charge 2": 93,
+   "Fitbit Surge": 97,
+   "Diff(Fitbit Charge HR)": -6,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": 2
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:22",
+   "GT": 97,
+   "Fitbit Charge HR": 92,
+   "Fitbit Charge 2": 95,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": -5,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:32",
+   "GT": 95,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 93,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": -3
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:42",
+   "GT": 94,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 93,
+   "Fitbit Surge": 89,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:52",
+   "GT": 97,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 94,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:02",
+   "GT": 96,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 96,
+   "Fitbit Surge": 93,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": 0,
+   "Diff(Fitbit Surge)": -3
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:12",
+   "GT": 92,
+   "Fitbit Charge HR": 93,
+   "Fitbit Charge 2": 97,
+   "Fitbit Surge": 96,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": 5,
+   "Diff(Fitbit Surge)": 4
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:22",
+   "GT": 92,
+   "Fitbit Charge HR": 91,
+   "Fitbit Charge 2": 94,
+   "Fitbit Surge": 95,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": 2,
+   "Diff(Fitbit Surge)": 3
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:32",
+   "GT": 98,
+   "Fitbit Charge HR": 93,
+   "Fitbit Charge 2": 95,
+   "Fitbit Surge": 95,
+   "Diff(Fitbit Charge HR)": -5,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -3
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:42",
+   "GT": 95,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 96,
+   "Fitbit Surge": 99,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": 1,
+   "Diff(Fitbit Surge)": 4
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:52",
+   "GT": 96,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 97,
+   "Fitbit Surge": 97,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": 1,
+   "Diff(Fitbit Surge)": 1
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:02",
+   "GT": 98,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 96,
+   "Fitbit Surge": 95,
+   "Diff(Fitbit Charge HR)": -3,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": -3
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:12",
+   "GT": 96,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 96,
+   "Fitbit Surge": 96,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": 0,
+   "Diff(Fitbit Surge)": 0
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:22",
+   "GT": 100,
+   "Fitbit Charge HR": 92,
+   "Fitbit Charge 2": 95,
+   "Fitbit Surge": 94,
+   "Diff(Fitbit Charge HR)": -8,
+   "Diff(Fitbit Charge 2)": -5,
+   "Diff(Fitbit Surge)": -6
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:32",
+   "GT": 105,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 96,
+   "Fitbit Surge": 93,
+   "Diff(Fitbit Charge HR)": -11,
+   "Diff(Fitbit Charge 2)": -9,
+   "Diff(Fitbit Surge)": -12
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:42",
+   "GT": 111,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 99,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": -15,
+   "Diff(Fitbit Charge 2)": -12,
+   "Diff(Fitbit Surge)": -19
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:52",
+   "GT": 104,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 101,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": -9,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -12
+ },
+ {
+   "Time Count(Every 10 seconds)": "6:02",
+   "GT": 104,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 95,
+   "Fitbit Surge": 86,
+   "Diff(Fitbit Charge HR)": -10,
+   "Diff(Fitbit Charge 2)": -9,
+   "Diff(Fitbit Surge)": -18
+ },
+ {
+   "Time Count(Every 10 seconds)": "6:12",
+   "GT": 94,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 103,
+   "Fitbit Surge": 94,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": 9,
+   "Diff(Fitbit Surge)": 0
+ },
+ {
+   "Time Count(Every 10 seconds)": "6:22",
+   "GT": 95,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 108,
+   "Fitbit Surge": 86,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": 13,
+   "Diff(Fitbit Surge)": -9
+ },
+ {
+   "Time Count(Every 10 seconds)": "6:32",
+   "GT": 97,
+   "Fitbit Charge HR": 93,
+   "Fitbit Charge 2": 110,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": -4,
+   "Diff(Fitbit Charge 2)": 13,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "6:42",
+   "GT": 95,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 106,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": 11,
+   "Diff(Fitbit Surge)": -3
+ },
+ {
+   "Time Count(Every 10 seconds)": "6:52",
+   "GT": 97,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 101,
+   "Fitbit Surge": 88,
+   "Diff(Fitbit Charge HR)": -3,
+   "Diff(Fitbit Charge 2)": 4,
+   "Diff(Fitbit Surge)": -9
+ },
+ {
+   "Time Count(Every 10 seconds)": "7:02",
+   "GT": 95,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 101,
+   "Fitbit Surge": 88,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": 6,
+   "Diff(Fitbit Surge)": -7
+ },
+ {
+   "Time Count(Every 10 seconds)": "7:12",
+   "GT": 93,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 96,
+   "Fitbit Surge": 89,
+   "Diff(Fitbit Charge HR)": 2,
+   "Diff(Fitbit Charge 2)": 3,
+   "Diff(Fitbit Surge)": -4
+ },
+ {
+   "Time Count(Every 10 seconds)": "7:22",
+   "GT": 93,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 92,
+   "Fitbit Surge": 91,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": -2
+ },
+ {
+   "Time Count(Every 10 seconds)": "7:32",
+   "GT": 96,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 94,
+   "Fitbit Surge": 93,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": -3
+ },
+ {
+   "Time Count(Every 10 seconds)": "7:42",
+   "GT": 93,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": 95,
+   "Fitbit Surge": 94,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": 2,
+   "Diff(Fitbit Surge)": 1
+ },
+ {
+   "Time Count(Every 10 seconds)": "7:52",
+   "GT": 93,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 96,
+   "Fitbit Surge": 98,
+   "Diff(Fitbit Charge HR)": 3,
+   "Diff(Fitbit Charge 2)": 3,
+   "Diff(Fitbit Surge)": 5
+ },
+ {
+   "Time Count(Every 10 seconds)": "8:02",
+   "GT": 98,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 93,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -5,
+   "Diff(Fitbit Surge)": -6
+ },
+ {
+   "Time Count(Every 10 seconds)": "8:12",
+   "GT": 104,
+   "Fitbit Charge HR": 98,
+   "Fitbit Charge 2": 94,
+   "Fitbit Surge": 95,
+   "Diff(Fitbit Charge HR)": -6,
+   "Diff(Fitbit Charge 2)": -10,
+   "Diff(Fitbit Surge)": -9
+ },
+ {
+   "Time Count(Every 10 seconds)": "8:22",
+   "GT": 103,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 95,
+   "Fitbit Surge": 101,
+   "Diff(Fitbit Charge HR)": -9,
+   "Diff(Fitbit Charge 2)": -8,
+   "Diff(Fitbit Surge)": -2
+ },
+ {
+   "Time Count(Every 10 seconds)": "8:32",
+   "GT": 109,
+   "Fitbit Charge HR": 99,
+   "Fitbit Charge 2": 99,
+   "Fitbit Surge": 103,
+   "Diff(Fitbit Charge HR)": -10,
+   "Diff(Fitbit Charge 2)": -10,
+   "Diff(Fitbit Surge)": -6
+ },
+ {
+   "Time Count(Every 10 seconds)": "8:42",
+   "GT": 107,
+   "Fitbit Charge HR": 100,
+   "Fitbit Charge 2": 100,
+   "Fitbit Surge": 100,
+   "Diff(Fitbit Charge HR)": -7,
+   "Diff(Fitbit Charge 2)": -7,
+   "Diff(Fitbit Surge)": -7
+ },
+ {
+   "Time Count(Every 10 seconds)": "8:52",
+   "GT": 107,
+   "Fitbit Charge HR": 100,
+   "Fitbit Charge 2": 100,
+   "Fitbit Surge": 100,
+   "Diff(Fitbit Charge HR)": -7,
+   "Diff(Fitbit Charge 2)": -7,
+   "Diff(Fitbit Surge)": -7
+ },
+ {
+   "Time Count(Every 10 seconds)": "9:02",
+   "GT": 112,
+   "Fitbit Charge HR": 97,
+   "Fitbit Charge 2": 105,
+   "Fitbit Surge": 95,
+   "Diff(Fitbit Charge HR)": -15,
+   "Diff(Fitbit Charge 2)": -7,
+   "Diff(Fitbit Surge)": -17
+ },
+ {
+   "Time Count(Every 10 seconds)": "9:12",
+   "GT": 115,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 105,
+   "Fitbit Surge": 97,
+   "Diff(Fitbit Charge HR)": -19,
+   "Diff(Fitbit Charge 2)": -10,
+   "Diff(Fitbit Surge)": -18
+ },
+ {
+   "Time Count(Every 10 seconds)": "9:22",
+   "GT": 126,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 103,
+   "Fitbit Surge": 95,
+   "Diff(Fitbit Charge HR)": -32,
+   "Diff(Fitbit Charge 2)": -23,
+   "Diff(Fitbit Surge)": -31
+ },
+ {
+   "Time Count(Every 10 seconds)": "9:32",
+   "GT": 119,
+   "Fitbit Charge HR": 93,
+   "Fitbit Charge 2": 103,
+   "Fitbit Surge": 94,
+   "Diff(Fitbit Charge HR)": -26,
+   "Diff(Fitbit Charge 2)": -16,
+   "Diff(Fitbit Surge)": -25
+ },
+ {
+   "Time Count(Every 10 seconds)": "9:42",
+   "GT": 114,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 102,
+   "Fitbit Surge": 92,
+   "Diff(Fitbit Charge HR)": -19,
+   "Diff(Fitbit Charge 2)": -12,
+   "Diff(Fitbit Surge)": -22
+ },
+ {
+   "Time Count(Every 10 seconds)": "9:52",
+   "GT": 110,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 102,
+   "Fitbit Surge": 88,
+   "Diff(Fitbit Charge HR)": -14,
+   "Diff(Fitbit Charge 2)": -8,
+   "Diff(Fitbit Surge)": -22
+ },
+ {
+   "Time Count(Every 10 seconds)": "10:02",
+   "GT": 103,
+   "Fitbit Charge HR": 97,
+   "Fitbit Charge 2": 88,
+   "Fitbit Surge": 94,
+   "Diff(Fitbit Charge HR)": -6,
+   "Diff(Fitbit Charge 2)": -15,
+   "Diff(Fitbit Surge)": -9
+ },
+ {
+   "Time Count(Every 10 seconds)": "10:12",
+   "GT": 107,
+   "Fitbit Charge HR": 103,
+   "Fitbit Charge 2": 88,
+   "Fitbit Surge": 93,
+   "Diff(Fitbit Charge HR)": -4,
+   "Diff(Fitbit Charge 2)": -19,
+   "Diff(Fitbit Surge)": -14
+ },
+ {
+   "Time Count(Every 10 seconds)": "10:22",
+   "GT": 117,
+   "Fitbit Charge HR": 105,
+   "Fitbit Charge 2": 87,
+   "Fitbit Surge": 91,
+   "Diff(Fitbit Charge HR)": -12,
+   "Diff(Fitbit Charge 2)": -30,
+   "Diff(Fitbit Surge)": -26
+ },
+ {
+   "Time Count(Every 10 seconds)": "10:32",
+   "GT": 106,
+   "Fitbit Charge HR": 108,
+   "Fitbit Charge 2": 93,
+   "Fitbit Surge": 91,
+   "Diff(Fitbit Charge HR)": 2,
+   "Diff(Fitbit Charge 2)": -13,
+   "Diff(Fitbit Surge)": -15
+ },
+ {
+   "Time Count(Every 10 seconds)": "10:42",
+   "GT": 107,
+   "Fitbit Charge HR": 105,
+   "Fitbit Charge 2": 97,
+   "Fitbit Surge": 93,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -10,
+   "Diff(Fitbit Surge)": -14
+ },
+ {
+   "Time Count(Every 10 seconds)": "10:52",
+   "GT": 109,
+   "Fitbit Charge HR": 108,
+   "Fitbit Charge 2": 104,
+   "Fitbit Surge": 99,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": -5,
+   "Diff(Fitbit Surge)": -10
+ },
+ {
+   "Time Count(Every 10 seconds)": "11:02",
+   "GT": 106,
+   "Fitbit Charge HR": 104,
+   "Fitbit Charge 2": 103,
+   "Fitbit Surge": 105,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -1
+ },
+ {
+   "Time Count(Every 10 seconds)": "11:12",
+   "GT": 105,
+   "Fitbit Charge HR": 105,
+   "Fitbit Charge 2": 103,
+   "Fitbit Surge": 106,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": 1
+ },
+ {
+   "Time Count(Every 10 seconds)": "11:22",
+   "GT": 103,
+   "Fitbit Charge HR": 103,
+   "Fitbit Charge 2": 99,
+   "Fitbit Surge": 107,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -4,
+   "Diff(Fitbit Surge)": 4
+ },
+ {
+   "Time Count(Every 10 seconds)": "11:32",
+   "GT": 105,
+   "Fitbit Charge HR": 100,
+   "Fitbit Charge 2": 94,
+   "Fitbit Surge": 111,
+   "Diff(Fitbit Charge HR)": -5,
+   "Diff(Fitbit Charge 2)": -11,
+   "Diff(Fitbit Surge)": 6
+ },
+ {
+   "Time Count(Every 10 seconds)": "11:42",
+   "GT": 108,
+   "Fitbit Charge HR": 101,
+   "Fitbit Charge 2": 90,
+   "Fitbit Surge": 109,
+   "Diff(Fitbit Charge HR)": -7,
+   "Diff(Fitbit Charge 2)": -18,
+   "Diff(Fitbit Surge)": 1
+ },
+ {
+   "Time Count(Every 10 seconds)": "11:52",
+   "GT": 113,
+   "Fitbit Charge HR": 103,
+   "Fitbit Charge 2": 92,
+   "Fitbit Surge": 112,
+   "Diff(Fitbit Charge HR)": -10,
+   "Diff(Fitbit Charge 2)": -21,
+   "Diff(Fitbit Surge)": -1
+ },
+ {
+   "Time Count(Every 10 seconds)": "12:02",
+   "GT": 112,
+   "Fitbit Charge HR": 106,
+   "Fitbit Charge 2": 89,
+   "Fitbit Surge": 115,
+   "Diff(Fitbit Charge HR)": -6,
+   "Diff(Fitbit Charge 2)": -23,
+   "Diff(Fitbit Surge)": 3
+ },
+ {
+   "Time Count(Every 10 seconds)": "12:12",
+   "GT": 108,
+   "Fitbit Charge HR": 107,
+   "Fitbit Charge 2": 92,
+   "Fitbit Surge": 111,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": -16,
+   "Diff(Fitbit Surge)": 3
+ },
+ {
+   "Time Count(Every 10 seconds)": "12:22",
+   "GT": 105,
+   "Fitbit Charge HR": 105,
+   "Fitbit Charge 2": 96,
+   "Fitbit Surge": 109,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -9,
+   "Diff(Fitbit Surge)": 4
+ },
+ {
+   "Time Count(Every 10 seconds)": "12:32",
+   "GT": 114,
+   "Fitbit Charge HR": 100,
+   "Fitbit Charge 2": 98,
+   "Fitbit Surge": 109,
+   "Diff(Fitbit Charge HR)": -14,
+   "Diff(Fitbit Charge 2)": -16,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "12:42",
+   "GT": 113,
+   "Fitbit Charge HR": 107,
+   "Fitbit Charge 2": 102,
+   "Fitbit Surge": 111,
+   "Diff(Fitbit Charge HR)": -6,
+   "Diff(Fitbit Charge 2)": -11,
+   "Diff(Fitbit Surge)": -2
+ },
+ {
+   "Time Count(Every 10 seconds)": "12:52",
+   "GT": 117,
+   "Fitbit Charge HR": 110,
+   "Fitbit Charge 2": 108,
+   "Fitbit Surge": 109,
+   "Diff(Fitbit Charge HR)": -7,
+   "Diff(Fitbit Charge 2)": -9,
+   "Diff(Fitbit Surge)": -8
+ },
+ {
+   "Time Count(Every 10 seconds)": "13:02",
+   "GT": 112,
+   "Fitbit Charge HR": 112,
+   "Fitbit Charge 2": 109,
+   "Fitbit Surge": 103,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -9
+ },
+ {
+   "Time Count(Every 10 seconds)": "13:12",
+   "GT": 120,
+   "Fitbit Charge HR": 112,
+   "Fitbit Charge 2": 106,
+   "Fitbit Surge": 101,
+   "Diff(Fitbit Charge HR)": -8,
+   "Diff(Fitbit Charge 2)": -14,
+   "Diff(Fitbit Surge)": -19
+ },
+ {
+   "Time Count(Every 10 seconds)": "13:22",
+   "GT": 121,
+   "Fitbit Charge HR": 118,
+   "Fitbit Charge 2": 104,
+   "Fitbit Surge": 94,
+   "Diff(Fitbit Charge HR)": -3,
+   "Diff(Fitbit Charge 2)": -17,
+   "Diff(Fitbit Surge)": -27
+ },
+ {
+   "Time Count(Every 10 seconds)": "13:32",
+   "GT": 123,
+   "Fitbit Charge HR": 118,
+   "Fitbit Charge 2": 110,
+   "Fitbit Surge": 98,
+   "Diff(Fitbit Charge HR)": -5,
+   "Diff(Fitbit Charge 2)": -13,
+   "Diff(Fitbit Surge)": -25
+ },
+ {
+   "Time Count(Every 10 seconds)": "13:42",
+   "GT": 121,
+   "Fitbit Charge HR": 118,
+   "Fitbit Charge 2": 111,
+   "Fitbit Surge": 101,
+   "Diff(Fitbit Charge HR)": -3,
+   "Diff(Fitbit Charge 2)": -10,
+   "Diff(Fitbit Surge)": -20
+ },
+ {
+   "Time Count(Every 10 seconds)": "13:52",
+   "GT": 120,
+   "Fitbit Charge HR": 118,
+   "Fitbit Charge 2": 117,
+   "Fitbit Surge": 103,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -17
+ },
+ {
+   "Time Count(Every 10 seconds)": "14:02",
+   "GT": 120,
+   "Fitbit Charge HR": 118,
+   "Fitbit Charge 2": 117,
+   "Fitbit Surge": 110,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -10
+ },
+ {
+   "Time Count(Every 10 seconds)": "14:12",
+   "GT": 123,
+   "Fitbit Charge HR": 116,
+   "Fitbit Charge 2": 108,
+   "Fitbit Surge": 108,
+   "Diff(Fitbit Charge HR)": -7,
+   "Diff(Fitbit Charge 2)": -15,
+   "Diff(Fitbit Surge)": -15
+ },
+ {
+   "Time Count(Every 10 seconds)": "14:22",
+   "GT": 130,
+   "Fitbit Charge HR": 119,
+   "Fitbit Charge 2": 106,
+   "Fitbit Surge": 113,
+   "Diff(Fitbit Charge HR)": -11,
+   "Diff(Fitbit Charge 2)": -24,
+   "Diff(Fitbit Surge)": -17
+ },
+ {
+   "Time Count(Every 10 seconds)": "14:32",
+   "GT": 132,
+   "Fitbit Charge HR": 119,
+   "Fitbit Charge 2": 107,
+   "Fitbit Surge": 112,
+   "Diff(Fitbit Charge HR)": -13,
+   "Diff(Fitbit Charge 2)": -25,
+   "Diff(Fitbit Surge)": -20
+ },
+ {
+   "Time Count(Every 10 seconds)": "14:42",
+   "GT": 135,
+   "Fitbit Charge HR": 124,
+   "Fitbit Charge 2": 107,
+   "Fitbit Surge": 111,
+   "Diff(Fitbit Charge HR)": -11,
+   "Diff(Fitbit Charge 2)": -28,
+   "Diff(Fitbit Surge)": -24
+ },
+ {
+   "Time Count(Every 10 seconds)": "14:52",
+   "GT": 133,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": 107,
+   "Fitbit Surge": 110,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": -26,
+   "Diff(Fitbit Surge)": -23
+ },
+ {
+   "Time Count(Every 10 seconds)": "15:02",
+   "GT": 131,
+   "Fitbit Charge HR": 127,
+   "Fitbit Charge 2": 105,
+   "Fitbit Surge": 110,
+   "Diff(Fitbit Charge HR)": -4,
+   "Diff(Fitbit Charge 2)": -26,
+   "Diff(Fitbit Surge)": -21
+ },
+ {
+   "Time Count(Every 10 seconds)": "15:12",
+   "GT": 128,
+   "Fitbit Charge HR": 126,
+   "Fitbit Charge 2": 103,
+   "Fitbit Surge": 110,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -25,
+   "Diff(Fitbit Surge)": -18
+ },
+ {
+   "Time Count(Every 10 seconds)": "15:22",
+   "GT": 131,
+   "Fitbit Charge HR": 126,
+   "Fitbit Charge 2": 107,
+   "Fitbit Surge": 107,
+   "Diff(Fitbit Charge HR)": -5,
+   "Diff(Fitbit Charge 2)": -24,
+   "Diff(Fitbit Surge)": -24
+ },
+ {
+   "Time Count(Every 10 seconds)": "15:32",
+   "GT": 132,
+   "Fitbit Charge HR": 130,
+   "Fitbit Charge 2": 109,
+   "Fitbit Surge": 108,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -23,
+   "Diff(Fitbit Surge)": -24
+ },
+ {
+   "Time Count(Every 10 seconds)": "15:42",
+   "GT": 131,
+   "Fitbit Charge HR": 131,
+   "Fitbit Charge 2": 115,
+   "Fitbit Surge": 107,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -16,
+   "Diff(Fitbit Surge)": -24
+ },
+ {
+   "Time Count(Every 10 seconds)": "15:52",
+   "GT": 126,
+   "Fitbit Charge HR": 129,
+   "Fitbit Charge 2": 119,
+   "Fitbit Surge": 112,
+   "Diff(Fitbit Charge HR)": 3,
+   "Diff(Fitbit Charge 2)": -7,
+   "Diff(Fitbit Surge)": -14
+ },
+ {
+   "Time Count(Every 10 seconds)": "16:02",
+   "GT": 124,
+   "Fitbit Charge HR": 127,
+   "Fitbit Charge 2": 113,
+   "Fitbit Surge": 112,
+   "Diff(Fitbit Charge HR)": 3,
+   "Diff(Fitbit Charge 2)": -11,
+   "Diff(Fitbit Surge)": -12
+ },
+ {
+   "Time Count(Every 10 seconds)": "16:12",
+   "GT": 124,
+   "Fitbit Charge HR": 126,
+   "Fitbit Charge 2": 118,
+   "Fitbit Surge": 105,
+   "Diff(Fitbit Charge HR)": 2,
+   "Diff(Fitbit Charge 2)": -6,
+   "Diff(Fitbit Surge)": -19
+ },
+ {
+   "Time Count(Every 10 seconds)": "16:22",
+   "GT": 124,
+   "Fitbit Charge HR": 124,
+   "Fitbit Charge 2": 122,
+   "Fitbit Surge": 108,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": -16
+ },
+ {
+   "Time Count(Every 10 seconds)": "16:32",
+   "GT": 127,
+   "Fitbit Charge HR": 124,
+   "Fitbit Charge 2": 123,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": -3,
+   "Diff(Fitbit Charge 2)": -4,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "16:42",
+   "GT": 127,
+   "Fitbit Charge HR": 127,
+   "Fitbit Charge 2": 124,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "16:52",
+   "GT": 129,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": 124,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": -5,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "17:02",
+   "GT": 127,
+   "Fitbit Charge HR": 127,
+   "Fitbit Charge 2": 125,
+   "Fitbit Surge": 117,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": -10
+ },
+ {
+   "Time Count(Every 10 seconds)": "17:12",
+   "GT": 126,
+   "Fitbit Charge HR": 127,
+   "Fitbit Charge 2": 126,
+   "Fitbit Surge": 120,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": 0,
+   "Diff(Fitbit Surge)": -6
+ },
+ {
+   "Time Count(Every 10 seconds)": "17:22",
+   "GT": 128,
+   "Fitbit Charge HR": 127,
+   "Fitbit Charge 2": 126,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "17:32",
+   "GT": 129,
+   "Fitbit Charge HR": 128,
+   "Fitbit Charge 2": 127,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": -2,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "17:42",
+   "GT": 129,
+   "Fitbit Charge HR": 129,
+   "Fitbit Charge 2": 128,
+   "Fitbit Surge": 124,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "17:52",
+   "GT": 130,
+   "Fitbit Charge HR": 127,
+   "Fitbit Charge 2": 127,
+   "Fitbit Surge": 125,
+   "Diff(Fitbit Charge HR)": -3,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "18:02",
+   "GT": 130,
+   "Fitbit Charge HR": 129,
+   "Fitbit Charge 2": 129,
+   "Fitbit Surge": 125,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": -5
+ },
+ {
+   "Time Count(Every 10 seconds)": "18:12",
+   "GT": 130,
+   "Fitbit Charge HR": 123,
+   "Fitbit Charge 2": 130,
+   "Fitbit Surge": 126,
+   "Diff(Fitbit Charge HR)": -7,
+   "Diff(Fitbit Charge 2)": 0,
+   "Diff(Fitbit Surge)": -4
+ },
+ {
+   "Time Count(Every 10 seconds)": "18:22",
+   "GT": 135,
+   "Fitbit Charge HR": 128,
+   "Fitbit Charge 2": 130,
+   "Fitbit Surge": 125,
+   "Diff(Fitbit Charge HR)": -7,
+   "Diff(Fitbit Charge 2)": -5,
+   "Diff(Fitbit Surge)": -10
+ },
+ {
+   "Time Count(Every 10 seconds)": "18:32",
+   "GT": 132,
+   "Fitbit Charge HR": 130,
+   "Fitbit Charge 2": 131,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "18:42",
+   "GT": 134,
+   "Fitbit Charge HR": 130,
+   "Fitbit Charge 2": 131,
+   "Fitbit Surge": 124,
+   "Diff(Fitbit Charge HR)": -4,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -10
+ },
+ {
+   "Time Count(Every 10 seconds)": "18:52",
+   "GT": 137,
+   "Fitbit Charge HR": 132,
+   "Fitbit Charge 2": 134,
+   "Fitbit Surge": 127,
+   "Diff(Fitbit Charge HR)": -5,
+   "Diff(Fitbit Charge 2)": -3,
+   "Diff(Fitbit Surge)": -10
+ },
+ {
+   "Time Count(Every 10 seconds)": "19:02",
+   "GT": 136,
+   "Fitbit Charge HR": 134,
+   "Fitbit Charge 2": 135,
+   "Fitbit Surge": 128,
+   "Diff(Fitbit Charge HR)": -2,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": -8
+ },
+ {
+   "Time Count(Every 10 seconds)": "19:12",
+   "GT": 134,
+   "Fitbit Charge HR": 134,
+   "Fitbit Charge 2": 135,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": 0,
+   "Diff(Fitbit Charge 2)": 1,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "19:22",
+   "GT": 133,
+   "Fitbit Charge HR": 134,
+   "Fitbit Charge 2": 135,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": 1,
+   "Diff(Fitbit Charge 2)": 2,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "19:32",
+   "GT": 131,
+   "Fitbit Charge HR": 130,
+   "Fitbit Charge 2": 130,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": -1,
+   "Diff(Fitbit Charge 2)": -1,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "19:42",
+   "GT": 134,
+   "Fitbit Charge HR": 129,
+   "Fitbit Charge 2": 130,
+   "Fitbit Surge": 122,
+   "Diff(Fitbit Charge HR)": -5,
+   "Diff(Fitbit Charge 2)": -4,
+   "Diff(Fitbit Surge)": -12
+ },
+ {
+   "Time Count(Every 10 seconds)": "19:52",
+   "GT": 140,
+   "Fitbit Charge HR": 131,
+   "Fitbit Charge 2": 132,
+   "Fitbit Surge": 124,
+   "Diff(Fitbit Charge HR)": -9,
+   "Diff(Fitbit Charge 2)": -8,
+   "Diff(Fitbit Surge)": -16
+ },
+ {
+   "Time Count(Every 10 seconds)": "20:02",
+   "GT": 137,
+   "Fitbit Charge HR": 130,
+   "Fitbit Charge 2": 130,
+   "Fitbit Surge": 126,
+   "Diff(Fitbit Charge HR)": -7,
+   "Diff(Fitbit Charge 2)": -7,
+   "Diff(Fitbit Surge)": -11
+ },
+ {
+   "Time Count(Every 10 seconds)": "20:12",
+   "GT": 136,
+   "Fitbit Charge HR": 124,
+   "Fitbit Charge 2": 128,
+   "Fitbit Surge": 129,
+   "Diff(Fitbit Charge HR)": -12,
+   "Diff(Fitbit Charge 2)": -8,
+   "Diff(Fitbit Surge)": -7
+ },
+ {
+   "Time Count(Every 10 seconds)": "20:22",
+   "GT": 145,
+   "Fitbit Charge HR": 118,
+   "Fitbit Charge 2": 126,
+   "Fitbit Surge": 124,
+   "Diff(Fitbit Charge HR)": -27,
+   "Diff(Fitbit Charge 2)": -19,
+   "Diff(Fitbit Surge)": -21
+ },
+ {
+   "Time Count(Every 10 seconds)": "20:32",
+   "GT": 146,
+   "Fitbit Charge HR": 113,
+   "Fitbit Charge 2": 122,
+   "Fitbit Surge": 124,
+   "Diff(Fitbit Charge HR)": -33,
+   "Diff(Fitbit Charge 2)": -24,
+   "Diff(Fitbit Surge)": -22
+ },
+ {
+   "Time Count(Every 10 seconds)": "20:42",
+   "GT": 146,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": 124,
+   "Fitbit Surge": 127,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": -22,
+   "Diff(Fitbit Surge)": -19
+ },
+ {
+   "Time Count(Every 10 seconds)": "20:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "21:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "21:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "21:22",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "21:32",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "21:42",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "21:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "22:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "22:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "22:22",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "22:32",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "22:42",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "22:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "23:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "23:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "23:22",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "23:32",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "23:42",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "23:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:22",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:32",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:42",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "0:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:22",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:32",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:42",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "1:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:22",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:32",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:42",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "2:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:22",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:32",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:42",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "3:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:22",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:32",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:42",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "4:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:22",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:32",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:42",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "5:52",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "6:02",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ },
+ {
+   "Time Count(Every 10 seconds)": "6:12",
+   "GT": null,
+   "Fitbit Charge HR": null,
+   "Fitbit Charge 2": null,
+   "Fitbit Surge": null,
+   "Diff(Fitbit Charge HR)": null,
+   "Diff(Fitbit Charge 2)": null,
+   "Diff(Fitbit Surge)": null
+ }
+]

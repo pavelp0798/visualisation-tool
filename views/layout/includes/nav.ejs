@@ -5,8 +5,9 @@
             aria-expanded="false">Select Participant</a>
         <div class="dropdown-menu">
             <% for(let i = 1; i <= participantsCount; i++) {%>
-            <a class="dropdown-item" href="?p=p<%=i%>">
-                Participant <%- i %></a>
+                <% if (title == "First Experiment" && i != 13 && i != 14 && i != 15 && i != 16 || title == "Second Experiment" && i != 20 && i != 19 && i != 18 && i != 17) { %>
+                    <a class="dropdown-item" href="?p=p<%=i%>">Participant <%- i %></a>
+                <% } %>
             <% } %>
         </div>
         <% } %>

@@ -1,0 +1,281 @@
+[
+ {
+   "Time Count(Every 60 seconds)": 0,
+   "GT": 0,
+   "Fitbit One": 0,
+   "Fitbit Flex 2": 0,
+   "Fitbit Surge": 0,
+   "Fitbit Charge HR": 0,
+   "Fitbit Charge 2": 0
+ },
+ {
+   "Time Count(Every 60 seconds)": 1,
+   "GT": 95,
+   "Fitbit One": 94,
+   "Fitbit Flex 2": 88,
+   "Fitbit Surge": 71,
+   "Fitbit Charge HR": 72,
+   "Fitbit Charge 2": 86
+ },
+ {
+   "Time Count(Every 60 seconds)": 2,
+   "GT": 93,
+   "Fitbit One": 94,
+   "Fitbit Flex 2": 89,
+   "Fitbit Surge": 80,
+   "Fitbit Charge HR": 72,
+   "Fitbit Charge 2": 89
+ },
+ {
+   "Time Count(Every 60 seconds)": 3,
+   "GT": 97,
+   "Fitbit One": 96,
+   "Fitbit Flex 2": 97,
+   "Fitbit Surge": 93,
+   "Fitbit Charge HR": 92,
+   "Fitbit Charge 2": 96
+ },
+ {
+   "Time Count(Every 60 seconds)": 4,
+   "GT": 97,
+   "Fitbit One": 97,
+   "Fitbit Flex 2": 96,
+   "Fitbit Surge": 95,
+   "Fitbit Charge HR": 96,
+   "Fitbit Charge 2": 96
+ },
+ {
+   "Time Count(Every 60 seconds)": 5,
+   "GT": 99,
+   "Fitbit One": 97,
+   "Fitbit Flex 2": 96,
+   "Fitbit Surge": 90,
+   "Fitbit Charge HR": 90,
+   "Fitbit Charge 2": 96
+ },
+ {
+   "Time Count(Every 60 seconds)": 6,
+   "GT": 104,
+   "Fitbit One": 105,
+   "Fitbit Flex 2": 102,
+   "Fitbit Surge": 65,
+   "Fitbit Charge HR": 73,
+   "Fitbit Charge 2": 104
+ },
+ {
+   "Time Count(Every 60 seconds)": 7,
+   "GT": 105,
+   "Fitbit One": 107,
+   "Fitbit Flex 2": 107,
+   "Fitbit Surge": 85,
+   "Fitbit Charge HR": 97,
+   "Fitbit Charge 2": 106
+ },
+ {
+   "Time Count(Every 60 seconds)": 8,
+   "GT": 107,
+   "Fitbit One": 107,
+   "Fitbit Flex 2": 109,
+   "Fitbit Surge": 99,
+   "Fitbit Charge HR": 94,
+   "Fitbit Charge 2": 108
+ },
+ {
+   "Time Count(Every 60 seconds)": 9,
+   "GT": 105,
+   "Fitbit One": 108,
+   "Fitbit Flex 2": 105,
+   "Fitbit Surge": 92,
+   "Fitbit Charge HR": 89,
+   "Fitbit Charge 2": 105
+ },
+ {
+   "Time Count(Every 60 seconds)": 10,
+   "GT": 108,
+   "Fitbit One": 106,
+   "Fitbit Flex 2": 104,
+   "Fitbit Surge": 93,
+   "Fitbit Charge HR": 95,
+   "Fitbit Charge 2": 105
+ },
+ {
+   "Time Count(Every 60 seconds)": 11,
+   "GT": 116,
+   "Fitbit One": 116,
+   "Fitbit Flex 2": 111,
+   "Fitbit Surge": 108,
+   "Fitbit Charge HR": 112,
+   "Fitbit Charge 2": 113
+ },
+ {
+   "Time Count(Every 60 seconds)": 12,
+   "GT": 114,
+   "Fitbit One": 115,
+   "Fitbit Flex 2": 112,
+   "Fitbit Surge": 113,
+   "Fitbit Charge HR": 115,
+   "Fitbit Charge 2": 112
+ },
+ {
+   "Time Count(Every 60 seconds)": 13,
+   "GT": 115,
+   "Fitbit One": 114,
+   "Fitbit Flex 2": 111,
+   "Fitbit Surge": 115,
+   "Fitbit Charge HR": 115,
+   "Fitbit Charge 2": 114
+ },
+ {
+   "Time Count(Every 60 seconds)": 14,
+   "GT": 115,
+   "Fitbit One": 117,
+   "Fitbit Flex 2": 114,
+   "Fitbit Surge": 110,
+   "Fitbit Charge HR": 113,
+   "Fitbit Charge 2": 116
+ },
+ {
+   "Time Count(Every 60 seconds)": 15,
+   "GT": 116,
+   "Fitbit One": 115,
+   "Fitbit Flex 2": 114,
+   "Fitbit Surge": 116,
+   "Fitbit Charge HR": 114,
+   "Fitbit Charge 2": 113
+ },
+ {
+   "Time Count(Every 60 seconds)": 16,
+   "GT": 122,
+   "Fitbit One": 120,
+   "Fitbit Flex 2": 121,
+   "Fitbit Surge": 112,
+   "Fitbit Charge HR": 113,
+   "Fitbit Charge 2": 119
+ },
+ {
+   "Time Count(Every 60 seconds)": 17,
+   "GT": 122,
+   "Fitbit One": 123,
+   "Fitbit Flex 2": 111,
+   "Fitbit Surge": 115,
+   "Fitbit Charge HR": 118,
+   "Fitbit Charge 2": 118
+ },
+ {
+   "Time Count(Every 60 seconds)": 18,
+   "GT": 123,
+   "Fitbit One": 122,
+   "Fitbit Flex 2": 113,
+   "Fitbit Surge": 115,
+   "Fitbit Charge HR": 116,
+   "Fitbit Charge 2": 114
+ },
+ {
+   "Time Count(Every 60 seconds)": 19,
+   "GT": 121,
+   "Fitbit One": 123,
+   "Fitbit Flex 2": 119,
+   "Fitbit Surge": 113,
+   "Fitbit Charge HR": 116,
+   "Fitbit Charge 2": 122
+ },
+ {
+   "Time Count(Every 60 seconds)": 20,
+   "GT": 126,
+   "Fitbit One": 122,
+   "Fitbit Flex 2": 116,
+   "Fitbit Surge": 115,
+   "Fitbit Charge HR": 115,
+   "Fitbit Charge 2": 116
+ },
+ {
+   "Time Count(Every 60 seconds)": 21,
+   "GT": 148,
+   "Fitbit One": 151,
+   "Fitbit Flex 2": 151,
+   "Fitbit Surge": 152,
+   "Fitbit Charge HR": 151,
+   "Fitbit Charge 2": 150
+ },
+ {
+   "Time Count(Every 60 seconds)": 22,
+   "GT": 149,
+   "Fitbit One": 147,
+   "Fitbit Flex 2": 146,
+   "Fitbit Surge": 143,
+   "Fitbit Charge HR": 146,
+   "Fitbit Charge 2": 149
+ },
+ {
+   "Time Count(Every 60 seconds)": 23,
+   "GT": 150,
+   "Fitbit One": 148,
+   "Fitbit Flex 2": 147,
+   "Fitbit Surge": 152,
+   "Fitbit Charge HR": 149,
+   "Fitbit Charge 2": 147
+ },
+ {
+   "Time Count(Every 60 seconds)": 24,
+   "GT": 149,
+   "Fitbit One": 152,
+   "Fitbit Flex 2": 153,
+   "Fitbit Surge": 151,
+   "Fitbit Charge HR": 154,
+   "Fitbit Charge 2": 151
+ },
+ {
+   "Time Count(Every 60 seconds)": 25,
+   "GT": 147,
+   "Fitbit One": 150,
+   "Fitbit Flex 2": 148,
+   "Fitbit Surge": 149,
+   "Fitbit Charge HR": 147,
+   "Fitbit Charge 2": 144
+ },
+ {
+   "Time Count(Every 60 seconds)": 26,
+   "GT": 156,
+   "Fitbit One": 154,
+   "Fitbit Flex 2": 153,
+   "Fitbit Surge": 153,
+   "Fitbit Charge HR": 152,
+   "Fitbit Charge 2": 151
+ },
+ {
+   "Time Count(Every 60 seconds)": 27,
+   "GT": 157,
+   "Fitbit One": 162,
+   "Fitbit Flex 2": 158,
+   "Fitbit Surge": 159,
+   "Fitbit Charge HR": 161,
+   "Fitbit Charge 2": 157
+ },
+ {
+   "Time Count(Every 60 seconds)": 28,
+   "GT": 157,
+   "Fitbit One": 156,
+   "Fitbit Flex 2": 150,
+   "Fitbit Surge": 158,
+   "Fitbit Charge HR": 156,
+   "Fitbit Charge 2": 153
+ },
+ {
+   "Time Count(Every 60 seconds)": 29,
+   "GT": 156,
+   "Fitbit One": 157,
+   "Fitbit Flex 2": 156,
+   "Fitbit Surge": 157,
+   "Fitbit Charge HR": 154,
+   "Fitbit Charge 2": 154
+ },
+ {
+   "Time Count(Every 60 seconds)": 30,
+   "GT": 160,
+   "Fitbit One": 158,
+   "Fitbit Flex 2": 158,
+   "Fitbit Surge": 156,
+   "Fitbit Charge HR": 162,
+   "Fitbit Charge 2": 158
+ }
+]

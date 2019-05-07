@@ -1,0 +1,44 @@
+[
+ {
+   "Name": "GT(M)",
+   "Start": 0,
+   "End": 2887,
+   "Distance(M)": 2887,
+   "Diff": 0
+ },
+ {
+   "Name": "Fitbit One",
+   "Start": 4570,
+   "End": 7810,
+   "Distance(M)": 3240,
+   "Diff": 353
+ },
+ {
+   "Name": "Fitbit Charge HR",
+   "Start": 4120,
+   "End": 7010,
+   "Distance(M)": 2890,
+   "Diff": 3
+ },
+ {
+   "Name": "Fitbit Surge",
+   "Start": 4430,
+   "End": 7740,
+   "Distance(M)": 3310,
+   "Diff": 423
+ },
+ {
+   "Name": "Fitbit Flex 2",
+   "Start": 4430,
+   "End": 7660,
+   "Distance(M)": 3230,
+   "Diff": 343
+ },
+ {
+   "Name": "Fitbit Charge 2",
+   "Start": 4460,
+   "End": 7710,
+   "Distance(M)": 3250,
+   "Diff": 363
+ }
+]

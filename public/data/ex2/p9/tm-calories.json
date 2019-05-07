@@ -1,0 +1,290 @@
+[
+ {
+   "Calories": "Time Count(Every 60 seconds)",
+   "FIELD2": "GT",
+   "FIELD3": "Fitbit One",
+   "FIELD4": "Fitbit Flex 2",
+   "FIELD5": "Fitbit Surge",
+   "FIELD6": "Fitbit Charge HR",
+   "FIELD7": "Fitbit Charge 2"
+ },
+ {
+   "Calories": "0",
+   "FIELD2": "0",
+   "FIELD3": "0",
+   "FIELD4": "0",
+   "FIELD5": "0",
+   "FIELD6": "0",
+   "FIELD7": "0"
+ },
+ {
+   "Calories": "1",
+   "FIELD2": "1.6",
+   "FIELD3": "3",
+   "FIELD4": "3",
+   "FIELD5": "5",
+   "FIELD6": "4",
+   "FIELD7": "5"
+ },
+ {
+   "Calories": "2",
+   "FIELD2": "4.1",
+   "FIELD3": "6",
+   "FIELD4": "8",
+   "FIELD5": "11",
+   "FIELD6": "9",
+   "FIELD7": "10"
+ },
+ {
+   "Calories": "3",
+   "FIELD2": "7.2",
+   "FIELD3": "9",
+   "FIELD4": "13",
+   "FIELD5": "17",
+   "FIELD6": "15",
+   "FIELD7": "15"
+ },
+ {
+   "Calories": "4",
+   "FIELD2": "10.3",
+   "FIELD3": "12",
+   "FIELD4": "19",
+   "FIELD5": "24",
+   "FIELD6": "20",
+   "FIELD7": "19"
+ },
+ {
+   "Calories": "5",
+   "FIELD2": "13.2",
+   "FIELD3": "15",
+   "FIELD4": "24",
+   "FIELD5": "30",
+   "FIELD6": "24",
+   "FIELD7": "23"
+ },
+ {
+   "Calories": "6",
+   "FIELD2": "16.2",
+   "FIELD3": "19",
+   "FIELD4": "28",
+   "FIELD5": "36",
+   "FIELD6": "29",
+   "FIELD7": "26"
+ },
+ {
+   "Calories": "7",
+   "FIELD2": "19.7",
+   "FIELD3": "24",
+   "FIELD4": "33",
+   "FIELD5": "43",
+   "FIELD6": "34",
+   "FIELD7": "31"
+ },
+ {
+   "Calories": "8",
+   "FIELD2": "23.2",
+   "FIELD3": "28",
+   "FIELD4": "38",
+   "FIELD5": "50",
+   "FIELD6": "39",
+   "FIELD7": "34"
+ },
+ {
+   "Calories": "9",
+   "FIELD2": "26.7",
+   "FIELD3": "31",
+   "FIELD4": "43",
+   "FIELD5": "57",
+   "FIELD6": "44",
+   "FIELD7": "39"
+ },
+ {
+   "Calories": "10",
+   "FIELD2": "30.1",
+   "FIELD3": "35",
+   "FIELD4": "49",
+   "FIELD5": "63",
+   "FIELD6": "49",
+   "FIELD7": "44"
+ },
+ {
+   "Calories": "11",
+   "FIELD2": "33.7",
+   "FIELD3": "41",
+   "FIELD4": "54",
+   "FIELD5": "69",
+   "FIELD6": "54",
+   "FIELD7": "48"
+ },
+ {
+   "Calories": "12",
+   "FIELD2": "37.8",
+   "FIELD3": "45",
+   "FIELD4": "57",
+   "FIELD5": "75",
+   "FIELD6": "59",
+   "FIELD7": "52"
+ },
+ {
+   "Calories": "13",
+   "FIELD2": "41.9",
+   "FIELD3": "49",
+   "FIELD4": "62",
+   "FIELD5": "82",
+   "FIELD6": "65",
+   "FIELD7": "57"
+ },
+ {
+   "Calories": "14",
+   "FIELD2": "46",
+   "FIELD3": "53",
+   "FIELD4": "67",
+   "FIELD5": "89",
+   "FIELD6": "70",
+   "FIELD7": "62"
+ },
+ {
+   "Calories": "15",
+   "FIELD2": "50.1",
+   "FIELD3": "57",
+   "FIELD4": "72",
+   "FIELD5": "95",
+   "FIELD6": "76",
+   "FIELD7": "67"
+ },
+ {
+   "Calories": "16",
+   "FIELD2": "54.3",
+   "FIELD3": "65",
+   "FIELD4": "78",
+   "FIELD5": "102",
+   "FIELD6": "82",
+   "FIELD7": "73"
+ },
+ {
+   "Calories": "17",
+   "FIELD2": "59.1",
+   "FIELD3": "69",
+   "FIELD4": "84",
+   "FIELD5": "110",
+   "FIELD6": "88",
+   "FIELD7": "78"
+ },
+ {
+   "Calories": "18",
+   "FIELD2": "64.4",
+   "FIELD3": "74",
+   "FIELD4": "90",
+   "FIELD5": "117",
+   "FIELD6": "94",
+   "FIELD7": "83"
+ },
+ {
+   "Calories": "19",
+   "FIELD2": "69.4",
+   "FIELD3": "79",
+   "FIELD4": "96",
+   "FIELD5": "125",
+   "FIELD6": "100",
+   "FIELD7": "89"
+ },
+ {
+   "Calories": "20",
+   "FIELD2": "74.3",
+   "FIELD3": "84",
+   "FIELD4": "102",
+   "FIELD5": "133",
+   "FIELD6": "107",
+   "FIELD7": "94"
+ },
+ {
+   "Calories": "21",
+   "FIELD2": "79.3",
+   "FIELD3": "93",
+   "FIELD4": "106",
+   "FIELD5": "141",
+   "FIELD6": "114",
+   "FIELD7": "100"
+ },
+ {
+   "Calories": "22",
+   "FIELD2": "85.5",
+   "FIELD3": "102",
+   "FIELD4": "111",
+   "FIELD5": "146",
+   "FIELD6": "122",
+   "FIELD7": "106"
+ },
+ {
+   "Calories": "23",
+   "FIELD2": "92.6",
+   "FIELD3": "112",
+   "FIELD4": "116",
+   "FIELD5": "152",
+   "FIELD6": "130",
+   "FIELD7": "113"
+ },
+ {
+   "Calories": "24",
+   "FIELD2": "100.3",
+   "FIELD3": "122",
+   "FIELD4": "121",
+   "FIELD5": "163",
+   "FIELD6": "139",
+   "FIELD7": "122"
+ },
+ {
+   "Calories": "25",
+   "FIELD2": "107.9",
+   "FIELD3": "132",
+   "FIELD4": "127",
+   "FIELD5": "175",
+   "FIELD6": "149",
+   "FIELD7": "131"
+ },
+ {
+   "Calories": "26",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": ""
+ },
+ {
+   "Calories": "27",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": ""
+ },
+ {
+   "Calories": "28",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": ""
+ },
+ {
+   "Calories": "29",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": ""
+ },
+ {
+   "Calories": "30",
+   "FIELD2": "",
+   "FIELD3": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": ""
+ }
+]

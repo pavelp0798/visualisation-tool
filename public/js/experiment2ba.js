@@ -7,10 +7,14 @@ function capitalizeFirstLetter(string) {
 function baDisplayGraph(type, data, names, sensor) {
     setTimeout(function () {
         const container = function (data) {
-            heartRateSensors = ["GT", "Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
+            heartRateSensors = ["Fitbit Charge HR", "Fitbit Charge 2", "Fitbit Surge"]
             let dataPlot = [];
             let diffMeanPlot = [];
-            for (i = 1; i < data.length; i++) {
+            dataPlot.push({
+                name: "Gold Standard",
+                data: data[1]
+            });
+            for (i = 2; i < data.length; i++) {
                 if (type == "heartrate") {
                     if (heartRateSensors.indexOf(names[i]) >= 0) {
                         dataPlot.push({
@@ -75,7 +79,7 @@ function baDisplayGraph(type, data, names, sensor) {
                 xAxis: {
                     title: {
                         enabled: true,
-                        text: 'Mean'
+                        text: 'Average of two measures'
                     },
                     startOnTick: true,
                     endOnTick: true,
@@ -83,7 +87,7 @@ function baDisplayGraph(type, data, names, sensor) {
                 },
                 yAxis: {
                     title: {
-                        text: 'Difference'
+                        text: 'Difference between the two measures'
                     }
                 },
                 legend: {
